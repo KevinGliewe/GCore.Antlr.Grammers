@@ -2,13 +2,18 @@ using System;
 using System.IO;
 using System.Linq;
 
+using GCore.Logging;
 
 namespace Antlr4.Grammers
 {
     public class ProjectHandler
     {
+
+        private string _lastprocess = null;
         public ProjectContext Context { get; private set; }
         public RepoContext Repo {get; private set; }
+
+        public string PackageName => $"{Repo.PackagePrefix}.{Context.Name}.{Repo.Version}.nupkg";
 
         public ProjectHandler(string antlr4Path, string srcPath, string destPath, RepoContext repo)
         {
@@ -17,19 +22,28 @@ namespace Antlr4.Grammers
         }
 
         public bool DoIt() {
+            Log.Info("Processing "+Context.Name);
             bool result = true;
 
-            if(result)
-                result = CopyData();
-            if(result)
-                result = GenerateParser();
-            if(result)
-                result = GenerateProject();
-            if(result)
-                result = BuildProject();
-            if(result)
-                result = Publish();
+            foreach(Func<bool> f in new Func<bool>[] {CopyData, GenerateParser, GenerateProject, BuildProject, Publish}) {
+                
+                if(!result) 
+                    break;
+                Log.Info("-> " + f.Method.Name);
+                try {
+                    result = f();
+                    if(!result) {
+                        Log.Warn("#> " + f.Method.Name + " FAILED");
+                        Log.Debug(_lastprocess);
+                    }
+                } catch (Exception ex) {
+                    Log.Exception(f.Method.Name, ex);
+                    result = false;
+                }
+            }
 
+            if(result)
+                Log.Success("Done");
             return result;
         }
 
@@ -43,10 +57,11 @@ namespace Antlr4.Grammers
 
         private bool GenerateParser() {
             foreach(var file in Directory.GetFiles(Context.DestPath, "*.g4"))
-                $"java -jar {Context.Antlr4Path} -Dlanguage=CSharp -visitor -o {Context.DestPath} {file}".Sh();
+                if($"java -jar {Context.Antlr4Path} -Dlanguage=CSharp -visitor -o {Context.DestPath} {file}".Sh2(out _lastprocess) != 0)
+                    return false;
             
             foreach(var csfile in Directory.GetFiles(Context.DestPath, "*.cs"))
-                File.WriteAllText(csfile, $"namespace Antlr4.Grammers.{Context.Name}\n{{\n" + File.ReadAllText(csfile) + "\n}");
+                File.WriteAllText(csfile, $"namespace {Repo.PackagePrefix}.{Context.Name}\n{{\n" + File.ReadAllText(csfile).Replace(".compareTo(", ".CompareTo(") + "\n}");
             return true;
         }
 
@@ -56,14 +71,14 @@ namespace Antlr4.Grammers
             <Project Sdk=""Microsoft.NET.Sdk"">
 
                 <PropertyGroup>
-                    <PackageId>Antlr4.Grammers.{Context.Name}</PackageId>
+                    <PackageId>{Repo.PackagePrefix}.{Context.Name}</PackageId>
                     <Version>{Repo.Version}</Version>
                     <TargetFramework>netstandard2.0</TargetFramework>
                     <Authors>Kevin Gliewe</Authors>
                     <Company>Kevin Gliewe</Company>
                     <Description>Prebuild Antlr4 grammer for {Context.Name}</Description>
-                    <RepositoryUrl>https://github.com/KillerGoldFisch/Antlr4.Grammers</RepositoryUrl>
-                    <PackageProjectUrl>https://github.com/KillerGoldFisch/Antlr4.Grammers</PackageProjectUrl>
+                    <RepositoryUrl>https://github.com/KillerGoldFisch/GCore.Antlr4.Grammers</RepositoryUrl>
+                    <PackageProjectUrl>https://github.com/KillerGoldFisch/GCore.Antlr4.Grammers</PackageProjectUrl>
                     <PackageLicenseUrl>http://anak10thn.github.io/WTFPL/</PackageLicenseUrl>
                     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
                     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
@@ -79,11 +94,27 @@ namespace Antlr4.Grammers
         }
 
         private bool BuildProject() {
-            $"dotnet publish -c Release {Context.ProjectFile}".Sh();
+            if($"dotnet publish -c Release {Context.ProjectFile}".Sh2(out _lastprocess) != 0)
+                return false;
+
+            var src = Path.Combine(Context.DestPath, "bin", "Release", PackageName);
+            var dest = Path.Combine(Repo.PackagePath, PackageName);
+
+            if(!File.Exists(src))
+                return false;
+            File.Move(src, dest);
+
             return true;
         }
 
         private bool Publish() {
+            if(Repo.ApiToken is null)
+                return true;
+
+            var dest = Path.Combine(Repo.PackagePath, PackageName);
+            if($"dotnet nuget push {dest} -k {Repo.ApiToken} -s https://api.nuget.org/v3/index.json".Sh2(out _lastprocess) != 0)
+               return false;
+
             return true;
         }
     }

@@ -17,7 +17,7 @@ namespace Antlr4.Grammers
         public ProjectContext(string antlr4Path, string srcPath, string destPath) {
             Antlr4Path = Path.GetFullPath(antlr4Path);
             SrcPath = Path.GetFullPath(srcPath);
-            Name = SrcPath.Split(Path.DirectorySeparatorChar).Last().Transform(To.LowerCase, To.TitleCase);
+            Name = SrcPath.Split(Path.DirectorySeparatorChar).Last().Transform(To.LowerCase, To.TitleCase).Replace("-", "");
             DestPath = Path.GetFullPath(Path.Combine(destPath, Name));
             ProjectFile = Path.Combine(DestPath, Name + ".csproj");
         }
