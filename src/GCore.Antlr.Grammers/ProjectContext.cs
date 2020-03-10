@@ -3,7 +3,7 @@ using System.IO;
 using System.Linq;
 using Humanizer;
 
-namespace Antlr4.Grammers
+namespace GCore.Antlr.Grammers
 {
     public class ProjectContext
     {

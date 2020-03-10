@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Runtime.InteropServices;
 using GCore.Logging;
 
-namespace Antlr4.Grammers
+namespace GCore.Antlr.Grammers
 {
     public static class StringShExtensions {
 
@@ -37,7 +37,7 @@ namespace Antlr4.Grammers
             return stdOut;
         }
 
-        public static void Sh2(this string cmd, out Process process)
+        public static void Sh2(this string cmd, out Process process, string workingDirectory = ".")
         {
             var escapedArgs = cmd.Replace("\"", "\\\"");
 
@@ -58,6 +58,7 @@ namespace Antlr4.Grammers
                     RedirectStandardOutput = true,
                     UseShellExecute = false,
                     CreateNoWindow = true,
+                    WorkingDirectory = workingDirectory
                 }
             };
             process.Start();
@@ -65,19 +66,19 @@ namespace Antlr4.Grammers
 
 
 
-        public static int Sh2(this string cmd, out string stdOut)
+        public static int Sh2(this string cmd, out string stdOut, string workingDirectory = ".")
         {
             Process process;
-            cmd.Sh2(out process);
+            cmd.Sh2(out process, workingDirectory);
             stdOut = process.StandardOutput.ReadToEnd();
             process.WaitForExit();
             return process.ExitCode;
         }
 
-        public static int Sh2(this string cmd, Action<string> lineCallback = null)
+        public static int Sh2(this string cmd, Action<string> lineCallback = null, string workingDirectory = ".")
         {
             Process process;
-            cmd.Sh2(out process);
+            cmd.Sh2(out process, workingDirectory);
             string line;
             if(lineCallback != null)
                 while((line = process.StandardOutput.ReadLine()) != null)
@@ -86,10 +87,10 @@ namespace Antlr4.Grammers
             return process.ExitCode;
         }
 
-        public static int Sh2(this string cmd)
+        public static int Sh2(this string cmd, string workingDirectory = ".")
         {
             Process process;
-            cmd.Sh2(out process);
+            cmd.Sh2(out process, workingDirectory);
             string line;
             while((line = process.StandardOutput.ReadLine()) != null)
                 GCore.Logging.Log.Info($"Process {process.Id}: {line}");

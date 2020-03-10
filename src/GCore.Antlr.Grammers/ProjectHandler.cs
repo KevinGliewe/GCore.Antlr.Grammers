@@ -4,7 +4,7 @@ using System.Linq;
 
 using GCore.Logging;
 
-namespace Antlr4.Grammers
+namespace GCore.Antlr.Grammers
 {
     public class ProjectHandler
     {
