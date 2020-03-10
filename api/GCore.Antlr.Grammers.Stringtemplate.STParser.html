@@ -1,0 +1,3357 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class STParser
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class STParser
+   ">
+    <meta name="generator" content="docfx 2.50.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser">
+  
+  
+  <h1 id="GCore_Antlr_Grammers_Stringtemplate_STParser" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser" class="text-break">Class STParser
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Antlr4.Runtime.Recognizer</span>&lt;<span class="xref">Antlr4.Runtime.IToken</span>, <span class="xref">Antlr4.Runtime.Atn.ParserATNSimulator</span>&gt;</div>
+    <div class="level2"><span class="xref">Antlr4.Runtime.Parser</span></div>
+    <div class="level3"><span class="xref">STParser</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Antlr4.Runtime.IRecognizer</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Output</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.ErrorOutput</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Reset()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Match(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.MatchWildcard()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.AddParseListener(Antlr4.Runtime.Tree.IParseTreeListener)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.RemoveParseListener(Antlr4.Runtime.Tree.IParseTreeListener)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.RemoveParseListeners()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.TriggerEnterRuleEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.TriggerExitRuleEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetATNWithBypassAlts()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.CompileParseTreePattern(System.String, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.CompileParseTreePattern(System.String, System.Int32, Antlr4.Runtime.Lexer)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.NotifyErrorListeners(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.NotifyErrorListeners(Antlr4.Runtime.IToken, System.String, Antlr4.Runtime.RecognitionException)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Consume()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.AddContextToParseTree()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.EnterRule(Antlr4.Runtime.ParserRuleContext, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.EnterLeftFactoredRule(Antlr4.Runtime.ParserRuleContext, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.ExitRule()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.EnterOuterAlt(Antlr4.Runtime.ParserRuleContext, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.EnterRecursionRule(Antlr4.Runtime.ParserRuleContext, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.EnterRecursionRule(Antlr4.Runtime.ParserRuleContext, System.Int32, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.PushNewRecursionContext(Antlr4.Runtime.ParserRuleContext, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.UnrollRecursionContexts(Antlr4.Runtime.ParserRuleContext)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetInvokingContext(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Precpred(Antlr4.Runtime.RuleContext, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.InContext(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.IsExpectedToken(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetExpectedTokens()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetExpectedTokensWithinCurrentRule()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetRuleIndex(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetRuleInvocationStack()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetRuleInvocationStackAsString()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetRuleInvocationStack(Antlr4.Runtime.RuleContext)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetDFAStrings()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.DumpDFA()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.BuildParseTree</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.TrimParseTree</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.ParseListeners</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.NumberOfSyntaxErrors</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.TokenFactory</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.ErrorHandler</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.InputStream</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.TokenStream</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.CurrentToken</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Precedence</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Context</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.ErrorListenerDispatch</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.RuleContext</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.SourceName</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.ParseInfo</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Profile</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Trace</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Eof</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.CreateTokenTypeMap(Antlr4.Runtime.IVocabulary)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.GetTokenType(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.GetErrorHeader(Antlr4.Runtime.RecognitionException)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.GetTokenErrorDisplay(Antlr4.Runtime.IToken)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.AddErrorListener(Antlr4.Runtime.IAntlrErrorListener&lt;Antlr4.Runtime.IToken&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.RemoveErrorListener(Antlr4.Runtime.IAntlrErrorListener&lt;Antlr4.Runtime.IToken&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.RemoveErrorListeners()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Sempred(Antlr4.Runtime.RuleContext, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Precpred(Antlr4.Runtime.RuleContext, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Action(Antlr4.Runtime.RuleContext, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.RuleNames</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Vocabulary</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.TokenTypeMap</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.RuleIndexMap</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.SerializedAtn</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.GrammarFileName</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Atn</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Interpreter</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.ParseInfo</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.ErrorListeners</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.ErrorListenerDispatch</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.State</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.InputStream</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.html">GCore.Antlr.Grammers.Stringtemplate</a></h6>
+  <h6><strong>Assembly</strong>: Stringtemplate.dll</h6>
+  <h5 id="GCore_Antlr_Grammers_Stringtemplate_STParser_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public class STParser : Parser, IRecognizer</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser__ctor_Antlr4_Runtime_ITokenStream_.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.%23ctor(Antlr4.Runtime.ITokenStream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L99">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser__ctor_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.#ctor*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser__ctor_Antlr4_Runtime_ITokenStream_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.#ctor(Antlr4.Runtime.ITokenStream)">STParser(ITokenStream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public STParser(ITokenStream input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.ITokenStream</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser__ctor_Antlr4_Runtime_ITokenStream_System_IO_TextWriter_System_IO_TextWriter_.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.%23ctor(Antlr4.Runtime.ITokenStream%2CSystem.IO.TextWriter%2CSystem.IO.TextWriter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L101">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser__ctor_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.#ctor*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser__ctor_Antlr4_Runtime_ITokenStream_System_IO_TextWriter_System_IO_TextWriter_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.#ctor(Antlr4.Runtime.ITokenStream,System.IO.TextWriter,System.IO.TextWriter)">STParser(ITokenStream, TextWriter, TextWriter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public STParser(ITokenStream input, TextWriter output, TextWriter errorOutput)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.ITokenStream</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.TextWriter</span></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.TextWriter</span></td>
+        <td><span class="parametername">errorOutput</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser__ATN.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser._ATN%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L2399">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser__ATN" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser._ATN">_ATN</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ATN _ATN</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.Atn.ATN</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_AND.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.AND%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L44">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_AND" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.AND">AND</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int AND = 28</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_AT.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.AT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L44">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_AT" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.AT">AT</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int AT = 22</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_BANG.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.BANG%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L45">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_BANG" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.BANG">BANG</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int BANG = 35</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_BLOCK_COMMENT.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.BLOCK_COMMENT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_BLOCK_COMMENT" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.BLOCK_COMMENT">BLOCK_COMMENT</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int BLOCK_COMMENT = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_COLON.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.COLON%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L44">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_COLON" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.COLON">COLON</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int COLON = 26</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_COMMA.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.COMMA%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L44">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_COMMA" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.COMMA">COMMA</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int COMMA = 25</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_decisionToDFA.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.decisionToDFA%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L38">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_decisionToDFA" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.decisionToDFA">decisionToDFA</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static DFA[] decisionToDFA</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.Dfa.DFA</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_DefaultVocabulary.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.DefaultVocabulary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L75">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_DefaultVocabulary" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.DefaultVocabulary">DefaultVocabulary</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly IVocabulary DefaultVocabulary</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.IVocabulary</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_DOC_COMMENT.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.DOC_COMMENT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_DOC_COMMENT" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.DOC_COMMENT">DOC_COMMENT</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DOC_COMMENT = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_DOT.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.DOT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L44">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_DOT" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.DOT">DOT</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DOT = 24</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_ELLIPSIS.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.ELLIPSIS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L44">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_ELLIPSIS" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.ELLIPSIS">ELLIPSIS</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ELLIPSIS = 23</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_ELSE.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.ELSE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L43">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_ELSE" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.ELSE">ELSE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ELSE = 16</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_ELSEIF.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.ELSEIF%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L43">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_ELSEIF" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.ELSEIF">ELSEIF</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ELSEIF = 15</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_END.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.END%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L43">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_END" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.END">END</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int END = 19</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_ENDIF.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.ENDIF%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L43">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_ENDIF" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.ENDIF">ENDIF</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ENDIF = 17</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_EQUALS.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.EQUALS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L45">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_EQUALS" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.EQUALS">EQUALS</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int EQUALS = 34</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_ERR_CHAR.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.ERR_CHAR%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L46">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_ERR_CHAR" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.ERR_CHAR">ERR_CHAR</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ERR_CHAR = 36</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_ESCAPE.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.ESCAPE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_ESCAPE" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.ESCAPE">ESCAPE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ESCAPE = 7</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_FALSE.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.FALSE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L44">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_FALSE" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.FALSE">FALSE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int FALSE = 21</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_HORZ_WS.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.HORZ_WS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_HORZ_WS" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.HORZ_WS">HORZ_WS</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int HORZ_WS = 5</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_ID.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.ID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L46">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_ID" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.ID">ID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ID = 37</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_IF.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.IF%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L43">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_IF" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.IF">IF</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int IF = 14</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_LBRACE.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.LBRACE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_LBRACE" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.LBRACE">LBRACE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int LBRACE = 11</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_LBRACK.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.LBRACK%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L45">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_LBRACK" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.LBRACK">LBRACK</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int LBRACK = 32</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_LDELIM.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.LDELIM%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_LDELIM" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.LDELIM">LDELIM</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int LDELIM = 8</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_LINE_COMMENT.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.LINE_COMMENT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_LINE_COMMENT" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.LINE_COMMENT">LINE_COMMENT</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int LINE_COMMENT = 3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_LPAREN.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.LPAREN%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L45">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_LPAREN" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.LPAREN">LPAREN</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int LPAREN = 30</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_OR.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.OR%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L45">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_OR" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.OR">OR</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int OR = 29</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_PIPE.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.PIPE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L46">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_PIPE" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.PIPE">PIPE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int PIPE = 38</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RBRACE.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RBRACE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RBRACE" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RBRACE">RBRACE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RBRACE = 9</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RBRACK.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RBRACK%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L45">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RBRACK" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RBRACK">RBRACK</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RBRACK = 33</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RDELIM.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RDELIM%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RDELIM" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RDELIM">RDELIM</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RDELIM = 12</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RPAREN.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RPAREN%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L45">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RPAREN" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RPAREN">RPAREN</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RPAREN = 31</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_andConditional.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_andConditional%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L50">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_andConditional" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_andConditional">RULE_andConditional</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_andConditional = 10</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_argExprList.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_argExprList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L54">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_argExprList" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_argExprList">RULE_argExprList</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_argExprList = 23</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_args.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_args%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L53">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_args" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_args">RULE_args</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_args = 22</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_compoundElement.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_compoundElement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L49">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_compoundElement" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_compoundElement">RULE_compoundElement</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_compoundElement = 4</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_conditional.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_conditional%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L50">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_conditional" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_conditional">RULE_conditional</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_conditional = 9</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_element.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_element%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L48">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_element" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_element">RULE_element</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_element = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_elements.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_elements%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L48">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_elements" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_elements">RULE_elements</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_elements = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_expr.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_expr%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L52">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_expr" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_expr">RULE_expr</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_expr = 15</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_exprOptions.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_exprOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L51">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_exprOptions" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_exprOptions">RULE_exprOptions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_exprOptions = 13</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_exprTag.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_exprTag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L49">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_exprTag" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_exprTag">RULE_exprTag</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_exprTag = 5</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_ifstat.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_ifstat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L50">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_ifstat" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_ifstat">RULE_ifstat</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_ifstat = 8</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_includeExpr.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_includeExpr%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L53">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_includeExpr" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_includeExpr">RULE_includeExpr</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_includeExpr = 19</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_list.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_list%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L53">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_list" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_list">RULE_list</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_list = 21</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_mapExpr.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_mapExpr%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L52">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_mapExpr" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_mapExpr">RULE_mapExpr</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_mapExpr = 16</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_mapTemplateRef.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_mapTemplateRef%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L52">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_mapTemplateRef" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_mapTemplateRef">RULE_mapTemplateRef</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_mapTemplateRef = 18</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_memberExpr.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_memberExpr%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L52">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_memberExpr" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_memberExpr">RULE_memberExpr</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_memberExpr = 17</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_namedArg.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_namedArg%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L54">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_namedArg" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_namedArg">RULE_namedArg</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_namedArg = 24</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_notConditional.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_notConditional%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L50">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_notConditional" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_notConditional">RULE_notConditional</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_notConditional = 11</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_notConditionalExpr.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_notConditionalExpr%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L51">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_notConditionalExpr" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_notConditionalExpr">RULE_notConditionalExpr</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_notConditionalExpr = 12</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_option.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_option%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L51">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_option" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_option">RULE_option</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_option = 14</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_primary.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_primary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L53">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_primary" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_primary">RULE_primary</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_primary = 20</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_region.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_region%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L49">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_region" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_region">RULE_region</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_region = 6</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_singleElement.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_singleElement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L48">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_singleElement" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_singleElement">RULE_singleElement</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_singleElement = 3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_subtemplate.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_subtemplate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L49">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_subtemplate" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_subtemplate">RULE_subtemplate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_subtemplate = 7</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_template.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_template%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L48">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RULE_template" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RULE_template">RULE_template</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_template = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_ruleNames.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.ruleNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L55">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_ruleNames" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.ruleNames">ruleNames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string[] ruleNames</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_SEMI.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.SEMI%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L44">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_SEMI" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.SEMI">SEMI</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SEMI = 27</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_sharedContextCache.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.sharedContextCache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L39">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_sharedContextCache" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.sharedContextCache">sharedContextCache</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static PredictionContextCache sharedContextCache</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.Atn.PredictionContextCache</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_STRING.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.STRING%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L43">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_STRING" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.STRING">STRING</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int STRING = 13</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_SUPER.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.SUPER%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L43">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_SUPER" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.SUPER">SUPER</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SUPER = 18</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_TEXT.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.TEXT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_TEXT" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.TEXT">TEXT</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int TEXT = 10</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_TMPL_COMMENT.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.TMPL_COMMENT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_TMPL_COMMENT" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.TMPL_COMMENT">TMPL_COMMENT</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int TMPL_COMMENT = 4</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_TRUE.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.TRUE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L43">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_TRUE" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.TRUE">TRUE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int TRUE = 20</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_VERT_WS.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.VERT_WS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_VERT_WS" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.VERT_WS">VERT_WS</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int VERT_WS = 6</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_GrammarFileName.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.GrammarFileName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L86">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_GrammarFileName_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.GrammarFileName*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_GrammarFileName" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.GrammarFileName">GrammarFileName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GrammarFileName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.GrammarFileName</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_RuleNames.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.RuleNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L88">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_RuleNames_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RuleNames*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_RuleNames" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.RuleNames">RuleNames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string[] RuleNames { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.RuleNames</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_SerializedAtn.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.SerializedAtn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L90">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_SerializedAtn_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.SerializedAtn*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_SerializedAtn" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.SerializedAtn">SerializedAtn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string SerializedAtn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.SerializedAtn</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_Vocabulary.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.Vocabulary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L77">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_Vocabulary_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.Vocabulary*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_Vocabulary" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.Vocabulary">Vocabulary</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotNull]
+public override IVocabulary Vocabulary { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.IVocabulary</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Vocabulary</span></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_andConditional.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.andConditional%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L847">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_andConditional_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.andConditional*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_andConditional" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.andConditional">andConditional()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public STParser.AndConditionalContext andConditional()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.STParser.AndConditionalContext.html">STParser.AndConditionalContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_argExprList.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.argExprList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L2021">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_argExprList_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.argExprList*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_argExprList" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.argExprList">argExprList()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public STParser.ArgExprListContext argExprList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.STParser.ArgExprListContext.html">STParser.ArgExprListContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_args.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.args%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L1923">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_args_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.args*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_args" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.args">args()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public STParser.ArgsContext args()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.STParser.ArgsContext.html">STParser.ArgsContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_compoundElement.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.compoundElement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L386">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_compoundElement_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.compoundElement*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_compoundElement" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.compoundElement">compoundElement()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public STParser.CompoundElementContext compoundElement()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.STParser.CompoundElementContext.html">STParser.CompoundElementContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_conditional.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.conditional%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L780">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_conditional_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.conditional*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_conditional" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.conditional">conditional()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public STParser.ConditionalContext conditional()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.STParser.ConditionalContext.html">STParser.ConditionalContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_element.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.element%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L244">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_element_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.element*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_element" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.element">element()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public STParser.ElementContext element()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.STParser.ElementContext.html">STParser.ElementContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_elements.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.elements%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L181">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_elements_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.elements*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_elements" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.elements">elements()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public STParser.ElementsContext elements()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.STParser.ElementsContext.html">STParser.ElementsContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_expr.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.expr%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L1201">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_expr_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.expr*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_expr" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.expr">expr()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public STParser.ExprContext expr()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.STParser.ExprContext.html">STParser.ExprContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_exprOptions.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.exprOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L1079">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_exprOptions_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.exprOptions*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_exprOptions" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.exprOptions">exprOptions()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public STParser.ExprOptionsContext exprOptions()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.STParser.ExprOptionsContext.html">STParser.ExprOptionsContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_exprTag.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.exprTag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L449">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_exprTag_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.exprTag*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_exprTag" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.exprTag">exprTag()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public STParser.ExprTagContext exprTag()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.STParser.ExprTagContext.html">STParser.ExprTagContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_ifstat.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.ifstat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L685">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_ifstat_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.ifstat*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_ifstat" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.ifstat">ifstat()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public STParser.IfstatContext ifstat()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.STParser.IfstatContext.html">STParser.IfstatContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_includeExpr.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.includeExpr%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L1588">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_includeExpr_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.includeExpr*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_includeExpr" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.includeExpr">includeExpr()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public STParser.IncludeExprContext includeExpr()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.STParser.IncludeExprContext.html">STParser.IncludeExprContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_list.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.list%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L1856">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_list_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.list*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_list" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.list">list()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public STParser.ListContext list()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.STParser.ListContext.html">STParser.ListContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_mapExpr.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.mapExpr%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L1274">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_mapExpr_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.mapExpr*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_mapExpr" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.mapExpr">mapExpr()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public STParser.MapExprContext mapExpr()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.STParser.MapExprContext.html">STParser.MapExprContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_mapTemplateRef.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.mapTemplateRef%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L1486">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_mapTemplateRef_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.mapTemplateRef*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_mapTemplateRef" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.mapTemplateRef">mapTemplateRef()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public STParser.MapTemplateRefContext mapTemplateRef()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.STParser.MapTemplateRefContext.html">STParser.MapTemplateRefContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_memberExpr.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.memberExpr%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L1394">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_memberExpr_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.memberExpr*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_memberExpr" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.memberExpr">memberExpr()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public STParser.MemberExprContext memberExpr()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.STParser.MemberExprContext.html">STParser.MemberExprContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_namedArg.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.namedArg%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L2083">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_namedArg_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.namedArg*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_namedArg" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.namedArg">namedArg()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public STParser.NamedArgContext namedArg()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.STParser.NamedArgContext.html">STParser.NamedArgContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_notConditional.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.notConditional%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L911">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_notConditional_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.notConditional*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_notConditional" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.notConditional">notConditional()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public STParser.NotConditionalContext notConditional()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.STParser.NotConditionalContext.html">STParser.NotConditionalContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_notConditionalExpr.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.notConditionalExpr%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L998">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_notConditionalExpr_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.notConditionalExpr*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_notConditionalExpr" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.notConditionalExpr">notConditionalExpr()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public STParser.NotConditionalExprContext notConditionalExpr()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.STParser.NotConditionalExprContext.html">STParser.NotConditionalExprContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_option.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.option%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L1141">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_option_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.option*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_option" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.option">option()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public STParser.OptionContext option()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.STParser.OptionContext.html">STParser.OptionContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_primary.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.primary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L1737">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_primary_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.primary*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_primary" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.primary">primary()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public STParser.PrimaryContext primary()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.STParser.PrimaryContext.html">STParser.PrimaryContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_region.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.region%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L518">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_region_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.region*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_region" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.region">region()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public STParser.RegionContext region()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.STParser.RegionContext.html">STParser.RegionContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_singleElement.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.singleElement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L305">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_singleElement_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.singleElement*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_singleElement" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.singleElement">singleElement()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public STParser.SingleElementContext singleElement()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.STParser.SingleElementContext.html">STParser.SingleElementContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_subtemplate.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.subtemplate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L581">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_subtemplate_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.subtemplate*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_subtemplate" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.subtemplate">subtemplate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public STParser.SubtemplateContext subtemplate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.STParser.SubtemplateContext.html">STParser.SubtemplateContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser_template.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser.template%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L132">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Stringtemplate_STParser_template_" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.template*"></a>
+  <h4 id="GCore_Antlr_Grammers_Stringtemplate_STParser_template" data-uid="GCore.Antlr.Grammers.Stringtemplate.STParser.template">template()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public STParser.TemplateContext template()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Stringtemplate.STParser.TemplateContext.html">STParser.TemplateContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Antlr4.Runtime.IRecognizer</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Stringtemplate_STParser.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Stringtemplate.STParser%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Stringtemplate/STParser.cs/#L35" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

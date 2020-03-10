@@ -1,0 +1,1626 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HTMLLexer
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HTMLLexer
+   ">
+    <meta name="generator" content="docfx 2.50.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer">
+  
+  
+  <h1 id="GCore_Antlr_Grammers_Html_HTMLLexer" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer" class="text-break">Class HTMLLexer
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Antlr4.Runtime.Recognizer</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">Antlr4.Runtime.Atn.LexerATNSimulator</span>&gt;</div>
+    <div class="level2"><span class="xref">Antlr4.Runtime.Lexer</span></div>
+    <div class="level3"><span class="xref">HTMLLexer</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Antlr4.Runtime.IRecognizer</span></div>
+    <div><span class="xref">Antlr4.Runtime.ITokenSource</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.DEFAULT_MODE</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.DefaultTokenChannel</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.Hidden</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.MinCharValue</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.MaxCharValue</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.Output</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.ErrorOutput</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.Reset()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.NextToken()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.Skip()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.More()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.Mode(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.PushMode(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.PopMode()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.SetInputStream(Antlr4.Runtime.ICharStream)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.Emit(Antlr4.Runtime.IToken)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.Emit()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.EmitEOF()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.GetAllTokens()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.Recover(Antlr4.Runtime.LexerNoViableAltException)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.NotifyListeners(Antlr4.Runtime.LexerNoViableAltException)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.GetErrorDisplay(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.GetErrorDisplay(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.GetCharErrorDisplay(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.Recover(Antlr4.Runtime.RecognitionException)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.TokenFactory</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.SourceName</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.InputStream</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.Antlr4.Runtime.ITokenSource.InputStream</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.Line</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.Column</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.CharIndex</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.TokenStartCharIndex</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.TokenStartLine</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.TokenStartColumn</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.Text</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.Token</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.Type</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.Channel</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.ModeStack</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.CurrentMode</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Lexer.HitEOF</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.Eof</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.CreateTokenTypeMap(Antlr4.Runtime.IVocabulary)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.GetTokenType(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.GetErrorHeader(Antlr4.Runtime.RecognitionException)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.GetTokenErrorDisplay(Antlr4.Runtime.IToken)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.AddErrorListener(Antlr4.Runtime.IAntlrErrorListener&lt;System.Int32&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.RemoveErrorListener(Antlr4.Runtime.IAntlrErrorListener&lt;System.Int32&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.RemoveErrorListeners()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.Sempred(Antlr4.Runtime.RuleContext, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.Precpred(Antlr4.Runtime.RuleContext, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.Action(Antlr4.Runtime.RuleContext, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.RuleNames</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.Vocabulary</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.TokenTypeMap</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.RuleIndexMap</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.SerializedAtn</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.GrammarFileName</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.Atn</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.Interpreter</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.ParseInfo</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.ErrorListeners</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.ErrorListenerDispatch</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.State</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.InputStream</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Antlr.Grammers.Html.html">GCore.Antlr.Grammers.Html</a></h6>
+  <h6><strong>Assembly</strong>: Html.dll</h6>
+  <h5 id="GCore_Antlr_Grammers_Html_HTMLLexer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public class HTMLLexer : Lexer, IRecognizer, ITokenSource</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer__ctor_Antlr4_Runtime_ICharStream_.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.%23ctor(Antlr4.Runtime.ICharStream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L64">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Html_HTMLLexer__ctor_" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.#ctor*"></a>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer__ctor_Antlr4_Runtime_ICharStream_" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.#ctor(Antlr4.Runtime.ICharStream)">HTMLLexer(ICharStream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HTMLLexer(ICharStream input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.ICharStream</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer__ctor_Antlr4_Runtime_ICharStream_System_IO_TextWriter_System_IO_TextWriter_.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.%23ctor(Antlr4.Runtime.ICharStream%2CSystem.IO.TextWriter%2CSystem.IO.TextWriter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L67">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Html_HTMLLexer__ctor_" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.#ctor*"></a>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer__ctor_Antlr4_Runtime_ICharStream_System_IO_TextWriter_System_IO_TextWriter_" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.#ctor(Antlr4.Runtime.ICharStream,System.IO.TextWriter,System.IO.TextWriter)">HTMLLexer(ICharStream, TextWriter, TextWriter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HTMLLexer(ICharStream input, TextWriter output, TextWriter errorOutput)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.ICharStream</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.TextWriter</span></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.TextWriter</span></td>
+        <td><span class="parametername">errorOutput</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer__ATN.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer._ATN%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L450">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer__ATN" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer._ATN">_ATN</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ATN _ATN</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.Atn.ATN</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_ATTRIBUTE.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.ATTRIBUTE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_ATTRIBUTE" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.ATTRIBUTE">ATTRIBUTE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ATTRIBUTE = 23</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_ATTVALUE.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.ATTVALUE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L44">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_ATTVALUE" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.ATTVALUE">ATTVALUE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ATTVALUE = 4</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_ATTVALUE_VALUE.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.ATTVALUE_VALUE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_ATTVALUE_VALUE" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.ATTVALUE_VALUE">ATTVALUE_VALUE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ATTVALUE_VALUE = 22</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_CDATA.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.CDATA%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L38">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_CDATA" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.CDATA">CDATA</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int CDATA = 4</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_channelNames.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.channelNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L45">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_channelNames" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.channelNames">channelNames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] channelNames</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_decisionToDFA.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.decisionToDFA%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L35">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_decisionToDFA" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.decisionToDFA">decisionToDFA</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static DFA[] decisionToDFA</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.Dfa.DFA</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_DefaultVocabulary.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.DefaultVocabulary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L84">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_DefaultVocabulary" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.DefaultVocabulary">DefaultVocabulary</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly IVocabulary DefaultVocabulary</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.IVocabulary</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_DTD.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.DTD%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L39">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_DTD" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.DTD">DTD</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DTD = 5</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_HTML_COMMENT.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.HTML_COMMENT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L38">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_HTML_COMMENT" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.HTML_COMMENT">HTML_COMMENT</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int HTML_COMMENT = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_HTML_CONDITIONAL_COMMENT.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.HTML_CONDITIONAL_COMMENT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L38">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_HTML_CONDITIONAL_COMMENT" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.HTML_CONDITIONAL_COMMENT">HTML_CONDITIONAL_COMMENT</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int HTML_CONDITIONAL_COMMENT = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_HTML_TEXT.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.HTML_TEXT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L40">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_HTML_TEXT" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.HTML_TEXT">HTML_TEXT</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int HTML_TEXT = 11</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_modeNames.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.modeNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L49">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_modeNames" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.modeNames">modeNames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] modeNames</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_ruleNames.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.ruleNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L53">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_ruleNames" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.ruleNames">ruleNames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string[] ruleNames</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_SCRIPT.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.SCRIPT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L44">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_SCRIPT" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.SCRIPT">SCRIPT</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SCRIPT = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_SCRIPT_BODY.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.SCRIPT_BODY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_SCRIPT_BODY" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.SCRIPT_BODY">SCRIPT_BODY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SCRIPT_BODY = 18</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_SCRIPT_OPEN.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.SCRIPT_OPEN%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L39">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_SCRIPT_OPEN" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.SCRIPT_OPEN">SCRIPT_OPEN</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SCRIPT_OPEN = 8</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_SCRIPT_SHORT_BODY.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.SCRIPT_SHORT_BODY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_SCRIPT_SHORT_BODY" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.SCRIPT_SHORT_BODY">SCRIPT_SHORT_BODY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SCRIPT_SHORT_BODY = 19</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_SCRIPTLET.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.SCRIPTLET%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L39">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_SCRIPTLET" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.SCRIPTLET">SCRIPTLET</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SCRIPTLET = 6</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_SEA_WS.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.SEA_WS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L39">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_SEA_WS" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.SEA_WS">SEA_WS</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SEA_WS = 7</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_sharedContextCache.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.sharedContextCache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L36">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_sharedContextCache" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.sharedContextCache">sharedContextCache</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static PredictionContextCache sharedContextCache</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.Atn.PredictionContextCache</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_STYLE.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.STYLE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L44">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_STYLE" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.STYLE">STYLE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int STYLE = 3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_STYLE_BODY.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.STYLE_BODY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_STYLE_BODY" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.STYLE_BODY">STYLE_BODY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int STYLE_BODY = 20</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_STYLE_OPEN.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.STYLE_OPEN%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L39">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_STYLE_OPEN" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.STYLE_OPEN">STYLE_OPEN</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int STYLE_OPEN = 9</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_STYLE_SHORT_BODY.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.STYLE_SHORT_BODY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_STYLE_SHORT_BODY" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.STYLE_SHORT_BODY">STYLE_SHORT_BODY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int STYLE_SHORT_BODY = 21</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_TAG.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.TAG%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L44">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_TAG" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.TAG">TAG</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int TAG = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_TAG_CLOSE.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.TAG_CLOSE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L40">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_TAG_CLOSE" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.TAG_CLOSE">TAG_CLOSE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int TAG_CLOSE = 12</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_TAG_EQUALS.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.TAG_EQUALS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L40">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_TAG_EQUALS" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.TAG_EQUALS">TAG_EQUALS</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int TAG_EQUALS = 15</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_TAG_NAME.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.TAG_NAME%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_TAG_NAME" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.TAG_NAME">TAG_NAME</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int TAG_NAME = 16</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_TAG_OPEN.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.TAG_OPEN%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L39">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_TAG_OPEN" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.TAG_OPEN">TAG_OPEN</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int TAG_OPEN = 10</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_TAG_SLASH.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.TAG_SLASH%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L40">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_TAG_SLASH" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.TAG_SLASH">TAG_SLASH</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int TAG_SLASH = 14</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_TAG_SLASH_CLOSE.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.TAG_SLASH_CLOSE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L40">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_TAG_SLASH_CLOSE" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.TAG_SLASH_CLOSE">TAG_SLASH_CLOSE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int TAG_SLASH_CLOSE = 13</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_TAG_WHITESPACE.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.TAG_WHITESPACE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_TAG_WHITESPACE" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.TAG_WHITESPACE">TAG_WHITESPACE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int TAG_WHITESPACE = 17</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_XML_DECLARATION.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.XML_DECLARATION%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L38">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_XML_DECLARATION" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.XML_DECLARATION">XML_DECLARATION</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int XML_DECLARATION = 3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_ChannelNames.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.ChannelNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L99">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Html_HTMLLexer_ChannelNames_" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.ChannelNames*"></a>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_ChannelNames" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.ChannelNames">ChannelNames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string[] ChannelNames { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Antlr4.Runtime.Lexer.ChannelNames</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_GrammarFileName.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.GrammarFileName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L95">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Html_HTMLLexer_GrammarFileName_" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.GrammarFileName*"></a>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_GrammarFileName" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.GrammarFileName">GrammarFileName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GrammarFileName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.GrammarFileName</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_ModeNames.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.ModeNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L101">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Html_HTMLLexer_ModeNames_" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.ModeNames*"></a>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_ModeNames" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.ModeNames">ModeNames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string[] ModeNames { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Antlr4.Runtime.Lexer.ModeNames</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_RuleNames.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.RuleNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L97">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Html_HTMLLexer_RuleNames_" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.RuleNames*"></a>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_RuleNames" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.RuleNames">RuleNames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string[] RuleNames { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.RuleNames</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_SerializedAtn.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.SerializedAtn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L103">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Html_HTMLLexer_SerializedAtn_" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.SerializedAtn*"></a>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_SerializedAtn" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.SerializedAtn">SerializedAtn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string SerializedAtn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.SerializedAtn</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer_Vocabulary.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer.Vocabulary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L86">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Html_HTMLLexer_Vocabulary_" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.Vocabulary*"></a>
+  <h4 id="GCore_Antlr_Grammers_Html_HTMLLexer_Vocabulary" data-uid="GCore.Antlr.Grammers.Html.HTMLLexer.Vocabulary">Vocabulary</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotNull]
+public override IVocabulary Vocabulary { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.IVocabulary</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Antlr4.Runtime.Recognizer&lt;System.Int32, Antlr4.Runtime.Atn.LexerATNSimulator&gt;.Vocabulary</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Antlr4.Runtime.IRecognizer</span>
+  </div>
+  <div>
+      <span class="xref">Antlr4.Runtime.ITokenSource</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Html_HTMLLexer.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Html.HTMLLexer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Html/HTMLLexer.cs/#L32" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

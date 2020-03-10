@@ -1,0 +1,2204 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PGNParser
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PGNParser
+   ">
+    <meta name="generator" content="docfx 2.50.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser">
+  
+  
+  <h1 id="GCore_Antlr_Grammers_Pgn_PGNParser" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser" class="text-break">Class PGNParser
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Antlr4.Runtime.Recognizer</span>&lt;<span class="xref">Antlr4.Runtime.IToken</span>, <span class="xref">Antlr4.Runtime.Atn.ParserATNSimulator</span>&gt;</div>
+    <div class="level2"><span class="xref">Antlr4.Runtime.Parser</span></div>
+    <div class="level3"><span class="xref">PGNParser</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Antlr4.Runtime.IRecognizer</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Output</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.ErrorOutput</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Reset()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Match(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.MatchWildcard()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.AddParseListener(Antlr4.Runtime.Tree.IParseTreeListener)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.RemoveParseListener(Antlr4.Runtime.Tree.IParseTreeListener)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.RemoveParseListeners()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.TriggerEnterRuleEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.TriggerExitRuleEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetATNWithBypassAlts()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.CompileParseTreePattern(System.String, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.CompileParseTreePattern(System.String, System.Int32, Antlr4.Runtime.Lexer)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.NotifyErrorListeners(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.NotifyErrorListeners(Antlr4.Runtime.IToken, System.String, Antlr4.Runtime.RecognitionException)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Consume()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.AddContextToParseTree()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.EnterRule(Antlr4.Runtime.ParserRuleContext, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.EnterLeftFactoredRule(Antlr4.Runtime.ParserRuleContext, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.ExitRule()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.EnterOuterAlt(Antlr4.Runtime.ParserRuleContext, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.EnterRecursionRule(Antlr4.Runtime.ParserRuleContext, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.EnterRecursionRule(Antlr4.Runtime.ParserRuleContext, System.Int32, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.PushNewRecursionContext(Antlr4.Runtime.ParserRuleContext, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.UnrollRecursionContexts(Antlr4.Runtime.ParserRuleContext)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetInvokingContext(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Precpred(Antlr4.Runtime.RuleContext, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.InContext(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.IsExpectedToken(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetExpectedTokens()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetExpectedTokensWithinCurrentRule()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetRuleIndex(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetRuleInvocationStack()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetRuleInvocationStackAsString()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetRuleInvocationStack(Antlr4.Runtime.RuleContext)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetDFAStrings()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.DumpDFA()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.BuildParseTree</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.TrimParseTree</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.ParseListeners</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.NumberOfSyntaxErrors</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.TokenFactory</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.ErrorHandler</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.InputStream</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.TokenStream</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.CurrentToken</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Precedence</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Context</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.ErrorListenerDispatch</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.RuleContext</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.SourceName</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.ParseInfo</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Profile</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Trace</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Eof</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.CreateTokenTypeMap(Antlr4.Runtime.IVocabulary)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.GetTokenType(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.GetErrorHeader(Antlr4.Runtime.RecognitionException)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.GetTokenErrorDisplay(Antlr4.Runtime.IToken)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.AddErrorListener(Antlr4.Runtime.IAntlrErrorListener&lt;Antlr4.Runtime.IToken&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.RemoveErrorListener(Antlr4.Runtime.IAntlrErrorListener&lt;Antlr4.Runtime.IToken&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.RemoveErrorListeners()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Sempred(Antlr4.Runtime.RuleContext, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Precpred(Antlr4.Runtime.RuleContext, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Action(Antlr4.Runtime.RuleContext, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.RuleNames</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Vocabulary</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.TokenTypeMap</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.RuleIndexMap</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.SerializedAtn</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.GrammarFileName</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Atn</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Interpreter</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.ParseInfo</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.ErrorListeners</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.ErrorListenerDispatch</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.State</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.InputStream</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Antlr.Grammers.Pgn.html">GCore.Antlr.Grammers.Pgn</a></h6>
+  <h6><strong>Assembly</strong>: Pgn.dll</h6>
+  <h5 id="GCore_Antlr_Grammers_Pgn_PGNParser_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public class PGNParser : Parser, IRecognizer</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser__ctor_Antlr4_Runtime_ITokenStream_.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.%23ctor(Antlr4.Runtime.ITokenStream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L92">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Pgn_PGNParser__ctor_" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.#ctor*"></a>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser__ctor_Antlr4_Runtime_ITokenStream_" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.#ctor(Antlr4.Runtime.ITokenStream)">PGNParser(ITokenStream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PGNParser(ITokenStream input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.ITokenStream</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser__ctor_Antlr4_Runtime_ITokenStream_System_IO_TextWriter_System_IO_TextWriter_.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.%23ctor(Antlr4.Runtime.ITokenStream%2CSystem.IO.TextWriter%2CSystem.IO.TextWriter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L94">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Pgn_PGNParser__ctor_" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.#ctor*"></a>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser__ctor_Antlr4_Runtime_ITokenStream_System_IO_TextWriter_System_IO_TextWriter_" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.#ctor(Antlr4.Runtime.ITokenStream,System.IO.TextWriter,System.IO.TextWriter)">PGNParser(ITokenStream, TextWriter, TextWriter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PGNParser(ITokenStream input, TextWriter output, TextWriter errorOutput)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.ITokenStream</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.TextWriter</span></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.TextWriter</span></td>
+        <td><span class="parametername">errorOutput</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser__ATN.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser._ATN%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L924">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser__ATN" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser._ATN">_ATN</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ATN _ATN</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.Atn.ATN</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_ASTERISK.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.ASTERISK%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_ASTERISK" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.ASTERISK">ASTERISK</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ASTERISK = 11</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_BLACK_WINS.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.BLACK_WINS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_BLACK_WINS" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.BLACK_WINS">BLACK_WINS</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int BLACK_WINS = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_BRACE_COMMENT.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.BRACE_COMMENT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_BRACE_COMMENT" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.BRACE_COMMENT">BRACE_COMMENT</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int BRACE_COMMENT = 5</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_decisionToDFA.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.decisionToDFA%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L38">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_decisionToDFA" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.decisionToDFA">decisionToDFA</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static DFA[] decisionToDFA</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.Dfa.DFA</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_DefaultVocabulary.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.DefaultVocabulary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L68">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_DefaultVocabulary" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.DefaultVocabulary">DefaultVocabulary</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly IVocabulary DefaultVocabulary</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.IVocabulary</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_DRAWN_GAME.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.DRAWN_GAME%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_DRAWN_GAME" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.DRAWN_GAME">DRAWN_GAME</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DRAWN_GAME = 3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_ESCAPE.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.ESCAPE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_ESCAPE" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.ESCAPE">ESCAPE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ESCAPE = 6</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_INTEGER.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.INTEGER%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_INTEGER" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.INTEGER">INTEGER</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int INTEGER = 9</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_LEFT_ANGLE_BRACKET.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.LEFT_ANGLE_BRACKET%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L43">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_LEFT_ANGLE_BRACKET" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.LEFT_ANGLE_BRACKET">LEFT_ANGLE_BRACKET</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int LEFT_ANGLE_BRACKET = 16</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_LEFT_BRACKET.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.LEFT_BRACKET%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_LEFT_BRACKET" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.LEFT_BRACKET">LEFT_BRACKET</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int LEFT_BRACKET = 12</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_LEFT_PARENTHESIS.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.LEFT_PARENTHESIS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L43">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_LEFT_PARENTHESIS" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.LEFT_PARENTHESIS">LEFT_PARENTHESIS</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int LEFT_PARENTHESIS = 14</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_NUMERIC_ANNOTATION_GLYPH.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.NUMERIC_ANNOTATION_GLYPH%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L44">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_NUMERIC_ANNOTATION_GLYPH" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.NUMERIC_ANNOTATION_GLYPH">NUMERIC_ANNOTATION_GLYPH</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int NUMERIC_ANNOTATION_GLYPH = 18</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_PERIOD.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.PERIOD%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_PERIOD" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.PERIOD">PERIOD</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int PERIOD = 10</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_REST_OF_LINE_COMMENT.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.REST_OF_LINE_COMMENT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_REST_OF_LINE_COMMENT" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.REST_OF_LINE_COMMENT">REST_OF_LINE_COMMENT</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int REST_OF_LINE_COMMENT = 4</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_RIGHT_ANGLE_BRACKET.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.RIGHT_ANGLE_BRACKET%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L44">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_RIGHT_ANGLE_BRACKET" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.RIGHT_ANGLE_BRACKET">RIGHT_ANGLE_BRACKET</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RIGHT_ANGLE_BRACKET = 17</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_RIGHT_BRACKET.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.RIGHT_BRACKET%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L43">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_RIGHT_BRACKET" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.RIGHT_BRACKET">RIGHT_BRACKET</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RIGHT_BRACKET = 13</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_RIGHT_PARENTHESIS.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.RIGHT_PARENTHESIS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L43">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_RIGHT_PARENTHESIS" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.RIGHT_PARENTHESIS">RIGHT_PARENTHESIS</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RIGHT_PARENTHESIS = 15</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_RULE_element.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.RULE_element%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L49">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_RULE_element" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.RULE_element">RULE_element</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_element = 9</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_RULE_element_sequence.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.RULE_element_sequence%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L49">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_RULE_element_sequence" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.RULE_element_sequence">RULE_element_sequence</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_element_sequence = 8</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_RULE_game_termination.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.RULE_game_termination%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L50">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_RULE_game_termination" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.RULE_game_termination">RULE_game_termination</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_game_termination = 13</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_RULE_move_number_indication.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.RULE_move_number_indication%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L49">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_RULE_move_number_indication" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.RULE_move_number_indication">RULE_move_number_indication</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_move_number_indication = 10</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_RULE_movetext_section.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.RULE_movetext_section%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L48">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_RULE_movetext_section" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.RULE_movetext_section">RULE_movetext_section</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_movetext_section = 7</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_RULE_parse.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.RULE_parse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L47">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_RULE_parse" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.RULE_parse">RULE_parse</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_parse = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_RULE_pgn_database.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.RULE_pgn_database%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L47">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_RULE_pgn_database" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.RULE_pgn_database">RULE_pgn_database</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_pgn_database = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_RULE_pgn_game.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.RULE_pgn_game%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L47">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_RULE_pgn_game" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.RULE_pgn_game">RULE_pgn_game</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_pgn_game = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_RULE_recursive_variation.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.RULE_recursive_variation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L50">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_RULE_recursive_variation" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.RULE_recursive_variation">RULE_recursive_variation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_recursive_variation = 12</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_RULE_san_move.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.RULE_san_move%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L50">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_RULE_san_move" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.RULE_san_move">RULE_san_move</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_san_move = 11</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_RULE_tag_name.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.RULE_tag_name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L48">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_RULE_tag_name" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.RULE_tag_name">RULE_tag_name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_tag_name = 5</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_RULE_tag_pair.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.RULE_tag_pair%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L48">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_RULE_tag_pair" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.RULE_tag_pair">RULE_tag_pair</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_tag_pair = 4</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_RULE_tag_section.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.RULE_tag_section%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L47">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_RULE_tag_section" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.RULE_tag_section">RULE_tag_section</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_tag_section = 3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_RULE_tag_value.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.RULE_tag_value%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L48">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_RULE_tag_value" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.RULE_tag_value">RULE_tag_value</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_tag_value = 6</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_ruleNames.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.ruleNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L51">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_ruleNames" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.ruleNames">ruleNames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string[] ruleNames</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_sharedContextCache.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.sharedContextCache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L39">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_sharedContextCache" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.sharedContextCache">sharedContextCache</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static PredictionContextCache sharedContextCache</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.Atn.PredictionContextCache</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_SPACES.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.SPACES%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_SPACES" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.SPACES">SPACES</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SPACES = 7</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_STRING.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.STRING%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_STRING" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.STRING">STRING</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int STRING = 8</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_SUFFIX_ANNOTATION.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.SUFFIX_ANNOTATION%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L44">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_SUFFIX_ANNOTATION" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.SUFFIX_ANNOTATION">SUFFIX_ANNOTATION</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SUFFIX_ANNOTATION = 20</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_SYMBOL.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.SYMBOL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L44">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_SYMBOL" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.SYMBOL">SYMBOL</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SYMBOL = 19</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_UNEXPECTED_CHAR.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.UNEXPECTED_CHAR%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L45">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_UNEXPECTED_CHAR" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.UNEXPECTED_CHAR">UNEXPECTED_CHAR</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int UNEXPECTED_CHAR = 21</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_WHITE_WINS.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.WHITE_WINS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_WHITE_WINS" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.WHITE_WINS">WHITE_WINS</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int WHITE_WINS = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_GrammarFileName.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.GrammarFileName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L79">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Pgn_PGNParser_GrammarFileName_" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.GrammarFileName*"></a>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_GrammarFileName" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.GrammarFileName">GrammarFileName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GrammarFileName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.GrammarFileName</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_RuleNames.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.RuleNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L81">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Pgn_PGNParser_RuleNames_" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.RuleNames*"></a>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_RuleNames" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.RuleNames">RuleNames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string[] RuleNames { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.RuleNames</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_SerializedAtn.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.SerializedAtn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L83">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Pgn_PGNParser_SerializedAtn_" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.SerializedAtn*"></a>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_SerializedAtn" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.SerializedAtn">SerializedAtn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string SerializedAtn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.SerializedAtn</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_Vocabulary.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.Vocabulary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L70">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Pgn_PGNParser_Vocabulary_" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.Vocabulary*"></a>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_Vocabulary" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.Vocabulary">Vocabulary</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotNull]
+public override IVocabulary Vocabulary { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.IVocabulary</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Vocabulary</span></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_element.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.element%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L616">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Pgn_PGNParser_element_" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.element*"></a>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_element" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.element">element()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public PGNParser.ElementContext element()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Pgn.PGNParser.ElementContext.html">PGNParser.ElementContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_element_sequence.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.element_sequence%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L539">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Pgn_PGNParser_element_sequence_" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.element_sequence*"></a>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_element_sequence" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.element_sequence">element_sequence()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public PGNParser.Element_sequenceContext element_sequence()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Pgn.PGNParser.Element_sequenceContext.html">PGNParser.Element_sequenceContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_game_termination.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.game_termination%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L828">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Pgn_PGNParser_game_termination_" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.game_termination*"></a>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_game_termination" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.game_termination">game_termination()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public PGNParser.Game_terminationContext game_termination()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Pgn.PGNParser.Game_terminationContext.html">PGNParser.Game_terminationContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_move_number_indication.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.move_number_indication%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L680">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Pgn_PGNParser_move_number_indication_" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.move_number_indication*"></a>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_move_number_indication" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.move_number_indication">move_number_indication()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public PGNParser.Move_number_indicationContext move_number_indication()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Pgn.PGNParser.Move_number_indicationContext.html">PGNParser.Move_number_indicationContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_movetext_section.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.movetext_section%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L484">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Pgn_PGNParser_movetext_section_" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.movetext_section*"></a>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_movetext_section" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.movetext_section">movetext_section()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public PGNParser.Movetext_sectionContext movetext_section()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Pgn.PGNParser.Movetext_sectionContext.html">PGNParser.Movetext_sectionContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_parse.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.parse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L125">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Pgn_PGNParser_parse_" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.parse*"></a>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_parse" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.parse">parse()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public PGNParser.ParseContext parse()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Pgn.PGNParser.ParseContext.html">PGNParser.ParseContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_pgn_database.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.pgn_database%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L174">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Pgn_PGNParser_pgn_database_" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.pgn_database*"></a>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_pgn_database" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.pgn_database">pgn_database()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public PGNParser.Pgn_databaseContext pgn_database()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Pgn.PGNParser.Pgn_databaseContext.html">PGNParser.Pgn_databaseContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_pgn_game.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.pgn_game%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L235">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Pgn_PGNParser_pgn_game_" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.pgn_game*"></a>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_pgn_game" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.pgn_game">pgn_game()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public PGNParser.Pgn_gameContext pgn_game()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Pgn.PGNParser.Pgn_gameContext.html">PGNParser.Pgn_gameContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_recursive_variation.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.recursive_variation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L780">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Pgn_PGNParser_recursive_variation_" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.recursive_variation*"></a>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_recursive_variation" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.recursive_variation">recursive_variation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public PGNParser.Recursive_variationContext recursive_variation()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Pgn.PGNParser.Recursive_variationContext.html">PGNParser.Recursive_variationContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_san_move.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.san_move%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L733">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Pgn_PGNParser_san_move_" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.san_move*"></a>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_san_move" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.san_move">san_move()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public PGNParser.San_moveContext san_move()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Pgn.PGNParser.San_moveContext.html">PGNParser.San_moveContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_tag_name.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.tag_name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L393">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Pgn_PGNParser_tag_name_" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.tag_name*"></a>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_tag_name" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.tag_name">tag_name()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public PGNParser.Tag_nameContext tag_name()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Pgn.PGNParser.Tag_nameContext.html">PGNParser.Tag_nameContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_tag_pair.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.tag_pair%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L347">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Pgn_PGNParser_tag_pair_" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.tag_pair*"></a>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_tag_pair" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.tag_pair">tag_pair()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public PGNParser.Tag_pairContext tag_pair()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Pgn.PGNParser.Tag_pairContext.html">PGNParser.Tag_pairContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_tag_section.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.tag_section%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L284">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Pgn_PGNParser_tag_section_" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.tag_section*"></a>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_tag_section" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.tag_section">tag_section()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public PGNParser.Tag_sectionContext tag_section()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Pgn.PGNParser.Tag_sectionContext.html">PGNParser.Tag_sectionContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser_tag_value.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser.tag_value%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L436">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Pgn_PGNParser_tag_value_" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.tag_value*"></a>
+  <h4 id="GCore_Antlr_Grammers_Pgn_PGNParser_tag_value" data-uid="GCore.Antlr.Grammers.Pgn.PGNParser.tag_value">tag_value()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public PGNParser.Tag_valueContext tag_value()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Pgn.PGNParser.Tag_valueContext.html">PGNParser.Tag_valueContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Antlr4.Runtime.IRecognizer</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pgn_PGNParser.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pgn.PGNParser%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pgn/PGNParser.cs/#L35" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2448 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class mpsParser
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class mpsParser
+   ">
+    <meta name="generator" content="docfx 2.50.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GCore.Antlr.Grammers.Mps.mpsParser">
+  
+  
+  <h1 id="GCore_Antlr_Grammers_Mps_mpsParser" data-uid="GCore.Antlr.Grammers.Mps.mpsParser" class="text-break">Class mpsParser
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Antlr4.Runtime.Recognizer</span>&lt;<span class="xref">Antlr4.Runtime.IToken</span>, <span class="xref">Antlr4.Runtime.Atn.ParserATNSimulator</span>&gt;</div>
+    <div class="level2"><span class="xref">Antlr4.Runtime.Parser</span></div>
+    <div class="level3"><span class="xref">mpsParser</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Antlr4.Runtime.IRecognizer</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Output</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.ErrorOutput</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Reset()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Match(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.MatchWildcard()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.AddParseListener(Antlr4.Runtime.Tree.IParseTreeListener)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.RemoveParseListener(Antlr4.Runtime.Tree.IParseTreeListener)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.RemoveParseListeners()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.TriggerEnterRuleEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.TriggerExitRuleEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetATNWithBypassAlts()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.CompileParseTreePattern(System.String, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.CompileParseTreePattern(System.String, System.Int32, Antlr4.Runtime.Lexer)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.NotifyErrorListeners(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.NotifyErrorListeners(Antlr4.Runtime.IToken, System.String, Antlr4.Runtime.RecognitionException)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Consume()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.AddContextToParseTree()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.EnterRule(Antlr4.Runtime.ParserRuleContext, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.EnterLeftFactoredRule(Antlr4.Runtime.ParserRuleContext, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.ExitRule()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.EnterOuterAlt(Antlr4.Runtime.ParserRuleContext, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.EnterRecursionRule(Antlr4.Runtime.ParserRuleContext, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.EnterRecursionRule(Antlr4.Runtime.ParserRuleContext, System.Int32, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.PushNewRecursionContext(Antlr4.Runtime.ParserRuleContext, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.UnrollRecursionContexts(Antlr4.Runtime.ParserRuleContext)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetInvokingContext(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Precpred(Antlr4.Runtime.RuleContext, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.InContext(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.IsExpectedToken(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetExpectedTokens()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetExpectedTokensWithinCurrentRule()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetRuleIndex(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetRuleInvocationStack()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetRuleInvocationStackAsString()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetRuleInvocationStack(Antlr4.Runtime.RuleContext)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetDFAStrings()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.DumpDFA()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.BuildParseTree</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.TrimParseTree</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.ParseListeners</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.NumberOfSyntaxErrors</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.TokenFactory</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.ErrorHandler</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.InputStream</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.TokenStream</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.CurrentToken</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Precedence</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Context</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.ErrorListenerDispatch</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.RuleContext</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.SourceName</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.ParseInfo</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Profile</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Trace</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Eof</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.CreateTokenTypeMap(Antlr4.Runtime.IVocabulary)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.GetTokenType(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.GetErrorHeader(Antlr4.Runtime.RecognitionException)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.GetTokenErrorDisplay(Antlr4.Runtime.IToken)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.AddErrorListener(Antlr4.Runtime.IAntlrErrorListener&lt;Antlr4.Runtime.IToken&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.RemoveErrorListener(Antlr4.Runtime.IAntlrErrorListener&lt;Antlr4.Runtime.IToken&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.RemoveErrorListeners()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Sempred(Antlr4.Runtime.RuleContext, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Precpred(Antlr4.Runtime.RuleContext, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Action(Antlr4.Runtime.RuleContext, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.RuleNames</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Vocabulary</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.TokenTypeMap</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.RuleIndexMap</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.SerializedAtn</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.GrammarFileName</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Atn</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Interpreter</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.ParseInfo</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.ErrorListeners</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.ErrorListenerDispatch</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.State</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.InputStream</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Antlr.Grammers.Mps.html">GCore.Antlr.Grammers.Mps</a></h6>
+  <h6><strong>Assembly</strong>: Mps.dll</h6>
+  <h5 id="GCore_Antlr_Grammers_Mps_mpsParser_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public class mpsParser : Parser, IRecognizer</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser__ctor_Antlr4_Runtime_ITokenStream_.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.%23ctor(Antlr4.Runtime.ITokenStream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L93">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser__ctor_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.#ctor*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser__ctor_Antlr4_Runtime_ITokenStream_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.#ctor(Antlr4.Runtime.ITokenStream)">mpsParser(ITokenStream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public mpsParser(ITokenStream input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.ITokenStream</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser__ctor_Antlr4_Runtime_ITokenStream_System_IO_TextWriter_System_IO_TextWriter_.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.%23ctor(Antlr4.Runtime.ITokenStream%2CSystem.IO.TextWriter%2CSystem.IO.TextWriter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L95">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser__ctor_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.#ctor*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser__ctor_Antlr4_Runtime_ITokenStream_System_IO_TextWriter_System_IO_TextWriter_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.#ctor(Antlr4.Runtime.ITokenStream,System.IO.TextWriter,System.IO.TextWriter)">mpsParser(ITokenStream, TextWriter, TextWriter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public mpsParser(ITokenStream input, TextWriter output, TextWriter errorOutput)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.ITokenStream</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.TextWriter</span></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.TextWriter</span></td>
+        <td><span class="parametername">errorOutput</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser__ATN.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser._ATN%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L1416">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser__ATN" data-uid="GCore.Antlr.Grammers.Mps.mpsParser._ATN">_ATN</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ATN _ATN</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.Atn.ATN</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_BOUNDKEY.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.BOUNDKEY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L43">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_BOUNDKEY" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.BOUNDKEY">BOUNDKEY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int BOUNDKEY = 12</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_BOUNDSINDICATORCARD.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.BOUNDSINDICATORCARD%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_BOUNDSINDICATORCARD" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.BOUNDSINDICATORCARD">BOUNDSINDICATORCARD</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int BOUNDSINDICATORCARD = 6</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_COLUMNINDICATORCARD.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.COLUMNINDICATORCARD%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_COLUMNINDICATORCARD" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.COLUMNINDICATORCARD">COLUMNINDICATORCARD</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int COLUMNINDICATORCARD = 3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_decisionToDFA.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.decisionToDFA%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L38">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_decisionToDFA" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.decisionToDFA">decisionToDFA</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static DFA[] decisionToDFA</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.Dfa.DFA</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_DefaultVocabulary.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.DefaultVocabulary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L69">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_DefaultVocabulary" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.DefaultVocabulary">DefaultVocabulary</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly IVocabulary DefaultVocabulary</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.IVocabulary</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_ENDATAINDICATORCARD.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.ENDATAINDICATORCARD%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_ENDATAINDICATORCARD" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.ENDATAINDICATORCARD">ENDATAINDICATORCARD</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ENDATAINDICATORCARD = 7</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_ENDMARKER.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.ENDMARKER%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L43">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_ENDMARKER" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.ENDMARKER">ENDMARKER</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ENDMARKER = 10</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_IDENTIFIER.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.IDENTIFIER%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L44">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_IDENTIFIER" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.IDENTIFIER">IDENTIFIER</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int IDENTIFIER = 14</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_KEYWORDFREE.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.KEYWORDFREE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L43">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_KEYWORDFREE" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.KEYWORDFREE">KEYWORDFREE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int KEYWORDFREE = 11</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_KEYWORDMARKER.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.KEYWORDMARKER%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_KEYWORDMARKER" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.KEYWORDMARKER">KEYWORDMARKER</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int KEYWORDMARKER = 8</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_LINE_COMMENT.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.LINE_COMMENT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L44">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_LINE_COMMENT" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.LINE_COMMENT">LINE_COMMENT</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int LINE_COMMENT = 17</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_NAMEINDICATORCARD.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.NAMEINDICATORCARD%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_NAMEINDICATORCARD" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.NAMEINDICATORCARD">NAMEINDICATORCARD</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int NAMEINDICATORCARD = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_NUMERICALVALUE.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.NUMERICALVALUE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L44">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_NUMERICALVALUE" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.NUMERICALVALUE">NUMERICALVALUE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int NUMERICALVALUE = 15</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_RANGESINDICATORCARD.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.RANGESINDICATORCARD%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_RANGESINDICATORCARD" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.RANGESINDICATORCARD">RANGESINDICATORCARD</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RANGESINDICATORCARD = 5</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_RHSINDICATORCARD.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.RHSINDICATORCARD%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_RHSINDICATORCARD" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.RHSINDICATORCARD">RHSINDICATORCARD</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RHSINDICATORCARD = 4</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_ROWINDICATORCARD.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.ROWINDICATORCARD%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_ROWINDICATORCARD" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.ROWINDICATORCARD">ROWINDICATORCARD</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ROWINDICATORCARD = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_ROWTYPE.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.ROWTYPE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L43">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_ROWTYPE" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.ROWTYPE">ROWTYPE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ROWTYPE = 13</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_RULE_bounds.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.RULE_bounds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L47">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_RULE_bounds" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.RULE_bounds">RULE_bounds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_bounds = 6</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_RULE_boundsdatacard.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.RULE_boundsdatacard%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L50">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_RULE_boundsdatacard" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.RULE_boundsdatacard">RULE_boundsdatacard</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_boundsdatacard = 16</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_RULE_boundsdatacards.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.RULE_boundsdatacards%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L49">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_RULE_boundsdatacards" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.RULE_boundsdatacards">RULE_boundsdatacards</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_boundsdatacards = 12</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_RULE_columndatacard.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.RULE_columndatacard%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L49">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_RULE_columndatacard" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.RULE_columndatacard">RULE_columndatacard</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_columndatacard = 13</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_RULE_columndatacards.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.RULE_columndatacards%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L48">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_RULE_columndatacards" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.RULE_columndatacards">RULE_columndatacards</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_columndatacards = 9</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_RULE_columns.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.RULE_columns%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L46">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_RULE_columns" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.RULE_columns">RULE_columns</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_columns = 3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_RULE_endata.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.RULE_endata%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L47">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_RULE_endata" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.RULE_endata">RULE_endata</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_endata = 7</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_RULE_endmarker.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.RULE_endmarker%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L51">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_RULE_endmarker" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.RULE_endmarker">RULE_endmarker</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_endmarker = 19</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_RULE_firstrow.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.RULE_firstrow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L46">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_RULE_firstrow" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.RULE_firstrow">RULE_firstrow</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_firstrow = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_RULE_intblock.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.RULE_intblock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L50">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_RULE_intblock" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.RULE_intblock">RULE_intblock</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_intblock = 17</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_RULE_modell.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.RULE_modell%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L46">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_RULE_modell" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.RULE_modell">RULE_modell</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_modell = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_RULE_ranges.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.RULE_ranges%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L47">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_RULE_ranges" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.RULE_ranges">RULE_ranges</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_ranges = 5</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_RULE_rangesdatacard.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.RULE_rangesdatacard%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L50">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_RULE_rangesdatacard" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.RULE_rangesdatacard">RULE_rangesdatacard</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_rangesdatacard = 15</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_RULE_rangesdatacards.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.RULE_rangesdatacards%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L48">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_RULE_rangesdatacards" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.RULE_rangesdatacards">RULE_rangesdatacards</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_rangesdatacards = 11</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_RULE_rhs.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.RULE_rhs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L46">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_RULE_rhs" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.RULE_rhs">RULE_rhs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_rhs = 4</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_RULE_rhsdatacard.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.RULE_rhsdatacard%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L49">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_RULE_rhsdatacard" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.RULE_rhsdatacard">RULE_rhsdatacard</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_rhsdatacard = 14</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_RULE_rhsdatacards.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.RULE_rhsdatacards%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L48">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_RULE_rhsdatacards" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.RULE_rhsdatacards">RULE_rhsdatacards</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_rhsdatacards = 10</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_RULE_rowdatacard.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.RULE_rowdatacard%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L47">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_RULE_rowdatacard" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.RULE_rowdatacard">RULE_rowdatacard</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_rowdatacard = 8</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_RULE_rows.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.RULE_rows%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L46">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_RULE_rows" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.RULE_rows">RULE_rows</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_rows = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_RULE_startmarker.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.RULE_startmarker%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L51">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_RULE_startmarker" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.RULE_startmarker">RULE_startmarker</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_startmarker = 18</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_ruleNames.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.ruleNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L52">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_ruleNames" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.ruleNames">ruleNames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string[] ruleNames</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_sharedContextCache.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.sharedContextCache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L39">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_sharedContextCache" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.sharedContextCache">sharedContextCache</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static PredictionContextCache sharedContextCache</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.Atn.PredictionContextCache</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_STARTMARKER.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.STARTMARKER%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L43">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_STARTMARKER" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.STARTMARKER">STARTMARKER</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int STARTMARKER = 9</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_WS.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.WS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L44">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_WS" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.WS">WS</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int WS = 16</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_GrammarFileName.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.GrammarFileName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L80">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser_GrammarFileName_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.GrammarFileName*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_GrammarFileName" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.GrammarFileName">GrammarFileName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GrammarFileName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.GrammarFileName</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_RuleNames.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.RuleNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L82">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser_RuleNames_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.RuleNames*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_RuleNames" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.RuleNames">RuleNames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string[] RuleNames { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.RuleNames</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_SerializedAtn.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.SerializedAtn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L84">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser_SerializedAtn_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.SerializedAtn*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_SerializedAtn" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.SerializedAtn">SerializedAtn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string SerializedAtn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.SerializedAtn</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_Vocabulary.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.Vocabulary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L71">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser_Vocabulary_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.Vocabulary*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_Vocabulary" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.Vocabulary">Vocabulary</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotNull]
+public override IVocabulary Vocabulary { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.IVocabulary</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Vocabulary</span></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_bounds.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.bounds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L482">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser_bounds_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.bounds*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_bounds" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.bounds">bounds()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public mpsParser.BoundsContext bounds()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Mps.mpsParser.BoundsContext.html">mpsParser.BoundsContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_boundsdatacard.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.boundsdatacard%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L1087">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser_boundsdatacard_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.boundsdatacard*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_boundsdatacard" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.boundsdatacard">boundsdatacard()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public mpsParser.BoundsdatacardContext boundsdatacard()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Mps.mpsParser.BoundsdatacardContext.html">mpsParser.BoundsdatacardContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_boundsdatacards.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.boundsdatacards%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L819">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser_boundsdatacards_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.boundsdatacards*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_boundsdatacards" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.boundsdatacards">boundsdatacards()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public mpsParser.BoundsdatacardsContext boundsdatacards()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Mps.mpsParser.BoundsdatacardsContext.html">mpsParser.BoundsdatacardsContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_columndatacard.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.columndatacard%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L882">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser_columndatacard_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.columndatacard*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_columndatacard" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.columndatacard">columndatacard()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public mpsParser.ColumndatacardContext columndatacard()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Mps.mpsParser.ColumndatacardContext.html">mpsParser.ColumndatacardContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_columndatacards.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.columndatacards%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L625">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser_columndatacards_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.columndatacards*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_columndatacards" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.columndatacards">columndatacards()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public mpsParser.ColumndatacardsContext columndatacards()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Mps.mpsParser.ColumndatacardsContext.html">mpsParser.ColumndatacardsContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_columns.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.columns%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L341">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser_columns_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.columns*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_columns" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.columns">columns()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public mpsParser.ColumnsContext columns()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Mps.mpsParser.ColumnsContext.html">mpsParser.ColumnsContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_endata.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.endata%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L526">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser_endata_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.endata*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_endata" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.endata">endata()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public mpsParser.EndataContext endata()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Mps.mpsParser.EndataContext.html">mpsParser.EndataContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_endmarker.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.endmarker%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L1274">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser_endmarker_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.endmarker*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_endmarker" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.endmarker">endmarker()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public mpsParser.EndmarkerContext endmarker()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Mps.mpsParser.EndmarkerContext.html">mpsParser.EndmarkerContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_firstrow.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.firstrow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L213">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser_firstrow_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.firstrow*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_firstrow" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.firstrow">firstrow()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public mpsParser.FirstrowContext firstrow()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Mps.mpsParser.FirstrowContext.html">mpsParser.FirstrowContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_intblock.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.intblock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L1161">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser_intblock_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.intblock*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_intblock" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.intblock">intblock()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public mpsParser.IntblockContext intblock()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Mps.mpsParser.IntblockContext.html">mpsParser.IntblockContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_modell.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.modell%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L144">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser_modell_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.modell*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_modell" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.modell">modell()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public mpsParser.ModellContext modell()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Mps.mpsParser.ModellContext.html">mpsParser.ModellContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_ranges.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.ranges%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L435">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser_ranges_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.ranges*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_ranges" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.ranges">ranges()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public mpsParser.RangesContext ranges()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Mps.mpsParser.RangesContext.html">mpsParser.RangesContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_rangesdatacard.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.rangesdatacard%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L1017">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser_rangesdatacard_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.rangesdatacard*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_rangesdatacard" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.rangesdatacard">rangesdatacard()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public mpsParser.RangesdatacardContext rangesdatacard()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Mps.mpsParser.RangesdatacardContext.html">mpsParser.RangesdatacardContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_rangesdatacards.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.rangesdatacards%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L758">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser_rangesdatacards_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.rangesdatacards*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_rangesdatacards" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.rangesdatacards">rangesdatacards()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public mpsParser.RangesdatacardsContext rangesdatacards()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Mps.mpsParser.RangesdatacardsContext.html">mpsParser.RangesdatacardsContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_rhs.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.rhs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L388">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser_rhs_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.rhs*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_rhs" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.rhs">rhs()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public mpsParser.RhsContext rhs()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Mps.mpsParser.RhsContext.html">mpsParser.RhsContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_rhsdatacard.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.rhsdatacard%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L945">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser_rhsdatacard_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.rhsdatacard*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_rhsdatacard" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.rhsdatacard">rhsdatacard()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public mpsParser.RhsdatacardContext rhsdatacard()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Mps.mpsParser.RhsdatacardContext.html">mpsParser.RhsdatacardContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_rhsdatacards.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.rhsdatacards%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L697">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser_rhsdatacards_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.rhsdatacards*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_rhsdatacards" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.rhsdatacards">rhsdatacards()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public mpsParser.RhsdatacardsContext rhsdatacards()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Mps.mpsParser.RhsdatacardsContext.html">mpsParser.RhsdatacardsContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_rowdatacard.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.rowdatacard%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L570">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser_rowdatacard_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.rowdatacard*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_rowdatacard" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.rowdatacard">rowdatacard()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public mpsParser.RowdatacardContext rowdatacard()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Mps.mpsParser.RowdatacardContext.html">mpsParser.RowdatacardContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_rows.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.rows%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L281">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser_rows_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.rows*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_rows" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.rows">rows()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public mpsParser.RowsContext rows()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Mps.mpsParser.RowsContext.html">mpsParser.RowsContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser_startmarker.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser.startmarker%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L1227">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Mps_mpsParser_startmarker_" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.startmarker*"></a>
+  <h4 id="GCore_Antlr_Grammers_Mps_mpsParser_startmarker" data-uid="GCore.Antlr.Grammers.Mps.mpsParser.startmarker">startmarker()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public mpsParser.StartmarkerContext startmarker()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Mps.mpsParser.StartmarkerContext.html">mpsParser.StartmarkerContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Antlr4.Runtime.IRecognizer</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Mps_mpsParser.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Mps.mpsParser%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Mps/mpsParser.cs/#L35" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1583 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class propcalcParser
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class propcalcParser
+   ">
+    <meta name="generator" content="docfx 2.50.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser">
+  
+  
+  <h1 id="GCore_Antlr_Grammers_Propcalc_propcalcParser" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser" class="text-break">Class propcalcParser
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Antlr4.Runtime.Recognizer</span>&lt;<span class="xref">Antlr4.Runtime.IToken</span>, <span class="xref">Antlr4.Runtime.Atn.ParserATNSimulator</span>&gt;</div>
+    <div class="level2"><span class="xref">Antlr4.Runtime.Parser</span></div>
+    <div class="level3"><span class="xref">propcalcParser</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Antlr4.Runtime.IRecognizer</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Output</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.ErrorOutput</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Reset()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Match(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.MatchWildcard()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.AddParseListener(Antlr4.Runtime.Tree.IParseTreeListener)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.RemoveParseListener(Antlr4.Runtime.Tree.IParseTreeListener)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.RemoveParseListeners()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.TriggerEnterRuleEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.TriggerExitRuleEvent()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetATNWithBypassAlts()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.CompileParseTreePattern(System.String, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.CompileParseTreePattern(System.String, System.Int32, Antlr4.Runtime.Lexer)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.NotifyErrorListeners(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.NotifyErrorListeners(Antlr4.Runtime.IToken, System.String, Antlr4.Runtime.RecognitionException)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Consume()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.AddContextToParseTree()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.EnterRule(Antlr4.Runtime.ParserRuleContext, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.EnterLeftFactoredRule(Antlr4.Runtime.ParserRuleContext, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.ExitRule()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.EnterOuterAlt(Antlr4.Runtime.ParserRuleContext, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.EnterRecursionRule(Antlr4.Runtime.ParserRuleContext, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.EnterRecursionRule(Antlr4.Runtime.ParserRuleContext, System.Int32, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.PushNewRecursionContext(Antlr4.Runtime.ParserRuleContext, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.UnrollRecursionContexts(Antlr4.Runtime.ParserRuleContext)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetInvokingContext(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Precpred(Antlr4.Runtime.RuleContext, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.InContext(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.IsExpectedToken(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetExpectedTokens()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetExpectedTokensWithinCurrentRule()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetRuleIndex(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetRuleInvocationStack()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetRuleInvocationStackAsString()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetRuleInvocationStack(Antlr4.Runtime.RuleContext)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.GetDFAStrings()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.DumpDFA()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.BuildParseTree</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.TrimParseTree</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.ParseListeners</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.NumberOfSyntaxErrors</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.TokenFactory</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.ErrorHandler</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.InputStream</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.TokenStream</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.CurrentToken</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Precedence</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Context</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.ErrorListenerDispatch</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.RuleContext</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.SourceName</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.ParseInfo</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Profile</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Parser.Trace</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Eof</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.CreateTokenTypeMap(Antlr4.Runtime.IVocabulary)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.GetTokenType(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.GetErrorHeader(Antlr4.Runtime.RecognitionException)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.GetTokenErrorDisplay(Antlr4.Runtime.IToken)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.AddErrorListener(Antlr4.Runtime.IAntlrErrorListener&lt;Antlr4.Runtime.IToken&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.RemoveErrorListener(Antlr4.Runtime.IAntlrErrorListener&lt;Antlr4.Runtime.IToken&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.RemoveErrorListeners()</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Sempred(Antlr4.Runtime.RuleContext, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Precpred(Antlr4.Runtime.RuleContext, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Action(Antlr4.Runtime.RuleContext, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.RuleNames</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Vocabulary</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.TokenTypeMap</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.RuleIndexMap</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.SerializedAtn</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.GrammarFileName</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Atn</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Interpreter</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.ParseInfo</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.ErrorListeners</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.ErrorListenerDispatch</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.State</span>
+    </div>
+    <div>
+      <span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.InputStream</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Antlr.Grammers.Propcalc.html">GCore.Antlr.Grammers.Propcalc</a></h6>
+  <h6><strong>Assembly</strong>: Propcalc.dll</h6>
+  <h5 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public class propcalcParser : Parser, IRecognizer</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser__ctor_Antlr4_Runtime_ITokenStream_.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.%23ctor(Antlr4.Runtime.ITokenStream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L83">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Propcalc_propcalcParser__ctor_" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.#ctor*"></a>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser__ctor_Antlr4_Runtime_ITokenStream_" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.#ctor(Antlr4.Runtime.ITokenStream)">propcalcParser(ITokenStream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public propcalcParser(ITokenStream input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.ITokenStream</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser__ctor_Antlr4_Runtime_ITokenStream_System_IO_TextWriter_System_IO_TextWriter_.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.%23ctor(Antlr4.Runtime.ITokenStream%2CSystem.IO.TextWriter%2CSystem.IO.TextWriter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L85">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Propcalc_propcalcParser__ctor_" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.#ctor*"></a>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser__ctor_Antlr4_Runtime_ITokenStream_System_IO_TextWriter_System_IO_TextWriter_" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.#ctor(Antlr4.Runtime.ITokenStream,System.IO.TextWriter,System.IO.TextWriter)">propcalcParser(ITokenStream, TextWriter, TextWriter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public propcalcParser(ITokenStream input, TextWriter output, TextWriter errorOutput)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.ITokenStream</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.TextWriter</span></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.TextWriter</span></td>
+        <td><span class="parametername">errorOutput</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser__ATN.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser._ATN%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L654">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser__ATN" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser._ATN">_ATN</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ATN _ATN</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.Atn.ATN</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_AND.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.AND%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_AND" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.AND">AND</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int AND = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_decisionToDFA.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.decisionToDFA%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L38">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_decisionToDFA" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.decisionToDFA">decisionToDFA</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static DFA[] decisionToDFA</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.Dfa.DFA</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_DefaultVocabulary.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.DefaultVocabulary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L59">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_DefaultVocabulary" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.DefaultVocabulary">DefaultVocabulary</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly IVocabulary DefaultVocabulary</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.IVocabulary</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_EQ.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.EQ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_EQ" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.EQ">EQ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int EQ = 5</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_EQUIV.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.EQUIV%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_EQUIV" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.EQUIV">EQUIV</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int EQUIV = 8</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_IMPLIES.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.IMPLIES%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_IMPLIES" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.IMPLIES">IMPLIES</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int IMPLIES = 6</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_LETTER.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.LETTER%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_LETTER" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.LETTER">LETTER</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int LETTER = 11</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_LPAREN.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.LPAREN%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_LPAREN" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.LPAREN">LPAREN</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int LPAREN = 9</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_NOT.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.NOT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_NOT" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.NOT">NOT</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int NOT = 4</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_OR.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.OR%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_OR" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.OR">OR</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int OR = 3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_RPAREN.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.RPAREN%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_RPAREN" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.RPAREN">RPAREN</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RPAREN = 10</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_RULE_atom.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.RULE_atom%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L45">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_RULE_atom" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.RULE_atom">RULE_atom</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_atom = 4</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_RULE_atoms.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.RULE_atoms%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L44">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_RULE_atoms" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.RULE_atoms">RULE_atoms</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_atoms = 3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_RULE_equiv.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.RULE_equiv%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L45">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_RULE_equiv" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.RULE_equiv">RULE_equiv</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_equiv = 5</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_RULE_expression.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.RULE_expression%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L44">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_RULE_expression" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.RULE_expression">RULE_expression</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_expression = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_RULE_implies.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.RULE_implies%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L45">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_RULE_implies" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.RULE_implies">RULE_implies</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_implies = 6</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_RULE_proposition.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.RULE_proposition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L44">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_RULE_proposition" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.RULE_proposition">RULE_proposition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_proposition = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_RULE_relExpression.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.RULE_relExpression%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L44">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_RULE_relExpression" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.RULE_relExpression">RULE_relExpression</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_relExpression = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_RULE_variable.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.RULE_variable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L45">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_RULE_variable" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.RULE_variable">RULE_variable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RULE_variable = 7</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_ruleNames.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.ruleNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L46">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_ruleNames" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.ruleNames">ruleNames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string[] ruleNames</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_sharedContextCache.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.sharedContextCache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L39">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_sharedContextCache" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.sharedContextCache">sharedContextCache</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static PredictionContextCache sharedContextCache</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.Atn.PredictionContextCache</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_T__0.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.T__0%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_T__0" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.T__0">T__0</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int T__0 = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_THEREFORE.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.THEREFORE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L41">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_THEREFORE" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.THEREFORE">THEREFORE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int THEREFORE = 7</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_WS.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.WS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_WS" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.WS">WS</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int WS = 12</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_GrammarFileName.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.GrammarFileName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L70">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Propcalc_propcalcParser_GrammarFileName_" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.GrammarFileName*"></a>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_GrammarFileName" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.GrammarFileName">GrammarFileName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GrammarFileName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.GrammarFileName</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_RuleNames.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.RuleNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L72">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Propcalc_propcalcParser_RuleNames_" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.RuleNames*"></a>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_RuleNames" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.RuleNames">RuleNames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string[] RuleNames { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.RuleNames</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_SerializedAtn.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.SerializedAtn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L74">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Propcalc_propcalcParser_SerializedAtn_" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.SerializedAtn*"></a>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_SerializedAtn" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.SerializedAtn">SerializedAtn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string SerializedAtn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.SerializedAtn</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_Vocabulary.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.Vocabulary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L61">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Propcalc_propcalcParser_Vocabulary_" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.Vocabulary*"></a>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_Vocabulary" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.Vocabulary">Vocabulary</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotNull]
+public override IVocabulary Vocabulary { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Antlr4.Runtime.IVocabulary</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Antlr4.Runtime.Recognizer&lt;Antlr4.Runtime.IToken, Antlr4.Runtime.Atn.ParserATNSimulator&gt;.Vocabulary</span></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_atom.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.atom%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L386">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Propcalc_propcalcParser_atom_" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.atom*"></a>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_atom" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.atom">atom()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public propcalcParser.AtomContext atom()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Propcalc.propcalcParser.AtomContext.html">propcalcParser.AtomContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_atoms.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.atoms%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L317">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Propcalc_propcalcParser_atoms_" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.atoms*"></a>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_atoms" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.atoms">atoms()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public propcalcParser.AtomsContext atoms()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Propcalc.propcalcParser.AtomsContext.html">propcalcParser.AtomsContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_equiv.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.equiv%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L466">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Propcalc_propcalcParser_equiv_" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.equiv*"></a>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_equiv" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.equiv">equiv()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public propcalcParser.EquivContext equiv()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Propcalc.propcalcParser.EquivContext.html">propcalcParser.EquivContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_expression.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.expression%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L177">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Propcalc_propcalcParser_expression_" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.expression*"></a>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_expression" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.expression">expression()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public propcalcParser.ExpressionContext expression()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Propcalc.propcalcParser.ExpressionContext.html">propcalcParser.ExpressionContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_implies.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.implies%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L517">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Propcalc_propcalcParser_implies_" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.implies*"></a>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_implies" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.implies">implies()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public propcalcParser.ImpliesContext implies()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Propcalc.propcalcParser.ImpliesContext.html">propcalcParser.ImpliesContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_proposition.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.proposition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L119">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Propcalc_propcalcParser_proposition_" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.proposition*"></a>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_proposition" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.proposition">proposition()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public propcalcParser.PropositionContext proposition()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Propcalc.propcalcParser.PropositionContext.html">propcalcParser.PropositionContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_relExpression.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.relExpression%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L251">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Propcalc_propcalcParser_relExpression_" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.relExpression*"></a>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_relExpression" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.relExpression">relExpression()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public propcalcParser.RelExpressionContext relExpression()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Propcalc.propcalcParser.RelExpressionContext.html">propcalcParser.RelExpressionContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser_variable.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser.variable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L565">View Source</a>
+  </span>
+  <a id="GCore_Antlr_Grammers_Propcalc_propcalcParser_variable_" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.variable*"></a>
+  <h4 id="GCore_Antlr_Grammers_Propcalc_propcalcParser_variable" data-uid="GCore.Antlr.Grammers.Propcalc.propcalcParser.variable">variable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuleVersion(0)]
+public propcalcParser.VariableContext variable()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Propcalc.propcalcParser.VariableContext.html">propcalcParser.VariableContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Antlr4.Runtime.IRecognizer</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Propcalc_propcalcParser.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Propcalc.propcalcParser%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Propcalc/propcalcParser.cs/#L35" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
