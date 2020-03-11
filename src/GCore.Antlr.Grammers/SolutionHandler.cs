@@ -65,8 +65,8 @@ namespace GCore.Antlr.Grammers
             return $"git clone -b gh-pages --single-branch https://{Repo.GithubUser}:{Repo.GithubToken}@github.com/KevinGliewe/GCore.Antlr.Grammers --depth 1 {Repo.GhPagesPath}".Sh2(out _lastprocess) == 0;
         }
         private bool GenerateDocumentation() {
-            return Repo.DocFxTool.Sh2(out _lastprocess, Repo.GhPagesPath) == 0;
-        }
+            return Repo.DocFxTool.Sh2(out _lastprocess, Repo.DocFxPath) == 0;
+        }π
 
         private bool PublishDocumentation() {
             // https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
