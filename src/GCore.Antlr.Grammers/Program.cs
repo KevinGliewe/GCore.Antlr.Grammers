@@ -45,7 +45,7 @@ namespace GCore.Antlr.Grammers
                 Environment.GetEnvironmentVariable("NugetToken"),
                 Environment.GetEnvironmentVariable("GithubUser"),
                 Environment.GetEnvironmentVariable("GithubToken"),
-                Environment.GetEnvironmentVariable("DOCFX_TOOL") ?? "docfx" 
+                Environment.GetEnvironmentVariable("DOCFX_TOOL") ?? "docfx build ./" 
             );
 
             var solutionPath = Path.Combine(workSpace, repoContext.PackagePrefix + ".sln");

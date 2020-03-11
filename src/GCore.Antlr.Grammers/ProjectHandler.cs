@@ -78,7 +78,7 @@ namespace GCore.Antlr.Grammers
                     <Company>Kevin Gliewe</Company>
                     <Description>Prebuild Antlr4 grammer for {Context.Name}</Description>
                     <RepositoryUrl>https://github.com/KillerGoldFisch/GCore.Antlr4.Grammers</RepositoryUrl>
-                    <PackageProjectUrl>https://github.com/KillerGoldFisch/GCore.Antlr4.Grammers</PackageProjectUrl>
+                    <PackageProjectUrl>https://kevingliewe.github.io/GCore.Antlr.Grammers/api/GCore.Antlr.Grammers.{Context.Name}.html</PackageProjectUrl>
                     <PackageLicenseUrl>http://anak10thn.github.io/WTFPL/</PackageLicenseUrl>
                     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
                     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
