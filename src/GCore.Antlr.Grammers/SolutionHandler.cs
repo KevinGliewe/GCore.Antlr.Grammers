@@ -66,7 +66,7 @@ namespace GCore.Antlr.Grammers
         }
         private bool GenerateDocumentation() {
             return Repo.DocFxTool.Sh2(out _lastprocess, Repo.DocFxPath) == 0;
-        }π
+        }
 
         private bool PublishDocumentation() {
             // https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
