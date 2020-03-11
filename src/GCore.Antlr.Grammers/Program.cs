@@ -19,10 +19,14 @@ namespace GCore.Antlr.Grammers
             var projectsPath = Path.Combine(workSpace, "projects");
             var packagePath = Path.Combine(workSpace, "packages");
             var antlrPath = Path.Combine(workSpace, "antlr-4.8-complete.jar");
+            var docFxPath = Path.Combine(repoPath, "doc", "docfx");
+            var ghPagesPath = Path.Combine(docFxPath, "_site");
             
             
             if(Directory.Exists(workSpace))
                 Directory.Delete(workSpace, true);
+            if(Directory.Exists(ghPagesPath))
+                Directory.Delete(ghPagesPath, true);
 
             Directory.CreateDirectory(workSpace);
             Directory.CreateDirectory(grammersPath);
@@ -37,9 +41,11 @@ namespace GCore.Antlr.Grammers
             var repoVersion = "git rev-list --count HEAD".Sh().Replace("\n", "").Trim();
             var grammerVersion = "git rev-list --count HEAD".Sh(grammersPath).Replace("\n", "").Trim();
 
-            var repoContext = new RepoContext(repoVersion, grammerVersion, packagePath, workSpace,
+            var repoContext = new RepoContext(repoPath, repoVersion, grammerVersion, packagePath, workSpace, docFxPath, ghPagesPath, 
                 Environment.GetEnvironmentVariable("NugetToken"),
-                Environment.GetEnvironmentVariable("GithubToken")
+                Environment.GetEnvironmentVariable("GithubUser"),
+                Environment.GetEnvironmentVariable("GithubToken"),
+                Environment.GetEnvironmentVariable("DOCFX_TOOL") ?? "docfx" 
             );
 
             var solutionPath = Path.Combine(workSpace, repoContext.PackagePrefix + ".sln");
