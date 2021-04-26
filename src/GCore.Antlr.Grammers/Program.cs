@@ -38,7 +38,7 @@ namespace GCore.Antlr.Grammers
             var grammerVersion = "git rev-list --count HEAD".Sh(grammersPath).Replace("\n", "").Trim();
 
             var repoContext = new RepoContext(repoPath, repoVersion, grammerVersion, packagePath, workSpace,
-                Environment.GetEnvironmentVariable("NugetToken")
+                args.Length > 0 ? args[0] : null
             );
 
             var solutionPath = Path.Combine(workSpace, repoContext.PackagePrefix + ".sln");
