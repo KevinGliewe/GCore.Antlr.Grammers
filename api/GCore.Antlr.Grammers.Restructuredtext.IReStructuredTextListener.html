@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IReStructuredTextListener
    ">
-    <meta name="generator" content="docfx 2.50.0.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -77,27 +77,11 @@
 <a class="xref" href="GCore.Antlr.Grammers.Restructuredtext.ReStructuredTextParser.html">ReStructuredTextParser</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.VisitTerminal(Antlr4.Runtime.Tree.ITerminalNode)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.VisitErrorNode(Antlr4.Runtime.Tree.IErrorNode)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.EnterEveryRule(Antlr4.Runtime.ParserRuleContext)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.ExitEveryRule(Antlr4.Runtime.ParserRuleContext)</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Antlr.Grammers.Restructuredtext.html">GCore.Antlr.Grammers.Restructuredtext</a></h6>
   <h6><strong>Assembly</strong>: Restructuredtext.dll</h6>
   <h5 id="GCore_Antlr_Grammers_Restructuredtext_IReStructuredTextListener_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
-public interface IReStructuredTextListener : IParseTreeListener</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IReStructuredTextListener : Antlr4.Runtime.Tree.IParseTreeListener</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -115,7 +99,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterBackTickAtom([NotNull] ReStructuredTextParser.BackTickAtomContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterBackTickAtom(ReStructuredTextParser.BackTickAtomContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -149,7 +133,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterBackTickAtoms([NotNull] ReStructuredTextParser.BackTickAtomsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterBackTickAtoms(ReStructuredTextParser.BackTickAtomsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -183,7 +167,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterBackTickNoSpace([NotNull] ReStructuredTextParser.BackTickNoSpaceContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterBackTickNoSpace(ReStructuredTextParser.BackTickNoSpaceContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -217,7 +201,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterBackTickText([NotNull] ReStructuredTextParser.BackTickTextContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterBackTickText(ReStructuredTextParser.BackTickTextContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -251,7 +235,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterBody([NotNull] ReStructuredTextParser.BodyContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterBody(ReStructuredTextParser.BodyContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -285,7 +269,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterBullet([NotNull] ReStructuredTextParser.BulletContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterBullet(ReStructuredTextParser.BulletContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -319,7 +303,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterBulletCrossLine([NotNull] ReStructuredTextParser.BulletCrossLineContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterBulletCrossLine(ReStructuredTextParser.BulletCrossLineContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -353,7 +337,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterBulletSimple([NotNull] ReStructuredTextParser.BulletSimpleContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterBulletSimple(ReStructuredTextParser.BulletSimpleContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -387,7 +371,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterComment([NotNull] ReStructuredTextParser.CommentContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterComment(ReStructuredTextParser.CommentContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -421,7 +405,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterCommentLine([NotNull] ReStructuredTextParser.CommentLineContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterCommentLine(ReStructuredTextParser.CommentLineContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -455,7 +439,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterCommentLineAtoms([NotNull] ReStructuredTextParser.CommentLineAtomsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterCommentLineAtoms(ReStructuredTextParser.CommentLineAtomsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -489,7 +473,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterCommentLineNoBreak([NotNull] ReStructuredTextParser.CommentLineNoBreakContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterCommentLineNoBreak(ReStructuredTextParser.CommentLineNoBreakContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -523,7 +507,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterCommentParagraph([NotNull] ReStructuredTextParser.CommentParagraphContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterCommentParagraph(ReStructuredTextParser.CommentParagraphContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -557,7 +541,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterCommentParagraphs([NotNull] ReStructuredTextParser.CommentParagraphsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterCommentParagraphs(ReStructuredTextParser.CommentParagraphsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -591,7 +575,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterCommentRest([NotNull] ReStructuredTextParser.CommentRestContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterCommentRest(ReStructuredTextParser.CommentRestContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -625,7 +609,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterElement([NotNull] ReStructuredTextParser.ElementContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterElement(ReStructuredTextParser.ElementContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -659,7 +643,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterEmpty_line([NotNull] ReStructuredTextParser.Empty_lineContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterEmpty_line(ReStructuredTextParser.Empty_lineContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -693,7 +677,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterForcedText([NotNull] ReStructuredTextParser.ForcedTextContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterForcedText(ReStructuredTextParser.ForcedTextContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -727,7 +711,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterHyperlink([NotNull] ReStructuredTextParser.HyperlinkContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterHyperlink(ReStructuredTextParser.HyperlinkContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -761,7 +745,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterHyperlinkAtom([NotNull] ReStructuredTextParser.HyperlinkAtomContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterHyperlinkAtom(ReStructuredTextParser.HyperlinkAtomContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -795,7 +779,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterHyperlinkDoc([NotNull] ReStructuredTextParser.HyperlinkDocContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterHyperlinkDoc(ReStructuredTextParser.HyperlinkDocContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -829,7 +813,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterHyperlinkTarget([NotNull] ReStructuredTextParser.HyperlinkTargetContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterHyperlinkTarget(ReStructuredTextParser.HyperlinkTargetContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -863,7 +847,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterIndentation([NotNull] ReStructuredTextParser.IndentationContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterIndentation(ReStructuredTextParser.IndentationContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -897,7 +881,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterLineBlock([NotNull] ReStructuredTextParser.LineBlockContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterLineBlock(ReStructuredTextParser.LineBlockContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -931,7 +915,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterLineBlockLine([NotNull] ReStructuredTextParser.LineBlockLineContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterLineBlockLine(ReStructuredTextParser.LineBlockLineContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -965,7 +949,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterLineNoBreak([NotNull] ReStructuredTextParser.LineNoBreakContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterLineNoBreak(ReStructuredTextParser.LineNoBreakContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -999,7 +983,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterLineNormal([NotNull] ReStructuredTextParser.LineNormalContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterLineNormal(ReStructuredTextParser.LineNormalContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1033,7 +1017,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterLines([NotNull] ReStructuredTextParser.LinesContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterLines(ReStructuredTextParser.LinesContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1067,7 +1051,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterLinesNormal([NotNull] ReStructuredTextParser.LinesNormalContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterLinesNormal(ReStructuredTextParser.LinesNormalContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1101,7 +1085,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterLineSpecial([NotNull] ReStructuredTextParser.LineSpecialContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterLineSpecial(ReStructuredTextParser.LineSpecialContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1135,7 +1119,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterLinesStar([NotNull] ReStructuredTextParser.LinesStarContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterLinesStar(ReStructuredTextParser.LinesStarContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1169,7 +1153,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterLineStar([NotNull] ReStructuredTextParser.LineStarContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterLineStar(ReStructuredTextParser.LineStarContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1203,7 +1187,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterLineStart_fragment([NotNull] ReStructuredTextParser.LineStart_fragmentContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterLineStart_fragment(ReStructuredTextParser.LineStart_fragmentContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1237,7 +1221,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterListItemBullet([NotNull] ReStructuredTextParser.ListItemBulletContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterListItemBullet(ReStructuredTextParser.ListItemBulletContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1271,7 +1255,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterListItemEnumerated([NotNull] ReStructuredTextParser.ListItemEnumeratedContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterListItemEnumerated(ReStructuredTextParser.ListItemEnumeratedContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1305,7 +1289,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterParagraph([NotNull] ReStructuredTextParser.ParagraphContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterParagraph(ReStructuredTextParser.ParagraphContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1339,7 +1323,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterParagraphNoBreak([NotNull] ReStructuredTextParser.ParagraphNoBreakContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterParagraphNoBreak(ReStructuredTextParser.ParagraphNoBreakContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1373,7 +1357,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterParse([NotNull] ReStructuredTextParser.ParseContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterParse(ReStructuredTextParser.ParseContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1407,7 +1391,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterQuotedLiteral([NotNull] ReStructuredTextParser.QuotedLiteralContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterQuotedLiteral(ReStructuredTextParser.QuotedLiteralContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1441,7 +1425,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterReference([NotNull] ReStructuredTextParser.ReferenceContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterReference(ReStructuredTextParser.ReferenceContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1475,7 +1459,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterReferenceIn([NotNull] ReStructuredTextParser.ReferenceInContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterReferenceIn(ReStructuredTextParser.ReferenceInContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1509,7 +1493,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterSection([NotNull] ReStructuredTextParser.SectionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterSection(ReStructuredTextParser.SectionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1543,7 +1527,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterSectionElement([NotNull] ReStructuredTextParser.SectionElementContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterSectionElement(ReStructuredTextParser.SectionElementContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1577,7 +1561,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterSeparator([NotNull] ReStructuredTextParser.SeparatorContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterSeparator(ReStructuredTextParser.SeparatorContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1611,7 +1595,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterSpan([NotNull] ReStructuredTextParser.SpanContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterSpan(ReStructuredTextParser.SpanContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1645,7 +1629,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterSpanLineStartNoStar([NotNull] ReStructuredTextParser.SpanLineStartNoStarContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterSpanLineStartNoStar(ReStructuredTextParser.SpanLineStartNoStarContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1679,7 +1663,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterSpanNoStar([NotNull] ReStructuredTextParser.SpanNoStarContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterSpanNoStar(ReStructuredTextParser.SpanNoStarContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1713,7 +1697,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterStarAtom([NotNull] ReStructuredTextParser.StarAtomContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterStarAtom(ReStructuredTextParser.StarAtomContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1747,7 +1731,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterStarAtoms([NotNull] ReStructuredTextParser.StarAtomsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterStarAtoms(ReStructuredTextParser.StarAtomsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1781,7 +1765,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterStarNoSpace([NotNull] ReStructuredTextParser.StarNoSpaceContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterStarNoSpace(ReStructuredTextParser.StarNoSpaceContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1815,7 +1799,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterStarText([NotNull] ReStructuredTextParser.StarTextContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterStarText(ReStructuredTextParser.StarTextContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1849,7 +1833,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterText([NotNull] ReStructuredTextParser.TextContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterText(ReStructuredTextParser.TextContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1883,7 +1867,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterText_fragment([NotNull] ReStructuredTextParser.Text_fragmentContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterText_fragment(ReStructuredTextParser.Text_fragmentContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1917,7 +1901,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterText_fragment_start([NotNull] ReStructuredTextParser.Text_fragment_startContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterText_fragment_start(ReStructuredTextParser.Text_fragment_startContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1951,7 +1935,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterTextLineStart([NotNull] ReStructuredTextParser.TextLineStartContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterTextLineStart(ReStructuredTextParser.TextLineStartContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1985,7 +1969,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterTextStart([NotNull] ReStructuredTextParser.TextStartContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterTextStart(ReStructuredTextParser.TextStartContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2019,7 +2003,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterTitle([NotNull] ReStructuredTextParser.TitleContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterTitle(ReStructuredTextParser.TitleContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2053,7 +2037,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterUrl([NotNull] ReStructuredTextParser.UrlContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterUrl(ReStructuredTextParser.UrlContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2087,7 +2071,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterUrlAtom([NotNull] ReStructuredTextParser.UrlAtomContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterUrlAtom(ReStructuredTextParser.UrlAtomContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2121,7 +2105,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitBackTickAtom([NotNull] ReStructuredTextParser.BackTickAtomContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitBackTickAtom(ReStructuredTextParser.BackTickAtomContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2155,7 +2139,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitBackTickAtoms([NotNull] ReStructuredTextParser.BackTickAtomsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitBackTickAtoms(ReStructuredTextParser.BackTickAtomsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2189,7 +2173,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitBackTickNoSpace([NotNull] ReStructuredTextParser.BackTickNoSpaceContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitBackTickNoSpace(ReStructuredTextParser.BackTickNoSpaceContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2223,7 +2207,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitBackTickText([NotNull] ReStructuredTextParser.BackTickTextContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitBackTickText(ReStructuredTextParser.BackTickTextContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2257,7 +2241,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitBody([NotNull] ReStructuredTextParser.BodyContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitBody(ReStructuredTextParser.BodyContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2291,7 +2275,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitBullet([NotNull] ReStructuredTextParser.BulletContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitBullet(ReStructuredTextParser.BulletContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2325,7 +2309,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitBulletCrossLine([NotNull] ReStructuredTextParser.BulletCrossLineContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitBulletCrossLine(ReStructuredTextParser.BulletCrossLineContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2359,7 +2343,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitBulletSimple([NotNull] ReStructuredTextParser.BulletSimpleContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitBulletSimple(ReStructuredTextParser.BulletSimpleContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2393,7 +2377,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitComment([NotNull] ReStructuredTextParser.CommentContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitComment(ReStructuredTextParser.CommentContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2427,7 +2411,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitCommentLine([NotNull] ReStructuredTextParser.CommentLineContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitCommentLine(ReStructuredTextParser.CommentLineContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2461,7 +2445,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitCommentLineAtoms([NotNull] ReStructuredTextParser.CommentLineAtomsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitCommentLineAtoms(ReStructuredTextParser.CommentLineAtomsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2495,7 +2479,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitCommentLineNoBreak([NotNull] ReStructuredTextParser.CommentLineNoBreakContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitCommentLineNoBreak(ReStructuredTextParser.CommentLineNoBreakContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2529,7 +2513,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitCommentParagraph([NotNull] ReStructuredTextParser.CommentParagraphContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitCommentParagraph(ReStructuredTextParser.CommentParagraphContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2563,7 +2547,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitCommentParagraphs([NotNull] ReStructuredTextParser.CommentParagraphsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitCommentParagraphs(ReStructuredTextParser.CommentParagraphsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2597,7 +2581,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitCommentRest([NotNull] ReStructuredTextParser.CommentRestContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitCommentRest(ReStructuredTextParser.CommentRestContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2631,7 +2615,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitElement([NotNull] ReStructuredTextParser.ElementContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitElement(ReStructuredTextParser.ElementContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2665,7 +2649,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitEmpty_line([NotNull] ReStructuredTextParser.Empty_lineContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitEmpty_line(ReStructuredTextParser.Empty_lineContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2699,7 +2683,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitForcedText([NotNull] ReStructuredTextParser.ForcedTextContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitForcedText(ReStructuredTextParser.ForcedTextContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2733,7 +2717,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitHyperlink([NotNull] ReStructuredTextParser.HyperlinkContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitHyperlink(ReStructuredTextParser.HyperlinkContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2767,7 +2751,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitHyperlinkAtom([NotNull] ReStructuredTextParser.HyperlinkAtomContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitHyperlinkAtom(ReStructuredTextParser.HyperlinkAtomContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2801,7 +2785,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitHyperlinkDoc([NotNull] ReStructuredTextParser.HyperlinkDocContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitHyperlinkDoc(ReStructuredTextParser.HyperlinkDocContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2835,7 +2819,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitHyperlinkTarget([NotNull] ReStructuredTextParser.HyperlinkTargetContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitHyperlinkTarget(ReStructuredTextParser.HyperlinkTargetContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2869,7 +2853,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitIndentation([NotNull] ReStructuredTextParser.IndentationContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitIndentation(ReStructuredTextParser.IndentationContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2903,7 +2887,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitLineBlock([NotNull] ReStructuredTextParser.LineBlockContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitLineBlock(ReStructuredTextParser.LineBlockContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2937,7 +2921,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitLineBlockLine([NotNull] ReStructuredTextParser.LineBlockLineContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitLineBlockLine(ReStructuredTextParser.LineBlockLineContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2971,7 +2955,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitLineNoBreak([NotNull] ReStructuredTextParser.LineNoBreakContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitLineNoBreak(ReStructuredTextParser.LineNoBreakContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3005,7 +2989,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitLineNormal([NotNull] ReStructuredTextParser.LineNormalContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitLineNormal(ReStructuredTextParser.LineNormalContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3039,7 +3023,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitLines([NotNull] ReStructuredTextParser.LinesContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitLines(ReStructuredTextParser.LinesContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3073,7 +3057,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitLinesNormal([NotNull] ReStructuredTextParser.LinesNormalContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitLinesNormal(ReStructuredTextParser.LinesNormalContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3107,7 +3091,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitLineSpecial([NotNull] ReStructuredTextParser.LineSpecialContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitLineSpecial(ReStructuredTextParser.LineSpecialContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3141,7 +3125,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitLinesStar([NotNull] ReStructuredTextParser.LinesStarContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitLinesStar(ReStructuredTextParser.LinesStarContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3175,7 +3159,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitLineStar([NotNull] ReStructuredTextParser.LineStarContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitLineStar(ReStructuredTextParser.LineStarContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3209,7 +3193,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitLineStart_fragment([NotNull] ReStructuredTextParser.LineStart_fragmentContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitLineStart_fragment(ReStructuredTextParser.LineStart_fragmentContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3243,7 +3227,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitListItemBullet([NotNull] ReStructuredTextParser.ListItemBulletContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitListItemBullet(ReStructuredTextParser.ListItemBulletContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3277,7 +3261,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitListItemEnumerated([NotNull] ReStructuredTextParser.ListItemEnumeratedContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitListItemEnumerated(ReStructuredTextParser.ListItemEnumeratedContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3311,7 +3295,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitParagraph([NotNull] ReStructuredTextParser.ParagraphContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitParagraph(ReStructuredTextParser.ParagraphContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3345,7 +3329,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitParagraphNoBreak([NotNull] ReStructuredTextParser.ParagraphNoBreakContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitParagraphNoBreak(ReStructuredTextParser.ParagraphNoBreakContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3379,7 +3363,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitParse([NotNull] ReStructuredTextParser.ParseContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitParse(ReStructuredTextParser.ParseContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3413,7 +3397,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitQuotedLiteral([NotNull] ReStructuredTextParser.QuotedLiteralContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitQuotedLiteral(ReStructuredTextParser.QuotedLiteralContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3447,7 +3431,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitReference([NotNull] ReStructuredTextParser.ReferenceContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitReference(ReStructuredTextParser.ReferenceContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3481,7 +3465,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitReferenceIn([NotNull] ReStructuredTextParser.ReferenceInContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitReferenceIn(ReStructuredTextParser.ReferenceInContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3515,7 +3499,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitSection([NotNull] ReStructuredTextParser.SectionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitSection(ReStructuredTextParser.SectionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3549,7 +3533,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitSectionElement([NotNull] ReStructuredTextParser.SectionElementContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitSectionElement(ReStructuredTextParser.SectionElementContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3583,7 +3567,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitSeparator([NotNull] ReStructuredTextParser.SeparatorContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitSeparator(ReStructuredTextParser.SeparatorContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3617,7 +3601,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitSpan([NotNull] ReStructuredTextParser.SpanContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitSpan(ReStructuredTextParser.SpanContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3651,7 +3635,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitSpanLineStartNoStar([NotNull] ReStructuredTextParser.SpanLineStartNoStarContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitSpanLineStartNoStar(ReStructuredTextParser.SpanLineStartNoStarContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3685,7 +3669,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitSpanNoStar([NotNull] ReStructuredTextParser.SpanNoStarContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitSpanNoStar(ReStructuredTextParser.SpanNoStarContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3719,7 +3703,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitStarAtom([NotNull] ReStructuredTextParser.StarAtomContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitStarAtom(ReStructuredTextParser.StarAtomContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3753,7 +3737,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitStarAtoms([NotNull] ReStructuredTextParser.StarAtomsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitStarAtoms(ReStructuredTextParser.StarAtomsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3787,7 +3771,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitStarNoSpace([NotNull] ReStructuredTextParser.StarNoSpaceContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitStarNoSpace(ReStructuredTextParser.StarNoSpaceContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3821,7 +3805,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitStarText([NotNull] ReStructuredTextParser.StarTextContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitStarText(ReStructuredTextParser.StarTextContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3855,7 +3839,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitText([NotNull] ReStructuredTextParser.TextContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitText(ReStructuredTextParser.TextContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3889,7 +3873,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitText_fragment([NotNull] ReStructuredTextParser.Text_fragmentContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitText_fragment(ReStructuredTextParser.Text_fragmentContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3923,7 +3907,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitText_fragment_start([NotNull] ReStructuredTextParser.Text_fragment_startContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitText_fragment_start(ReStructuredTextParser.Text_fragment_startContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3957,7 +3941,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitTextLineStart([NotNull] ReStructuredTextParser.TextLineStartContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitTextLineStart(ReStructuredTextParser.TextLineStartContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3991,7 +3975,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitTextStart([NotNull] ReStructuredTextParser.TextStartContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitTextStart(ReStructuredTextParser.TextStartContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4025,7 +4009,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitTitle([NotNull] ReStructuredTextParser.TitleContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitTitle(ReStructuredTextParser.TitleContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4059,7 +4043,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitUrl([NotNull] ReStructuredTextParser.UrlContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitUrl(ReStructuredTextParser.UrlContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4093,7 +4077,7 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitUrlAtom([NotNull] ReStructuredTextParser.UrlAtomContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitUrlAtom(ReStructuredTextParser.UrlAtomContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4129,7 +4113,8 @@ public interface IReStructuredTextListener : IParseTreeListener</code></pre>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

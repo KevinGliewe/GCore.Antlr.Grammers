@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IPGNVisitor&lt;Result&gt;
    ">
-    <meta name="generator" content="docfx 2.50.0.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -77,27 +77,11 @@
 by <a class="xref" href="GCore.Antlr.Grammers.Pgn.PGNParser.html">PGNParser</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeVisitor&lt;Result&gt;.Visit(Antlr4.Runtime.Tree.IParseTree)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeVisitor&lt;Result&gt;.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeVisitor&lt;Result&gt;.VisitTerminal(Antlr4.Runtime.Tree.ITerminalNode)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeVisitor&lt;Result&gt;.VisitErrorNode(Antlr4.Runtime.Tree.IErrorNode)</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Antlr.Grammers.Pgn.html">GCore.Antlr.Grammers.Pgn</a></h6>
   <h6><strong>Assembly</strong>: Pgn.dll</h6>
   <h5 id="GCore_Antlr_Grammers_Pgn_IPGNVisitor_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
-public interface IPGNVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IPGNVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -131,7 +115,7 @@ public interface IPGNVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</co
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitElement([NotNull] PGNParser.ElementContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitElement(PGNParser.ElementContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -180,7 +164,7 @@ public interface IPGNVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</co
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitElement_sequence([NotNull] PGNParser.Element_sequenceContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitElement_sequence(PGNParser.Element_sequenceContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -229,7 +213,7 @@ public interface IPGNVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</co
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitGame_termination([NotNull] PGNParser.Game_terminationContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitGame_termination(PGNParser.Game_terminationContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -278,7 +262,7 @@ public interface IPGNVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</co
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitMove_number_indication([NotNull] PGNParser.Move_number_indicationContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitMove_number_indication(PGNParser.Move_number_indicationContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -327,7 +311,7 @@ public interface IPGNVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</co
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitMovetext_section([NotNull] PGNParser.Movetext_sectionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitMovetext_section(PGNParser.Movetext_sectionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -376,7 +360,7 @@ public interface IPGNVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</co
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitParse([NotNull] PGNParser.ParseContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitParse(PGNParser.ParseContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -425,7 +409,7 @@ public interface IPGNVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</co
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitPgn_database([NotNull] PGNParser.Pgn_databaseContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitPgn_database(PGNParser.Pgn_databaseContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -474,7 +458,7 @@ public interface IPGNVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</co
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitPgn_game([NotNull] PGNParser.Pgn_gameContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitPgn_game(PGNParser.Pgn_gameContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -523,7 +507,7 @@ public interface IPGNVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</co
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitRecursive_variation([NotNull] PGNParser.Recursive_variationContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitRecursive_variation(PGNParser.Recursive_variationContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -572,7 +556,7 @@ public interface IPGNVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</co
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitSan_move([NotNull] PGNParser.San_moveContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitSan_move(PGNParser.San_moveContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -621,7 +605,7 @@ public interface IPGNVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</co
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitTag_name([NotNull] PGNParser.Tag_nameContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitTag_name(PGNParser.Tag_nameContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -670,7 +654,7 @@ public interface IPGNVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</co
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitTag_pair([NotNull] PGNParser.Tag_pairContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitTag_pair(PGNParser.Tag_pairContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -719,7 +703,7 @@ public interface IPGNVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</co
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitTag_section([NotNull] PGNParser.Tag_sectionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitTag_section(PGNParser.Tag_sectionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -768,7 +752,7 @@ public interface IPGNVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</co
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitTag_value([NotNull] PGNParser.Tag_valueContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitTag_value(PGNParser.Tag_valueContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -819,7 +803,8 @@ public interface IPGNVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</co
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IGraphQLVisitor&lt;Result&gt;
    ">
-    <meta name="generator" content="docfx 2.50.0.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -77,27 +77,11 @@
 by <a class="xref" href="GCore.Antlr.Grammers.Graphql.GraphQLParser.html">GraphQLParser</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeVisitor&lt;Result&gt;.Visit(Antlr4.Runtime.Tree.IParseTree)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeVisitor&lt;Result&gt;.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeVisitor&lt;Result&gt;.VisitTerminal(Antlr4.Runtime.Tree.ITerminalNode)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeVisitor&lt;Result&gt;.VisitErrorNode(Antlr4.Runtime.Tree.IErrorNode)</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Antlr.Grammers.Graphql.html">GCore.Antlr.Grammers.Graphql</a></h6>
   <h6><strong>Assembly</strong>: Graphql.dll</h6>
   <h5 id="GCore_Antlr_Grammers_Graphql_IGraphQLVisitor_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
-public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -131,7 +115,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitAlias([NotNull] GraphQLParser.AliasContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitAlias(GraphQLParser.AliasContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -180,7 +164,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitArgument([NotNull] GraphQLParser.ArgumentContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitArgument(GraphQLParser.ArgumentContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -229,7 +213,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitArguments([NotNull] GraphQLParser.ArgumentsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitArguments(GraphQLParser.ArgumentsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -278,7 +262,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitArgumentsDefinition([NotNull] GraphQLParser.ArgumentsDefinitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitArgumentsDefinition(GraphQLParser.ArgumentsDefinitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -327,7 +311,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitBooleanValue([NotNull] GraphQLParser.BooleanValueContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitBooleanValue(GraphQLParser.BooleanValueContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -376,7 +360,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitDefaultValue([NotNull] GraphQLParser.DefaultValueContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitDefaultValue(GraphQLParser.DefaultValueContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -425,7 +409,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitDefinition([NotNull] GraphQLParser.DefinitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitDefinition(GraphQLParser.DefinitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -474,7 +458,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitDescription([NotNull] GraphQLParser.DescriptionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitDescription(GraphQLParser.DescriptionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -523,7 +507,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitDirective([NotNull] GraphQLParser.DirectiveContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitDirective(GraphQLParser.DirectiveContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -572,7 +556,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitDirectiveDefinition([NotNull] GraphQLParser.DirectiveDefinitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitDirectiveDefinition(GraphQLParser.DirectiveDefinitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -621,7 +605,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitDirectiveLocation([NotNull] GraphQLParser.DirectiveLocationContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitDirectiveLocation(GraphQLParser.DirectiveLocationContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -670,7 +654,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitDirectiveLocations([NotNull] GraphQLParser.DirectiveLocationsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitDirectiveLocations(GraphQLParser.DirectiveLocationsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -719,7 +703,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitDirectives([NotNull] GraphQLParser.DirectivesContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitDirectives(GraphQLParser.DirectivesContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -768,7 +752,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitDocument([NotNull] GraphQLParser.DocumentContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitDocument(GraphQLParser.DocumentContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -817,7 +801,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitEnumTypeDefinition([NotNull] GraphQLParser.EnumTypeDefinitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitEnumTypeDefinition(GraphQLParser.EnumTypeDefinitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -866,7 +850,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitEnumTypeExtension([NotNull] GraphQLParser.EnumTypeExtensionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitEnumTypeExtension(GraphQLParser.EnumTypeExtensionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -915,7 +899,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitEnumValue([NotNull] GraphQLParser.EnumValueContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitEnumValue(GraphQLParser.EnumValueContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -964,7 +948,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitEnumValueDefinition([NotNull] GraphQLParser.EnumValueDefinitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitEnumValueDefinition(GraphQLParser.EnumValueDefinitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1013,7 +997,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitEnumValuesDefinition([NotNull] GraphQLParser.EnumValuesDefinitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitEnumValuesDefinition(GraphQLParser.EnumValuesDefinitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1062,7 +1046,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitExecutableDefinition([NotNull] GraphQLParser.ExecutableDefinitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitExecutableDefinition(GraphQLParser.ExecutableDefinitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1111,7 +1095,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitExecutableDirectiveLocation([NotNull] GraphQLParser.ExecutableDirectiveLocationContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitExecutableDirectiveLocation(GraphQLParser.ExecutableDirectiveLocationContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1160,7 +1144,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitField([NotNull] GraphQLParser.FieldContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitField(GraphQLParser.FieldContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1209,7 +1193,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitFieldDefinition([NotNull] GraphQLParser.FieldDefinitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitFieldDefinition(GraphQLParser.FieldDefinitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1258,7 +1242,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitFieldsDefinition([NotNull] GraphQLParser.FieldsDefinitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitFieldsDefinition(GraphQLParser.FieldsDefinitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1307,7 +1291,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitFloatValue([NotNull] GraphQLParser.FloatValueContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitFloatValue(GraphQLParser.FloatValueContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1356,7 +1340,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitFragmentDefinition([NotNull] GraphQLParser.FragmentDefinitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitFragmentDefinition(GraphQLParser.FragmentDefinitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1405,7 +1389,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitFragmentName([NotNull] GraphQLParser.FragmentNameContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitFragmentName(GraphQLParser.FragmentNameContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1454,7 +1438,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitFragmentSpread([NotNull] GraphQLParser.FragmentSpreadContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitFragmentSpread(GraphQLParser.FragmentSpreadContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1503,7 +1487,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitImplementsInterfaces([NotNull] GraphQLParser.ImplementsInterfacesContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitImplementsInterfaces(GraphQLParser.ImplementsInterfacesContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1552,7 +1536,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitInlineFragment([NotNull] GraphQLParser.InlineFragmentContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitInlineFragment(GraphQLParser.InlineFragmentContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1601,7 +1585,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitInputFieldsDefinition([NotNull] GraphQLParser.InputFieldsDefinitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitInputFieldsDefinition(GraphQLParser.InputFieldsDefinitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1650,7 +1634,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitInputObjectTypeDefinition([NotNull] GraphQLParser.InputObjectTypeDefinitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitInputObjectTypeDefinition(GraphQLParser.InputObjectTypeDefinitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1699,7 +1683,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitInputObjectTypeExtension([NotNull] GraphQLParser.InputObjectTypeExtensionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitInputObjectTypeExtension(GraphQLParser.InputObjectTypeExtensionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1748,7 +1732,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitInputValueDefinition([NotNull] GraphQLParser.InputValueDefinitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitInputValueDefinition(GraphQLParser.InputValueDefinitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1797,7 +1781,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitInterfaceTypeDefinition([NotNull] GraphQLParser.InterfaceTypeDefinitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitInterfaceTypeDefinition(GraphQLParser.InterfaceTypeDefinitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1846,7 +1830,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitInterfaceTypeExtension([NotNull] GraphQLParser.InterfaceTypeExtensionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitInterfaceTypeExtension(GraphQLParser.InterfaceTypeExtensionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1895,7 +1879,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitIntValue([NotNull] GraphQLParser.IntValueContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitIntValue(GraphQLParser.IntValueContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1944,7 +1928,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitListType([NotNull] GraphQLParser.ListTypeContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitListType(GraphQLParser.ListTypeContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1993,7 +1977,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitListValue([NotNull] GraphQLParser.ListValueContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitListValue(GraphQLParser.ListValueContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2042,7 +2026,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitName([NotNull] GraphQLParser.NameContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitName(GraphQLParser.NameContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2091,7 +2075,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitNamedType([NotNull] GraphQLParser.NamedTypeContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitNamedType(GraphQLParser.NamedTypeContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2140,7 +2124,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitNullValue([NotNull] GraphQLParser.NullValueContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitNullValue(GraphQLParser.NullValueContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2189,7 +2173,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitObjectField([NotNull] GraphQLParser.ObjectFieldContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitObjectField(GraphQLParser.ObjectFieldContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2238,7 +2222,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitObjectTypeDefinition([NotNull] GraphQLParser.ObjectTypeDefinitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitObjectTypeDefinition(GraphQLParser.ObjectTypeDefinitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2287,7 +2271,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitObjectTypeExtension([NotNull] GraphQLParser.ObjectTypeExtensionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitObjectTypeExtension(GraphQLParser.ObjectTypeExtensionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2336,7 +2320,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitObjectValue([NotNull] GraphQLParser.ObjectValueContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitObjectValue(GraphQLParser.ObjectValueContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2385,7 +2369,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitOperationDefinition([NotNull] GraphQLParser.OperationDefinitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitOperationDefinition(GraphQLParser.OperationDefinitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2434,7 +2418,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitOperationType([NotNull] GraphQLParser.OperationTypeContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitOperationType(GraphQLParser.OperationTypeContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2483,7 +2467,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitOperationTypeDefinition([NotNull] GraphQLParser.OperationTypeDefinitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitOperationTypeDefinition(GraphQLParser.OperationTypeDefinitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2532,7 +2516,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitRootOperationTypeDefinition([NotNull] GraphQLParser.RootOperationTypeDefinitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitRootOperationTypeDefinition(GraphQLParser.RootOperationTypeDefinitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2581,7 +2565,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitScalarTypeDefinition([NotNull] GraphQLParser.ScalarTypeDefinitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitScalarTypeDefinition(GraphQLParser.ScalarTypeDefinitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2630,7 +2614,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitScalarTypeExtension([NotNull] GraphQLParser.ScalarTypeExtensionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitScalarTypeExtension(GraphQLParser.ScalarTypeExtensionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2679,7 +2663,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitSchemaDefinition([NotNull] GraphQLParser.SchemaDefinitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitSchemaDefinition(GraphQLParser.SchemaDefinitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2728,7 +2712,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitSchemaExtension([NotNull] GraphQLParser.SchemaExtensionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitSchemaExtension(GraphQLParser.SchemaExtensionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2777,7 +2761,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitSelection([NotNull] GraphQLParser.SelectionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitSelection(GraphQLParser.SelectionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2826,7 +2810,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitSelectionSet([NotNull] GraphQLParser.SelectionSetContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitSelectionSet(GraphQLParser.SelectionSetContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2875,7 +2859,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitStringValue([NotNull] GraphQLParser.StringValueContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitStringValue(GraphQLParser.StringValueContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2924,7 +2908,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitType_([NotNull] GraphQLParser.Type_Context context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitType_(GraphQLParser.Type_Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2973,7 +2957,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitTypeCondition([NotNull] GraphQLParser.TypeConditionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitTypeCondition(GraphQLParser.TypeConditionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3022,7 +3006,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitTypeDefinition([NotNull] GraphQLParser.TypeDefinitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitTypeDefinition(GraphQLParser.TypeDefinitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3071,7 +3055,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitTypeExtension([NotNull] GraphQLParser.TypeExtensionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitTypeExtension(GraphQLParser.TypeExtensionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3120,7 +3104,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitTypeSystemDefinition([NotNull] GraphQLParser.TypeSystemDefinitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitTypeSystemDefinition(GraphQLParser.TypeSystemDefinitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3169,7 +3153,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitTypeSystemDirectiveLocation([NotNull] GraphQLParser.TypeSystemDirectiveLocationContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitTypeSystemDirectiveLocation(GraphQLParser.TypeSystemDirectiveLocationContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3218,7 +3202,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitTypeSystemExtension([NotNull] GraphQLParser.TypeSystemExtensionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitTypeSystemExtension(GraphQLParser.TypeSystemExtensionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3267,7 +3251,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitUnionMemberTypes([NotNull] GraphQLParser.UnionMemberTypesContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitUnionMemberTypes(GraphQLParser.UnionMemberTypesContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3316,7 +3300,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitUnionTypeDefinition([NotNull] GraphQLParser.UnionTypeDefinitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitUnionTypeDefinition(GraphQLParser.UnionTypeDefinitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3365,7 +3349,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitUnionTypeExtension([NotNull] GraphQLParser.UnionTypeExtensionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitUnionTypeExtension(GraphQLParser.UnionTypeExtensionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3414,7 +3398,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitValue([NotNull] GraphQLParser.ValueContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitValue(GraphQLParser.ValueContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3463,7 +3447,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitVariable([NotNull] GraphQLParser.VariableContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitVariable(GraphQLParser.VariableContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3512,7 +3496,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitVariableDefinition([NotNull] GraphQLParser.VariableDefinitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitVariableDefinition(GraphQLParser.VariableDefinitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3561,7 +3545,7 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitVariableDefinitions([NotNull] GraphQLParser.VariableDefinitionsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitVariableDefinitions(GraphQLParser.VariableDefinitionsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3612,7 +3596,8 @@ public interface IGraphQLVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

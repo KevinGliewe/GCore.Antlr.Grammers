@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IPGNListener
    ">
-    <meta name="generator" content="docfx 2.50.0.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -77,27 +77,11 @@
 <a class="xref" href="GCore.Antlr.Grammers.Pgn.PGNParser.html">PGNParser</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.VisitTerminal(Antlr4.Runtime.Tree.ITerminalNode)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.VisitErrorNode(Antlr4.Runtime.Tree.IErrorNode)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.EnterEveryRule(Antlr4.Runtime.ParserRuleContext)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.ExitEveryRule(Antlr4.Runtime.ParserRuleContext)</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Antlr.Grammers.Pgn.html">GCore.Antlr.Grammers.Pgn</a></h6>
   <h6><strong>Assembly</strong>: Pgn.dll</h6>
   <h5 id="GCore_Antlr_Grammers_Pgn_IPGNListener_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
-public interface IPGNListener : IParseTreeListener</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IPGNListener : Antlr4.Runtime.Tree.IParseTreeListener</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -115,7 +99,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterElement([NotNull] PGNParser.ElementContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterElement(PGNParser.ElementContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -149,7 +133,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterElement_sequence([NotNull] PGNParser.Element_sequenceContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterElement_sequence(PGNParser.Element_sequenceContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -183,7 +167,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterGame_termination([NotNull] PGNParser.Game_terminationContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterGame_termination(PGNParser.Game_terminationContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -217,7 +201,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterMove_number_indication([NotNull] PGNParser.Move_number_indicationContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterMove_number_indication(PGNParser.Move_number_indicationContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -251,7 +235,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterMovetext_section([NotNull] PGNParser.Movetext_sectionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterMovetext_section(PGNParser.Movetext_sectionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -285,7 +269,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterParse([NotNull] PGNParser.ParseContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterParse(PGNParser.ParseContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -319,7 +303,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterPgn_database([NotNull] PGNParser.Pgn_databaseContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterPgn_database(PGNParser.Pgn_databaseContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -353,7 +337,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterPgn_game([NotNull] PGNParser.Pgn_gameContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterPgn_game(PGNParser.Pgn_gameContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -387,7 +371,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterRecursive_variation([NotNull] PGNParser.Recursive_variationContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterRecursive_variation(PGNParser.Recursive_variationContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -421,7 +405,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterSan_move([NotNull] PGNParser.San_moveContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterSan_move(PGNParser.San_moveContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -455,7 +439,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterTag_name([NotNull] PGNParser.Tag_nameContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterTag_name(PGNParser.Tag_nameContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -489,7 +473,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterTag_pair([NotNull] PGNParser.Tag_pairContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterTag_pair(PGNParser.Tag_pairContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -523,7 +507,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterTag_section([NotNull] PGNParser.Tag_sectionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterTag_section(PGNParser.Tag_sectionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -557,7 +541,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterTag_value([NotNull] PGNParser.Tag_valueContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterTag_value(PGNParser.Tag_valueContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -591,7 +575,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitElement([NotNull] PGNParser.ElementContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitElement(PGNParser.ElementContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -625,7 +609,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitElement_sequence([NotNull] PGNParser.Element_sequenceContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitElement_sequence(PGNParser.Element_sequenceContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -659,7 +643,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitGame_termination([NotNull] PGNParser.Game_terminationContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitGame_termination(PGNParser.Game_terminationContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -693,7 +677,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitMove_number_indication([NotNull] PGNParser.Move_number_indicationContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitMove_number_indication(PGNParser.Move_number_indicationContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -727,7 +711,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitMovetext_section([NotNull] PGNParser.Movetext_sectionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitMovetext_section(PGNParser.Movetext_sectionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -761,7 +745,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitParse([NotNull] PGNParser.ParseContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitParse(PGNParser.ParseContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -795,7 +779,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitPgn_database([NotNull] PGNParser.Pgn_databaseContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitPgn_database(PGNParser.Pgn_databaseContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -829,7 +813,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitPgn_game([NotNull] PGNParser.Pgn_gameContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitPgn_game(PGNParser.Pgn_gameContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -863,7 +847,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitRecursive_variation([NotNull] PGNParser.Recursive_variationContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitRecursive_variation(PGNParser.Recursive_variationContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -897,7 +881,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitSan_move([NotNull] PGNParser.San_moveContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitSan_move(PGNParser.San_moveContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -931,7 +915,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitTag_name([NotNull] PGNParser.Tag_nameContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitTag_name(PGNParser.Tag_nameContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -965,7 +949,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitTag_pair([NotNull] PGNParser.Tag_pairContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitTag_pair(PGNParser.Tag_pairContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -999,7 +983,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitTag_section([NotNull] PGNParser.Tag_sectionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitTag_section(PGNParser.Tag_sectionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1033,7 +1017,7 @@ public interface IPGNListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitTag_value([NotNull] PGNParser.Tag_valueContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitTag_value(PGNParser.Tag_valueContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1069,7 +1053,8 @@ public interface IPGNListener : IParseTreeListener</code></pre>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

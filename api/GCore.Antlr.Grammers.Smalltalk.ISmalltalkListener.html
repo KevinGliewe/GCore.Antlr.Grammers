@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface ISmalltalkListener
    ">
-    <meta name="generator" content="docfx 2.50.0.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -77,27 +77,11 @@
 <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.SmalltalkParser.html">SmalltalkParser</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.VisitTerminal(Antlr4.Runtime.Tree.ITerminalNode)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.VisitErrorNode(Antlr4.Runtime.Tree.IErrorNode)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.EnterEveryRule(Antlr4.Runtime.ParserRuleContext)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.ExitEveryRule(Antlr4.Runtime.ParserRuleContext)</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.html">GCore.Antlr.Grammers.Smalltalk</a></h6>
   <h6><strong>Assembly</strong>: Smalltalk.dll</h6>
   <h5 id="GCore_Antlr_Grammers_Smalltalk_ISmalltalkListener_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
-public interface ISmalltalkListener : IParseTreeListener</code></pre>
+    <pre><code class="lang-csharp hljs">public interface ISmalltalkListener : Antlr4.Runtime.Tree.IParseTreeListener</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -115,7 +99,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterAnswer([NotNull] SmalltalkParser.AnswerContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterAnswer(SmalltalkParser.AnswerContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -149,7 +133,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterAssignment([NotNull] SmalltalkParser.AssignmentContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterAssignment(SmalltalkParser.AssignmentContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -183,7 +167,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterBareLiteralArray([NotNull] SmalltalkParser.BareLiteralArrayContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterBareLiteralArray(SmalltalkParser.BareLiteralArrayContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -217,7 +201,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterBareSymbol([NotNull] SmalltalkParser.BareSymbolContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterBareSymbol(SmalltalkParser.BareSymbolContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -251,7 +235,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterBinaryMessage([NotNull] SmalltalkParser.BinaryMessageContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterBinaryMessage(SmalltalkParser.BinaryMessageContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -285,7 +269,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterBinarySend([NotNull] SmalltalkParser.BinarySendContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterBinarySend(SmalltalkParser.BinarySendContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -319,7 +303,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterBinaryTail([NotNull] SmalltalkParser.BinaryTailContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterBinaryTail(SmalltalkParser.BinaryTailContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -353,7 +337,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterBlock([NotNull] SmalltalkParser.BlockContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterBlock(SmalltalkParser.BlockContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -387,7 +371,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterBlockParamList([NotNull] SmalltalkParser.BlockParamListContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterBlockParamList(SmalltalkParser.BlockParamListContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -421,7 +405,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterCascade([NotNull] SmalltalkParser.CascadeContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterCascade(SmalltalkParser.CascadeContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -455,7 +439,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterCharConstant([NotNull] SmalltalkParser.CharConstantContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterCharConstant(SmalltalkParser.CharConstantContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -489,7 +473,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterDynamicArray([NotNull] SmalltalkParser.DynamicArrayContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterDynamicArray(SmalltalkParser.DynamicArrayContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -523,7 +507,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterDynamicDictionary([NotNull] SmalltalkParser.DynamicDictionaryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterDynamicDictionary(SmalltalkParser.DynamicDictionaryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -557,7 +541,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterExpression([NotNull] SmalltalkParser.ExpressionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterExpression(SmalltalkParser.ExpressionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -591,7 +575,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterExpressionList([NotNull] SmalltalkParser.ExpressionListContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterExpressionList(SmalltalkParser.ExpressionListContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -625,7 +609,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterExpressions([NotNull] SmalltalkParser.ExpressionsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterExpressions(SmalltalkParser.ExpressionsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -647,19 +631,19 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Smalltalk_ISmalltalkListener_EnterHex_GCore_Antlr_Grammers_Smalltalk_SmalltalkParser_HexContext_.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Smalltalk.ISmalltalkListener.EnterHex(GCore.Antlr.Grammers.Smalltalk.SmalltalkParser.HexContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Smalltalk_ISmalltalkListener_EnterHex__GCore_Antlr_Grammers_Smalltalk_SmalltalkParser_Hex_Context_.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Smalltalk.ISmalltalkListener.EnterHex_(GCore.Antlr.Grammers.Smalltalk.SmalltalkParser.Hex_Context)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Smalltalk/SmalltalkListener.cs/#L365">View Source</a>
   </span>
-  <a id="GCore_Antlr_Grammers_Smalltalk_ISmalltalkListener_EnterHex_" data-uid="GCore.Antlr.Grammers.Smalltalk.ISmalltalkListener.EnterHex*"></a>
-  <h4 id="GCore_Antlr_Grammers_Smalltalk_ISmalltalkListener_EnterHex_GCore_Antlr_Grammers_Smalltalk_SmalltalkParser_HexContext_" data-uid="GCore.Antlr.Grammers.Smalltalk.ISmalltalkListener.EnterHex(GCore.Antlr.Grammers.Smalltalk.SmalltalkParser.HexContext)">EnterHex(SmalltalkParser.HexContext)</h4>
-  <div class="markdown level1 summary"><p>Enter a parse tree produced by <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.SmalltalkParser.html#GCore_Antlr_Grammers_Smalltalk_SmalltalkParser_hex">hex()</a>.</p>
+  <a id="GCore_Antlr_Grammers_Smalltalk_ISmalltalkListener_EnterHex__" data-uid="GCore.Antlr.Grammers.Smalltalk.ISmalltalkListener.EnterHex_*"></a>
+  <h4 id="GCore_Antlr_Grammers_Smalltalk_ISmalltalkListener_EnterHex__GCore_Antlr_Grammers_Smalltalk_SmalltalkParser_Hex_Context_" data-uid="GCore.Antlr.Grammers.Smalltalk.ISmalltalkListener.EnterHex_(GCore.Antlr.Grammers.Smalltalk.SmalltalkParser.Hex_Context)">EnterHex_(SmalltalkParser.Hex_Context)</h4>
+  <div class="markdown level1 summary"><p>Enter a parse tree produced by <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.SmalltalkParser.html#GCore_Antlr_Grammers_Smalltalk_SmalltalkParser_hex_">hex_()</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterHex([NotNull] SmalltalkParser.HexContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterHex_(SmalltalkParser.Hex_Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -672,7 +656,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GCore.Antlr.Grammers.Smalltalk.SmalltalkParser.HexContext.html">SmalltalkParser.HexContext</a></td>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Smalltalk.SmalltalkParser.Hex_Context.html">SmalltalkParser.Hex_Context</a></td>
         <td><span class="parametername">context</span></td>
         <td><p>The parse tree.</p>
 </td>
@@ -693,7 +677,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterKeywordMessage([NotNull] SmalltalkParser.KeywordMessageContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterKeywordMessage(SmalltalkParser.KeywordMessageContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -727,7 +711,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterKeywordPair([NotNull] SmalltalkParser.KeywordPairContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterKeywordPair(SmalltalkParser.KeywordPairContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -761,7 +745,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterKeywords([NotNull] SmalltalkParser.KeywordsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterKeywords(SmalltalkParser.KeywordsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -795,7 +779,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterKeywordSend([NotNull] SmalltalkParser.KeywordSendContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterKeywordSend(SmalltalkParser.KeywordSendContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -829,7 +813,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterLiteral([NotNull] SmalltalkParser.LiteralContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterLiteral(SmalltalkParser.LiteralContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -863,7 +847,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterLiteralArray([NotNull] SmalltalkParser.LiteralArrayContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterLiteralArray(SmalltalkParser.LiteralArrayContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -897,7 +881,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterLiteralArrayRest([NotNull] SmalltalkParser.LiteralArrayRestContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterLiteralArrayRest(SmalltalkParser.LiteralArrayRestContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -931,7 +915,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterMessage([NotNull] SmalltalkParser.MessageContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterMessage(SmalltalkParser.MessageContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -965,7 +949,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterNumber([NotNull] SmalltalkParser.NumberContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterNumber(SmalltalkParser.NumberContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -999,7 +983,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterNumberExp([NotNull] SmalltalkParser.NumberExpContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterNumberExp(SmalltalkParser.NumberExpContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1033,7 +1017,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterOperand([NotNull] SmalltalkParser.OperandContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterOperand(SmalltalkParser.OperandContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1067,7 +1051,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterParsetimeLiteral([NotNull] SmalltalkParser.ParsetimeLiteralContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterParsetimeLiteral(SmalltalkParser.ParsetimeLiteralContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1101,7 +1085,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterPrimitive([NotNull] SmalltalkParser.PrimitiveContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterPrimitive(SmalltalkParser.PrimitiveContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1135,7 +1119,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterPseudoVariable([NotNull] SmalltalkParser.PseudoVariableContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterPseudoVariable(SmalltalkParser.PseudoVariableContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1169,7 +1153,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterReference([NotNull] SmalltalkParser.ReferenceContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterReference(SmalltalkParser.ReferenceContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1203,7 +1187,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterRuntimeLiteral([NotNull] SmalltalkParser.RuntimeLiteralContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterRuntimeLiteral(SmalltalkParser.RuntimeLiteralContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1237,7 +1221,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterScript([NotNull] SmalltalkParser.ScriptContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterScript(SmalltalkParser.ScriptContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1271,7 +1255,7 @@ public interface ISmalltalkListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterSequence([NotNull] SmalltalkParser.SequenceContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterSequence(SmalltalkParser.SequenceContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1306,7 +1290,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterStatementAnswer([NotNull] SmalltalkParser.StatementAnswerContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterStatementAnswer(SmalltalkParser.StatementAnswerContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1341,7 +1325,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterStatementExpressions([NotNull] SmalltalkParser.StatementExpressionsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterStatementExpressions(SmalltalkParser.StatementExpressionsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1376,7 +1360,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterStatementExpressionsAnswer([NotNull] SmalltalkParser.StatementExpressionsAnswerContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterStatementExpressionsAnswer(SmalltalkParser.StatementExpressionsAnswerContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1410,7 +1394,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterStFloat([NotNull] SmalltalkParser.StFloatContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterStFloat(SmalltalkParser.StFloatContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1444,7 +1428,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterStInteger([NotNull] SmalltalkParser.StIntegerContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterStInteger(SmalltalkParser.StIntegerContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1478,7 +1462,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterString([NotNull] SmalltalkParser.StringContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterString(SmalltalkParser.StringContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1512,7 +1496,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterSubexpression([NotNull] SmalltalkParser.SubexpressionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterSubexpression(SmalltalkParser.SubexpressionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1546,7 +1530,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterSymbol([NotNull] SmalltalkParser.SymbolContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterSymbol(SmalltalkParser.SymbolContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1580,7 +1564,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterTemps([NotNull] SmalltalkParser.TempsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterTemps(SmalltalkParser.TempsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1614,7 +1598,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterUnaryMessage([NotNull] SmalltalkParser.UnaryMessageContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterUnaryMessage(SmalltalkParser.UnaryMessageContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1648,7 +1632,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterUnarySelector([NotNull] SmalltalkParser.UnarySelectorContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterUnarySelector(SmalltalkParser.UnarySelectorContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1682,7 +1666,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterUnarySend([NotNull] SmalltalkParser.UnarySendContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterUnarySend(SmalltalkParser.UnarySendContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1716,7 +1700,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterUnaryTail([NotNull] SmalltalkParser.UnaryTailContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterUnaryTail(SmalltalkParser.UnaryTailContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1750,7 +1734,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterVariable([NotNull] SmalltalkParser.VariableContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterVariable(SmalltalkParser.VariableContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1784,7 +1768,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterWs([NotNull] SmalltalkParser.WsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterWs(SmalltalkParser.WsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1818,7 +1802,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitAnswer([NotNull] SmalltalkParser.AnswerContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitAnswer(SmalltalkParser.AnswerContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1852,7 +1836,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitAssignment([NotNull] SmalltalkParser.AssignmentContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitAssignment(SmalltalkParser.AssignmentContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1886,7 +1870,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitBareLiteralArray([NotNull] SmalltalkParser.BareLiteralArrayContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitBareLiteralArray(SmalltalkParser.BareLiteralArrayContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1920,7 +1904,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitBareSymbol([NotNull] SmalltalkParser.BareSymbolContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitBareSymbol(SmalltalkParser.BareSymbolContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1954,7 +1938,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitBinaryMessage([NotNull] SmalltalkParser.BinaryMessageContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitBinaryMessage(SmalltalkParser.BinaryMessageContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1988,7 +1972,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitBinarySend([NotNull] SmalltalkParser.BinarySendContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitBinarySend(SmalltalkParser.BinarySendContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2022,7 +2006,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitBinaryTail([NotNull] SmalltalkParser.BinaryTailContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitBinaryTail(SmalltalkParser.BinaryTailContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2056,7 +2040,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitBlock([NotNull] SmalltalkParser.BlockContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitBlock(SmalltalkParser.BlockContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2090,7 +2074,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitBlockParamList([NotNull] SmalltalkParser.BlockParamListContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitBlockParamList(SmalltalkParser.BlockParamListContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2124,7 +2108,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitCascade([NotNull] SmalltalkParser.CascadeContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitCascade(SmalltalkParser.CascadeContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2158,7 +2142,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitCharConstant([NotNull] SmalltalkParser.CharConstantContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitCharConstant(SmalltalkParser.CharConstantContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2192,7 +2176,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitDynamicArray([NotNull] SmalltalkParser.DynamicArrayContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitDynamicArray(SmalltalkParser.DynamicArrayContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2226,7 +2210,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitDynamicDictionary([NotNull] SmalltalkParser.DynamicDictionaryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitDynamicDictionary(SmalltalkParser.DynamicDictionaryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2260,7 +2244,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitExpression([NotNull] SmalltalkParser.ExpressionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitExpression(SmalltalkParser.ExpressionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2294,7 +2278,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitExpressionList([NotNull] SmalltalkParser.ExpressionListContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitExpressionList(SmalltalkParser.ExpressionListContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2328,7 +2312,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitExpressions([NotNull] SmalltalkParser.ExpressionsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitExpressions(SmalltalkParser.ExpressionsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2350,19 +2334,19 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Smalltalk_ISmalltalkListener_ExitHex_GCore_Antlr_Grammers_Smalltalk_SmalltalkParser_HexContext_.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Smalltalk.ISmalltalkListener.ExitHex(GCore.Antlr.Grammers.Smalltalk.SmalltalkParser.HexContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Smalltalk_ISmalltalkListener_ExitHex__GCore_Antlr_Grammers_Smalltalk_SmalltalkParser_Hex_Context_.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Smalltalk.ISmalltalkListener.ExitHex_(GCore.Antlr.Grammers.Smalltalk.SmalltalkParser.Hex_Context)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Smalltalk/SmalltalkListener.cs/#L370">View Source</a>
   </span>
-  <a id="GCore_Antlr_Grammers_Smalltalk_ISmalltalkListener_ExitHex_" data-uid="GCore.Antlr.Grammers.Smalltalk.ISmalltalkListener.ExitHex*"></a>
-  <h4 id="GCore_Antlr_Grammers_Smalltalk_ISmalltalkListener_ExitHex_GCore_Antlr_Grammers_Smalltalk_SmalltalkParser_HexContext_" data-uid="GCore.Antlr.Grammers.Smalltalk.ISmalltalkListener.ExitHex(GCore.Antlr.Grammers.Smalltalk.SmalltalkParser.HexContext)">ExitHex(SmalltalkParser.HexContext)</h4>
-  <div class="markdown level1 summary"><p>Exit a parse tree produced by <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.SmalltalkParser.html#GCore_Antlr_Grammers_Smalltalk_SmalltalkParser_hex">hex()</a>.</p>
+  <a id="GCore_Antlr_Grammers_Smalltalk_ISmalltalkListener_ExitHex__" data-uid="GCore.Antlr.Grammers.Smalltalk.ISmalltalkListener.ExitHex_*"></a>
+  <h4 id="GCore_Antlr_Grammers_Smalltalk_ISmalltalkListener_ExitHex__GCore_Antlr_Grammers_Smalltalk_SmalltalkParser_Hex_Context_" data-uid="GCore.Antlr.Grammers.Smalltalk.ISmalltalkListener.ExitHex_(GCore.Antlr.Grammers.Smalltalk.SmalltalkParser.Hex_Context)">ExitHex_(SmalltalkParser.Hex_Context)</h4>
+  <div class="markdown level1 summary"><p>Exit a parse tree produced by <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.SmalltalkParser.html#GCore_Antlr_Grammers_Smalltalk_SmalltalkParser_hex_">hex_()</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitHex([NotNull] SmalltalkParser.HexContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitHex_(SmalltalkParser.Hex_Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2375,7 +2359,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GCore.Antlr.Grammers.Smalltalk.SmalltalkParser.HexContext.html">SmalltalkParser.HexContext</a></td>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Smalltalk.SmalltalkParser.Hex_Context.html">SmalltalkParser.Hex_Context</a></td>
         <td><span class="parametername">context</span></td>
         <td><p>The parse tree.</p>
 </td>
@@ -2396,7 +2380,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitKeywordMessage([NotNull] SmalltalkParser.KeywordMessageContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitKeywordMessage(SmalltalkParser.KeywordMessageContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2430,7 +2414,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitKeywordPair([NotNull] SmalltalkParser.KeywordPairContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitKeywordPair(SmalltalkParser.KeywordPairContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2464,7 +2448,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitKeywords([NotNull] SmalltalkParser.KeywordsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitKeywords(SmalltalkParser.KeywordsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2498,7 +2482,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitKeywordSend([NotNull] SmalltalkParser.KeywordSendContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitKeywordSend(SmalltalkParser.KeywordSendContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2532,7 +2516,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitLiteral([NotNull] SmalltalkParser.LiteralContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitLiteral(SmalltalkParser.LiteralContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2566,7 +2550,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitLiteralArray([NotNull] SmalltalkParser.LiteralArrayContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitLiteralArray(SmalltalkParser.LiteralArrayContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2600,7 +2584,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitLiteralArrayRest([NotNull] SmalltalkParser.LiteralArrayRestContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitLiteralArrayRest(SmalltalkParser.LiteralArrayRestContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2634,7 +2618,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitMessage([NotNull] SmalltalkParser.MessageContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitMessage(SmalltalkParser.MessageContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2668,7 +2652,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitNumber([NotNull] SmalltalkParser.NumberContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitNumber(SmalltalkParser.NumberContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2702,7 +2686,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitNumberExp([NotNull] SmalltalkParser.NumberExpContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitNumberExp(SmalltalkParser.NumberExpContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2736,7 +2720,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitOperand([NotNull] SmalltalkParser.OperandContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitOperand(SmalltalkParser.OperandContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2770,7 +2754,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitParsetimeLiteral([NotNull] SmalltalkParser.ParsetimeLiteralContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitParsetimeLiteral(SmalltalkParser.ParsetimeLiteralContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2804,7 +2788,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitPrimitive([NotNull] SmalltalkParser.PrimitiveContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitPrimitive(SmalltalkParser.PrimitiveContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2838,7 +2822,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitPseudoVariable([NotNull] SmalltalkParser.PseudoVariableContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitPseudoVariable(SmalltalkParser.PseudoVariableContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2872,7 +2856,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitReference([NotNull] SmalltalkParser.ReferenceContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitReference(SmalltalkParser.ReferenceContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2906,7 +2890,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitRuntimeLiteral([NotNull] SmalltalkParser.RuntimeLiteralContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitRuntimeLiteral(SmalltalkParser.RuntimeLiteralContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2940,7 +2924,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitScript([NotNull] SmalltalkParser.ScriptContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitScript(SmalltalkParser.ScriptContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2974,7 +2958,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitSequence([NotNull] SmalltalkParser.SequenceContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitSequence(SmalltalkParser.SequenceContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3009,7 +2993,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitStatementAnswer([NotNull] SmalltalkParser.StatementAnswerContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitStatementAnswer(SmalltalkParser.StatementAnswerContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3044,7 +3028,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitStatementExpressions([NotNull] SmalltalkParser.StatementExpressionsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitStatementExpressions(SmalltalkParser.StatementExpressionsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3079,7 +3063,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitStatementExpressionsAnswer([NotNull] SmalltalkParser.StatementExpressionsAnswerContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitStatementExpressionsAnswer(SmalltalkParser.StatementExpressionsAnswerContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3113,7 +3097,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitStFloat([NotNull] SmalltalkParser.StFloatContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitStFloat(SmalltalkParser.StFloatContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3147,7 +3131,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitStInteger([NotNull] SmalltalkParser.StIntegerContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitStInteger(SmalltalkParser.StIntegerContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3181,7 +3165,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitString([NotNull] SmalltalkParser.StringContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitString(SmalltalkParser.StringContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3215,7 +3199,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitSubexpression([NotNull] SmalltalkParser.SubexpressionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitSubexpression(SmalltalkParser.SubexpressionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3249,7 +3233,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitSymbol([NotNull] SmalltalkParser.SymbolContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitSymbol(SmalltalkParser.SymbolContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3283,7 +3267,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitTemps([NotNull] SmalltalkParser.TempsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitTemps(SmalltalkParser.TempsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3317,7 +3301,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitUnaryMessage([NotNull] SmalltalkParser.UnaryMessageContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitUnaryMessage(SmalltalkParser.UnaryMessageContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3351,7 +3335,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitUnarySelector([NotNull] SmalltalkParser.UnarySelectorContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitUnarySelector(SmalltalkParser.UnarySelectorContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3385,7 +3369,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitUnarySend([NotNull] SmalltalkParser.UnarySendContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitUnarySend(SmalltalkParser.UnarySendContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3419,7 +3403,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitUnaryTail([NotNull] SmalltalkParser.UnaryTailContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitUnaryTail(SmalltalkParser.UnaryTailContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3453,7 +3437,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitVariable([NotNull] SmalltalkParser.VariableContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitVariable(SmalltalkParser.VariableContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3487,7 +3471,7 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitWs([NotNull] SmalltalkParser.WsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitWs(SmalltalkParser.WsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3523,7 +3507,8 @@ labeled alternative in <a class="xref" href="GCore.Antlr.Grammers.Smalltalk.Smal
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

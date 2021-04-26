@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface ILPCListener
    ">
-    <meta name="generator" content="docfx 2.50.0.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -77,27 +77,11 @@
 <a class="xref" href="GCore.Antlr.Grammers.Lpc.LPCParser.html">LPCParser</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.VisitTerminal(Antlr4.Runtime.Tree.ITerminalNode)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.VisitErrorNode(Antlr4.Runtime.Tree.IErrorNode)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.EnterEveryRule(Antlr4.Runtime.ParserRuleContext)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.ExitEveryRule(Antlr4.Runtime.ParserRuleContext)</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Antlr.Grammers.Lpc.html">GCore.Antlr.Grammers.Lpc</a></h6>
   <h6><strong>Assembly</strong>: Lpc.dll</h6>
   <h5 id="GCore_Antlr_Grammers_Lpc_ILPCListener_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
-public interface ILPCListener : IParseTreeListener</code></pre>
+    <pre><code class="lang-csharp hljs">public interface ILPCListener : Antlr4.Runtime.Tree.IParseTreeListener</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -115,7 +99,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterArgument([NotNull] LPCParser.ArgumentContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterArgument(LPCParser.ArgumentContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -149,7 +133,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterArgument_list([NotNull] LPCParser.Argument_listContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterArgument_list(LPCParser.Argument_listContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -183,7 +167,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterAssoc_pair([NotNull] LPCParser.Assoc_pairContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterAssoc_pair(LPCParser.Assoc_pairContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -217,7 +201,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterAtomic_type([NotNull] LPCParser.Atomic_typeContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterAtomic_type(LPCParser.Atomic_typeContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -251,7 +235,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterBasic_type([NotNull] LPCParser.Basic_typeContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterBasic_type(LPCParser.Basic_typeContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -285,7 +269,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterBlock([NotNull] LPCParser.BlockContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterBlock(LPCParser.BlockContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -319,7 +303,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterBlock_or_semi([NotNull] LPCParser.Block_or_semiContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterBlock_or_semi(LPCParser.Block_or_semiContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -353,7 +337,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterCase_label([NotNull] LPCParser.Case_labelContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterCase_label(LPCParser.Case_labelContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -387,7 +371,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterCase_statement([NotNull] LPCParser.Case_statementContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterCase_statement(LPCParser.Case_statementContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -421,7 +405,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterCast([NotNull] LPCParser.CastContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterCast(LPCParser.CastContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -455,7 +439,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterCatch_statement([NotNull] LPCParser.Catch_statementContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterCatch_statement(LPCParser.Catch_statementContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -489,7 +473,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterClass_init([NotNull] LPCParser.Class_initContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterClass_init(LPCParser.Class_initContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -523,7 +507,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterComma_expr([NotNull] LPCParser.Comma_exprContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterComma_expr(LPCParser.Comma_exprContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -557,7 +541,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterCond([NotNull] LPCParser.CondContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterCond(LPCParser.CondContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -591,7 +575,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterConstant([NotNull] LPCParser.ConstantContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterConstant(LPCParser.ConstantContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -625,7 +609,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterData_type([NotNull] LPCParser.Data_typeContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterData_type(LPCParser.Data_typeContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -659,7 +643,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterDefination([NotNull] LPCParser.DefinationContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterDefination(LPCParser.DefinationContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -693,7 +677,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterDo_statement([NotNull] LPCParser.Do_statementContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterDo_statement(LPCParser.Do_statementContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -727,7 +711,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterEfun_override([NotNull] LPCParser.Efun_overrideContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterEfun_override(LPCParser.Efun_overrideContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -761,7 +745,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterExpr_list([NotNull] LPCParser.Expr_listContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterExpr_list(LPCParser.Expr_listContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -795,7 +779,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterExpr_list_node([NotNull] LPCParser.Expr_list_nodeContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterExpr_list_node(LPCParser.Expr_list_nodeContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -829,7 +813,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterExpr_list2([NotNull] LPCParser.Expr_list2Context context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterExpr_list2(LPCParser.Expr_list2Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -863,7 +847,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterExpr_list3([NotNull] LPCParser.Expr_list3Context context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterExpr_list3(LPCParser.Expr_list3Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -897,7 +881,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterExpr_list4([NotNull] LPCParser.Expr_list4Context context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterExpr_list4(LPCParser.Expr_list4Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -931,7 +915,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterExpr_or_block([NotNull] LPCParser.Expr_or_blockContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterExpr_or_block(LPCParser.Expr_or_blockContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -965,7 +949,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterExpr0([NotNull] LPCParser.Expr0Context context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterExpr0(LPCParser.Expr0Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -999,7 +983,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterExpr4([NotNull] LPCParser.Expr4Context context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterExpr4(LPCParser.Expr4Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1033,7 +1017,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterFirst_for_expr([NotNull] LPCParser.First_for_exprContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterFirst_for_expr(LPCParser.First_for_exprContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1067,7 +1051,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterFor_expr([NotNull] LPCParser.For_exprContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterFor_expr(LPCParser.For_exprContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1101,7 +1085,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterFor_loop([NotNull] LPCParser.For_loopContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterFor_loop(LPCParser.For_loopContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1135,7 +1119,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterForeach_loop([NotNull] LPCParser.Foreach_loopContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterForeach_loop(LPCParser.Foreach_loopContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1169,7 +1153,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterForeach_var([NotNull] LPCParser.Foreach_varContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterForeach_var(LPCParser.Foreach_varContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1203,7 +1187,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterForeach_vars([NotNull] LPCParser.Foreach_varsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterForeach_vars(LPCParser.Foreach_varsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1237,7 +1221,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterFunction_arrow_call([NotNull] LPCParser.Function_arrow_callContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterFunction_arrow_call(LPCParser.Function_arrow_callContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1271,7 +1255,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterFunction_call([NotNull] LPCParser.Function_callContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterFunction_call(LPCParser.Function_callContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1305,7 +1289,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterFunction_defination([NotNull] LPCParser.Function_definationContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterFunction_defination(LPCParser.Function_definationContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1339,7 +1323,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterFunction_name([NotNull] LPCParser.Function_nameContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterFunction_name(LPCParser.Function_nameContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1373,7 +1357,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterFunction_name_call([NotNull] LPCParser.Function_name_callContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterFunction_name_call(LPCParser.Function_name_callContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1407,7 +1391,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterIdentifier([NotNull] LPCParser.IdentifierContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterIdentifier(LPCParser.IdentifierContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1441,7 +1425,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterInheritance([NotNull] LPCParser.InheritanceContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterInheritance(LPCParser.InheritanceContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1475,7 +1459,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterLocal_declarations([NotNull] LPCParser.Local_declarationsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterLocal_declarations(LPCParser.Local_declarationsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1509,7 +1493,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterLocal_declare_statement([NotNull] LPCParser.Local_declare_statementContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterLocal_declare_statement(LPCParser.Local_declare_statementContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1543,7 +1527,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterLocal_name_list([NotNull] LPCParser.Local_name_listContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterLocal_name_list(LPCParser.Local_name_listContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1577,7 +1561,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterLpc_program([NotNull] LPCParser.Lpc_programContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterLpc_program(LPCParser.Lpc_programContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1611,7 +1595,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterLvalue_list([NotNull] LPCParser.Lvalue_listContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterLvalue_list(LPCParser.Lvalue_listContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1645,7 +1629,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterMember_list([NotNull] LPCParser.Member_listContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterMember_list(LPCParser.Member_listContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1679,7 +1663,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterMember_name([NotNull] LPCParser.Member_nameContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterMember_name(LPCParser.Member_nameContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1713,7 +1697,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterMember_name_list([NotNull] LPCParser.Member_name_listContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterMember_name_list(LPCParser.Member_name_listContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1747,7 +1731,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterModifier_change([NotNull] LPCParser.Modifier_changeContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterModifier_change(LPCParser.Modifier_changeContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1781,7 +1765,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterName_list([NotNull] LPCParser.Name_listContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterName_list(LPCParser.Name_listContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1815,7 +1799,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterNew_arg([NotNull] LPCParser.New_argContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterNew_arg(LPCParser.New_argContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1849,7 +1833,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterNew_local_def([NotNull] LPCParser.New_local_defContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterNew_local_def(LPCParser.New_local_defContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1883,7 +1867,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterNew_local_name([NotNull] LPCParser.New_local_nameContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterNew_local_name(LPCParser.New_local_nameContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1917,7 +1901,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterNew_name([NotNull] LPCParser.New_nameContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterNew_name(LPCParser.New_nameContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1951,7 +1935,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterOpt_basic_type([NotNull] LPCParser.Opt_basic_typeContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterOpt_basic_type(LPCParser.Opt_basic_typeContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1985,7 +1969,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterOpt_class_init([NotNull] LPCParser.Opt_class_initContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterOpt_class_init(LPCParser.Opt_class_initContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2019,7 +2003,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterOptional_else_part([NotNull] LPCParser.Optional_else_partContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterOptional_else_part(LPCParser.Optional_else_partContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2053,7 +2037,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterOptional_star([NotNull] LPCParser.Optional_starContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterOptional_star(LPCParser.Optional_starContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2087,7 +2071,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterParse_command([NotNull] LPCParser.Parse_commandContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterParse_command(LPCParser.Parse_commandContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2121,7 +2105,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterPossible_semi_colon([NotNull] LPCParser.Possible_semi_colonContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterPossible_semi_colon(LPCParser.Possible_semi_colonContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2155,7 +2139,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterProgram([NotNull] LPCParser.ProgramContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterProgram(LPCParser.ProgramContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2189,7 +2173,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterReturnStatement([NotNull] LPCParser.ReturnStatementContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterReturnStatement(LPCParser.ReturnStatementContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2223,7 +2207,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterSingle_new_local_def([NotNull] LPCParser.Single_new_local_defContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterSingle_new_local_def(LPCParser.Single_new_local_defContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2257,7 +2241,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterSingle_new_local_def_with_init([NotNull] LPCParser.Single_new_local_def_with_initContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterSingle_new_local_def_with_init(LPCParser.Single_new_local_def_with_initContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2291,7 +2275,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterSscanf([NotNull] LPCParser.SscanfContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterSscanf(LPCParser.SscanfContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2325,7 +2309,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterStatement([NotNull] LPCParser.StatementContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterStatement(LPCParser.StatementContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2359,7 +2343,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterStatements([NotNull] LPCParser.StatementsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterStatements(LPCParser.StatementsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2393,7 +2377,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterString([NotNull] LPCParser.StringContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterString(LPCParser.StringContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2427,7 +2411,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterString_con1([NotNull] LPCParser.String_con1Context context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterString_con1(LPCParser.String_con1Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2461,7 +2445,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterString_con2([NotNull] LPCParser.String_con2Context context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterString_con2(LPCParser.String_con2Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2495,7 +2479,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterSwitch_block([NotNull] LPCParser.Switch_blockContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterSwitch_block(LPCParser.Switch_blockContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2529,7 +2513,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterSwitch_statement([NotNull] LPCParser.Switch_statementContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterSwitch_statement(LPCParser.Switch_statementContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2563,7 +2547,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterTime_expression([NotNull] LPCParser.Time_expressionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterTime_expression(LPCParser.Time_expressionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2597,7 +2581,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterType_decl([NotNull] LPCParser.Type_declContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterType_decl(LPCParser.Type_declContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2631,7 +2615,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterType_modifier_list([NotNull] LPCParser.Type_modifier_listContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterType_modifier_list(LPCParser.Type_modifier_listContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2665,7 +2649,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterWhile_statement([NotNull] LPCParser.While_statementContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterWhile_statement(LPCParser.While_statementContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2699,7 +2683,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitArgument([NotNull] LPCParser.ArgumentContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitArgument(LPCParser.ArgumentContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2733,7 +2717,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitArgument_list([NotNull] LPCParser.Argument_listContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitArgument_list(LPCParser.Argument_listContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2767,7 +2751,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitAssoc_pair([NotNull] LPCParser.Assoc_pairContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitAssoc_pair(LPCParser.Assoc_pairContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2801,7 +2785,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitAtomic_type([NotNull] LPCParser.Atomic_typeContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitAtomic_type(LPCParser.Atomic_typeContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2835,7 +2819,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitBasic_type([NotNull] LPCParser.Basic_typeContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitBasic_type(LPCParser.Basic_typeContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2869,7 +2853,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitBlock([NotNull] LPCParser.BlockContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitBlock(LPCParser.BlockContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2903,7 +2887,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitBlock_or_semi([NotNull] LPCParser.Block_or_semiContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitBlock_or_semi(LPCParser.Block_or_semiContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2937,7 +2921,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitCase_label([NotNull] LPCParser.Case_labelContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitCase_label(LPCParser.Case_labelContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2971,7 +2955,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitCase_statement([NotNull] LPCParser.Case_statementContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitCase_statement(LPCParser.Case_statementContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3005,7 +2989,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitCast([NotNull] LPCParser.CastContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitCast(LPCParser.CastContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3039,7 +3023,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitCatch_statement([NotNull] LPCParser.Catch_statementContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitCatch_statement(LPCParser.Catch_statementContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3073,7 +3057,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitClass_init([NotNull] LPCParser.Class_initContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitClass_init(LPCParser.Class_initContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3107,7 +3091,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitComma_expr([NotNull] LPCParser.Comma_exprContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitComma_expr(LPCParser.Comma_exprContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3141,7 +3125,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitCond([NotNull] LPCParser.CondContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitCond(LPCParser.CondContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3175,7 +3159,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitConstant([NotNull] LPCParser.ConstantContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitConstant(LPCParser.ConstantContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3209,7 +3193,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitData_type([NotNull] LPCParser.Data_typeContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitData_type(LPCParser.Data_typeContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3243,7 +3227,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitDefination([NotNull] LPCParser.DefinationContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitDefination(LPCParser.DefinationContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3277,7 +3261,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitDo_statement([NotNull] LPCParser.Do_statementContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitDo_statement(LPCParser.Do_statementContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3311,7 +3295,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitEfun_override([NotNull] LPCParser.Efun_overrideContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitEfun_override(LPCParser.Efun_overrideContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3345,7 +3329,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitExpr_list([NotNull] LPCParser.Expr_listContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitExpr_list(LPCParser.Expr_listContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3379,7 +3363,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitExpr_list_node([NotNull] LPCParser.Expr_list_nodeContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitExpr_list_node(LPCParser.Expr_list_nodeContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3413,7 +3397,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitExpr_list2([NotNull] LPCParser.Expr_list2Context context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitExpr_list2(LPCParser.Expr_list2Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3447,7 +3431,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitExpr_list3([NotNull] LPCParser.Expr_list3Context context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitExpr_list3(LPCParser.Expr_list3Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3481,7 +3465,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitExpr_list4([NotNull] LPCParser.Expr_list4Context context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitExpr_list4(LPCParser.Expr_list4Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3515,7 +3499,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitExpr_or_block([NotNull] LPCParser.Expr_or_blockContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitExpr_or_block(LPCParser.Expr_or_blockContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3549,7 +3533,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitExpr0([NotNull] LPCParser.Expr0Context context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitExpr0(LPCParser.Expr0Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3583,7 +3567,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitExpr4([NotNull] LPCParser.Expr4Context context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitExpr4(LPCParser.Expr4Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3617,7 +3601,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitFirst_for_expr([NotNull] LPCParser.First_for_exprContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitFirst_for_expr(LPCParser.First_for_exprContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3651,7 +3635,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitFor_expr([NotNull] LPCParser.For_exprContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitFor_expr(LPCParser.For_exprContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3685,7 +3669,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitFor_loop([NotNull] LPCParser.For_loopContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitFor_loop(LPCParser.For_loopContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3719,7 +3703,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitForeach_loop([NotNull] LPCParser.Foreach_loopContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitForeach_loop(LPCParser.Foreach_loopContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3753,7 +3737,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitForeach_var([NotNull] LPCParser.Foreach_varContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitForeach_var(LPCParser.Foreach_varContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3787,7 +3771,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitForeach_vars([NotNull] LPCParser.Foreach_varsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitForeach_vars(LPCParser.Foreach_varsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3821,7 +3805,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitFunction_arrow_call([NotNull] LPCParser.Function_arrow_callContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitFunction_arrow_call(LPCParser.Function_arrow_callContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3855,7 +3839,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitFunction_call([NotNull] LPCParser.Function_callContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitFunction_call(LPCParser.Function_callContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3889,7 +3873,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitFunction_defination([NotNull] LPCParser.Function_definationContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitFunction_defination(LPCParser.Function_definationContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3923,7 +3907,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitFunction_name([NotNull] LPCParser.Function_nameContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitFunction_name(LPCParser.Function_nameContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3957,7 +3941,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitFunction_name_call([NotNull] LPCParser.Function_name_callContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitFunction_name_call(LPCParser.Function_name_callContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3991,7 +3975,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitIdentifier([NotNull] LPCParser.IdentifierContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitIdentifier(LPCParser.IdentifierContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4025,7 +4009,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitInheritance([NotNull] LPCParser.InheritanceContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitInheritance(LPCParser.InheritanceContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4059,7 +4043,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitLocal_declarations([NotNull] LPCParser.Local_declarationsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitLocal_declarations(LPCParser.Local_declarationsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4093,7 +4077,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitLocal_declare_statement([NotNull] LPCParser.Local_declare_statementContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitLocal_declare_statement(LPCParser.Local_declare_statementContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4127,7 +4111,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitLocal_name_list([NotNull] LPCParser.Local_name_listContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitLocal_name_list(LPCParser.Local_name_listContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4161,7 +4145,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitLpc_program([NotNull] LPCParser.Lpc_programContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitLpc_program(LPCParser.Lpc_programContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4195,7 +4179,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitLvalue_list([NotNull] LPCParser.Lvalue_listContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitLvalue_list(LPCParser.Lvalue_listContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4229,7 +4213,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitMember_list([NotNull] LPCParser.Member_listContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitMember_list(LPCParser.Member_listContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4263,7 +4247,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitMember_name([NotNull] LPCParser.Member_nameContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitMember_name(LPCParser.Member_nameContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4297,7 +4281,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitMember_name_list([NotNull] LPCParser.Member_name_listContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitMember_name_list(LPCParser.Member_name_listContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4331,7 +4315,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitModifier_change([NotNull] LPCParser.Modifier_changeContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitModifier_change(LPCParser.Modifier_changeContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4365,7 +4349,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitName_list([NotNull] LPCParser.Name_listContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitName_list(LPCParser.Name_listContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4399,7 +4383,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitNew_arg([NotNull] LPCParser.New_argContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitNew_arg(LPCParser.New_argContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4433,7 +4417,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitNew_local_def([NotNull] LPCParser.New_local_defContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitNew_local_def(LPCParser.New_local_defContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4467,7 +4451,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitNew_local_name([NotNull] LPCParser.New_local_nameContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitNew_local_name(LPCParser.New_local_nameContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4501,7 +4485,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitNew_name([NotNull] LPCParser.New_nameContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitNew_name(LPCParser.New_nameContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4535,7 +4519,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitOpt_basic_type([NotNull] LPCParser.Opt_basic_typeContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitOpt_basic_type(LPCParser.Opt_basic_typeContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4569,7 +4553,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitOpt_class_init([NotNull] LPCParser.Opt_class_initContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitOpt_class_init(LPCParser.Opt_class_initContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4603,7 +4587,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitOptional_else_part([NotNull] LPCParser.Optional_else_partContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitOptional_else_part(LPCParser.Optional_else_partContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4637,7 +4621,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitOptional_star([NotNull] LPCParser.Optional_starContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitOptional_star(LPCParser.Optional_starContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4671,7 +4655,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitParse_command([NotNull] LPCParser.Parse_commandContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitParse_command(LPCParser.Parse_commandContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4705,7 +4689,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitPossible_semi_colon([NotNull] LPCParser.Possible_semi_colonContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitPossible_semi_colon(LPCParser.Possible_semi_colonContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4739,7 +4723,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitProgram([NotNull] LPCParser.ProgramContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitProgram(LPCParser.ProgramContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4773,7 +4757,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitReturnStatement([NotNull] LPCParser.ReturnStatementContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitReturnStatement(LPCParser.ReturnStatementContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4807,7 +4791,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitSingle_new_local_def([NotNull] LPCParser.Single_new_local_defContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitSingle_new_local_def(LPCParser.Single_new_local_defContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4841,7 +4825,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitSingle_new_local_def_with_init([NotNull] LPCParser.Single_new_local_def_with_initContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitSingle_new_local_def_with_init(LPCParser.Single_new_local_def_with_initContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4875,7 +4859,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitSscanf([NotNull] LPCParser.SscanfContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitSscanf(LPCParser.SscanfContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4909,7 +4893,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitStatement([NotNull] LPCParser.StatementContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitStatement(LPCParser.StatementContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4943,7 +4927,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitStatements([NotNull] LPCParser.StatementsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitStatements(LPCParser.StatementsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4977,7 +4961,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitString([NotNull] LPCParser.StringContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitString(LPCParser.StringContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5011,7 +4995,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitString_con1([NotNull] LPCParser.String_con1Context context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitString_con1(LPCParser.String_con1Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5045,7 +5029,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitString_con2([NotNull] LPCParser.String_con2Context context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitString_con2(LPCParser.String_con2Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5079,7 +5063,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitSwitch_block([NotNull] LPCParser.Switch_blockContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitSwitch_block(LPCParser.Switch_blockContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5113,7 +5097,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitSwitch_statement([NotNull] LPCParser.Switch_statementContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitSwitch_statement(LPCParser.Switch_statementContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5147,7 +5131,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitTime_expression([NotNull] LPCParser.Time_expressionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitTime_expression(LPCParser.Time_expressionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5181,7 +5165,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitType_decl([NotNull] LPCParser.Type_declContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitType_decl(LPCParser.Type_declContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5215,7 +5199,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitType_modifier_list([NotNull] LPCParser.Type_modifier_listContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitType_modifier_list(LPCParser.Type_modifier_listContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5249,7 +5233,7 @@ public interface ILPCListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitWhile_statement([NotNull] LPCParser.While_statementContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitWhile_statement(LPCParser.While_statementContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5285,7 +5269,8 @@ public interface ILPCListener : IParseTreeListener</code></pre>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

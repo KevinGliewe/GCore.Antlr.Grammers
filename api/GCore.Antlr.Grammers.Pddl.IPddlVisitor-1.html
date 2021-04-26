@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IPddlVisitor&lt;Result&gt;
    ">
-    <meta name="generator" content="docfx 2.50.0.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -77,27 +77,11 @@
 by <a class="xref" href="GCore.Antlr.Grammers.Pddl.PddlParser.html">PddlParser</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeVisitor&lt;Result&gt;.Visit(Antlr4.Runtime.Tree.IParseTree)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeVisitor&lt;Result&gt;.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeVisitor&lt;Result&gt;.VisitTerminal(Antlr4.Runtime.Tree.ITerminalNode)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeVisitor&lt;Result&gt;.VisitErrorNode(Antlr4.Runtime.Tree.IErrorNode)</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Antlr.Grammers.Pddl.html">GCore.Antlr.Grammers.Pddl</a></h6>
   <h6><strong>Assembly</strong>: Pddl.dll</h6>
   <h5 id="GCore_Antlr_Grammers_Pddl_IPddlVisitor_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
-public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -131,7 +115,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitActionDef([NotNull] PddlParser.ActionDefContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitActionDef(PddlParser.ActionDefContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -180,7 +164,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitActionDefBody([NotNull] PddlParser.ActionDefBodyContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitActionDefBody(PddlParser.ActionDefBodyContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -229,7 +213,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitActionSymbol([NotNull] PddlParser.ActionSymbolContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitActionSymbol(PddlParser.ActionSymbolContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -278,7 +262,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitAssignOp([NotNull] PddlParser.AssignOpContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitAssignOp(PddlParser.AssignOpContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -327,7 +311,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitAtomicFormulaSkeleton([NotNull] PddlParser.AtomicFormulaSkeletonContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitAtomicFormulaSkeleton(PddlParser.AtomicFormulaSkeletonContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -376,7 +360,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitAtomicFunctionSkeleton([NotNull] PddlParser.AtomicFunctionSkeletonContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitAtomicFunctionSkeleton(PddlParser.AtomicFunctionSkeletonContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -425,7 +409,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitAtomicNameFormula([NotNull] PddlParser.AtomicNameFormulaContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitAtomicNameFormula(PddlParser.AtomicNameFormulaContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -474,7 +458,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitAtomicTermFormula([NotNull] PddlParser.AtomicTermFormulaContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitAtomicTermFormula(PddlParser.AtomicTermFormulaContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -523,7 +507,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitBinaryComp([NotNull] PddlParser.BinaryCompContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitBinaryComp(PddlParser.BinaryCompContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -572,7 +556,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitBinaryOp([NotNull] PddlParser.BinaryOpContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitBinaryOp(PddlParser.BinaryOpContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -621,7 +605,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitCEffect([NotNull] PddlParser.CEffectContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitCEffect(PddlParser.CEffectContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -670,7 +654,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitCondEffect([NotNull] PddlParser.CondEffectContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitCondEffect(PddlParser.CondEffectContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -719,7 +703,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitConGD([NotNull] PddlParser.ConGDContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitConGD(PddlParser.ConGDContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -768,7 +752,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitConstantsDef([NotNull] PddlParser.ConstantsDefContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitConstantsDef(PddlParser.ConstantsDefContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -817,7 +801,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitConstraints([NotNull] PddlParser.ConstraintsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitConstraints(PddlParser.ConstraintsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -866,7 +850,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitDaDefBody([NotNull] PddlParser.DaDefBodyContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitDaDefBody(PddlParser.DaDefBodyContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -915,7 +899,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitDaEffect([NotNull] PddlParser.DaEffectContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitDaEffect(PddlParser.DaEffectContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -964,7 +948,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitDaGD([NotNull] PddlParser.DaGDContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitDaGD(PddlParser.DaGDContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1013,7 +997,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitDerivedDef([NotNull] PddlParser.DerivedDefContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitDerivedDef(PddlParser.DerivedDefContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1062,7 +1046,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitDomain([NotNull] PddlParser.DomainContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitDomain(PddlParser.DomainContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1111,7 +1095,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitDomainName([NotNull] PddlParser.DomainNameContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitDomainName(PddlParser.DomainNameContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1160,7 +1144,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitDurationConstraint([NotNull] PddlParser.DurationConstraintContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitDurationConstraint(PddlParser.DurationConstraintContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1209,7 +1193,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitDurativeActionDef([NotNull] PddlParser.DurativeActionDefContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitDurativeActionDef(PddlParser.DurativeActionDefContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1258,7 +1242,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitDurOp([NotNull] PddlParser.DurOpContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitDurOp(PddlParser.DurOpContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1307,7 +1291,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitDurValue([NotNull] PddlParser.DurValueContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitDurValue(PddlParser.DurValueContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1356,7 +1340,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitEffect([NotNull] PddlParser.EffectContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitEffect(PddlParser.EffectContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1405,7 +1389,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitFAssignDA([NotNull] PddlParser.FAssignDAContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitFAssignDA(PddlParser.FAssignDAContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1454,7 +1438,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitFComp([NotNull] PddlParser.FCompContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitFComp(PddlParser.FCompContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1503,7 +1487,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitFExp([NotNull] PddlParser.FExpContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitFExp(PddlParser.FExpContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1552,7 +1536,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitFExp2([NotNull] PddlParser.FExp2Context context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitFExp2(PddlParser.FExp2Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1601,7 +1585,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitFExpDA([NotNull] PddlParser.FExpDAContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitFExpDA(PddlParser.FExpDAContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1650,7 +1634,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitFHead([NotNull] PddlParser.FHeadContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitFHead(PddlParser.FHeadContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1699,7 +1683,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitFunctionList([NotNull] PddlParser.FunctionListContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitFunctionList(PddlParser.FunctionListContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1748,7 +1732,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitFunctionsDef([NotNull] PddlParser.FunctionsDefContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitFunctionsDef(PddlParser.FunctionsDefContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1797,7 +1781,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitFunctionSymbol([NotNull] PddlParser.FunctionSymbolContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitFunctionSymbol(PddlParser.FunctionSymbolContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1846,7 +1830,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitFunctionType([NotNull] PddlParser.FunctionTypeContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitFunctionType(PddlParser.FunctionTypeContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1895,7 +1879,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitGoal([NotNull] PddlParser.GoalContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitGoal(PddlParser.GoalContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1944,7 +1928,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitGoalDesc([NotNull] PddlParser.GoalDescContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitGoalDesc(PddlParser.GoalDescContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1981,19 +1965,19 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pddl_IPddlVisitor_1_VisitInit_GCore_Antlr_Grammers_Pddl_PddlParser_InitContext_.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pddl.IPddlVisitor%601.VisitInit(GCore.Antlr.Grammers.Pddl.PddlParser.InitContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pddl_IPddlVisitor_1_VisitInit__GCore_Antlr_Grammers_Pddl_PddlParser_Init_Context_.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pddl.IPddlVisitor%601.VisitInit_(GCore.Antlr.Grammers.Pddl.PddlParser.Init_Context)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pddl/PddlVisitor.cs/#L395">View Source</a>
   </span>
-  <a id="GCore_Antlr_Grammers_Pddl_IPddlVisitor_1_VisitInit_" data-uid="GCore.Antlr.Grammers.Pddl.IPddlVisitor`1.VisitInit*"></a>
-  <h4 id="GCore_Antlr_Grammers_Pddl_IPddlVisitor_1_VisitInit_GCore_Antlr_Grammers_Pddl_PddlParser_InitContext_" data-uid="GCore.Antlr.Grammers.Pddl.IPddlVisitor`1.VisitInit(GCore.Antlr.Grammers.Pddl.PddlParser.InitContext)">VisitInit(PddlParser.InitContext)</h4>
-  <div class="markdown level1 summary"><p>Visit a parse tree produced by <a class="xref" href="GCore.Antlr.Grammers.Pddl.PddlParser.html#GCore_Antlr_Grammers_Pddl_PddlParser_init">init()</a>.</p>
+  <a id="GCore_Antlr_Grammers_Pddl_IPddlVisitor_1_VisitInit__" data-uid="GCore.Antlr.Grammers.Pddl.IPddlVisitor`1.VisitInit_*"></a>
+  <h4 id="GCore_Antlr_Grammers_Pddl_IPddlVisitor_1_VisitInit__GCore_Antlr_Grammers_Pddl_PddlParser_Init_Context_" data-uid="GCore.Antlr.Grammers.Pddl.IPddlVisitor`1.VisitInit_(GCore.Antlr.Grammers.Pddl.PddlParser.Init_Context)">VisitInit_(PddlParser.Init_Context)</h4>
+  <div class="markdown level1 summary"><p>Visit a parse tree produced by <a class="xref" href="GCore.Antlr.Grammers.Pddl.PddlParser.html#GCore_Antlr_Grammers_Pddl_PddlParser_init_">init_()</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitInit([NotNull] PddlParser.InitContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitInit_(PddlParser.Init_Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2006,7 +1990,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GCore.Antlr.Grammers.Pddl.PddlParser.InitContext.html">PddlParser.InitContext</a></td>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Pddl.PddlParser.Init_Context.html">PddlParser.Init_Context</a></td>
         <td><span class="parametername">context</span></td>
         <td><p>The parse tree.</p>
 </td>
@@ -2042,7 +2026,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitInitEl([NotNull] PddlParser.InitElContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitInitEl(PddlParser.InitElContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2091,7 +2075,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitInterval([NotNull] PddlParser.IntervalContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitInterval(PddlParser.IntervalContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2140,7 +2124,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitMetricFExp([NotNull] PddlParser.MetricFExpContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitMetricFExp(PddlParser.MetricFExpContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2189,7 +2173,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitMetricSpec([NotNull] PddlParser.MetricSpecContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitMetricSpec(PddlParser.MetricSpecContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2238,7 +2222,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitNameLiteral([NotNull] PddlParser.NameLiteralContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitNameLiteral(PddlParser.NameLiteralContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2287,7 +2271,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitObjectDecl([NotNull] PddlParser.ObjectDeclContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitObjectDecl(PddlParser.ObjectDeclContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2336,7 +2320,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitOptimization([NotNull] PddlParser.OptimizationContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitOptimization(PddlParser.OptimizationContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2385,7 +2369,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitPddlDoc([NotNull] PddlParser.PddlDocContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitPddlDoc(PddlParser.PddlDocContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2434,7 +2418,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitPEffect([NotNull] PddlParser.PEffectContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitPEffect(PddlParser.PEffectContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2483,7 +2467,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitPredicate([NotNull] PddlParser.PredicateContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitPredicate(PddlParser.PredicateContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2532,7 +2516,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitPredicatesDef([NotNull] PddlParser.PredicatesDefContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitPredicatesDef(PddlParser.PredicatesDefContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2581,7 +2565,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitPrefConGD([NotNull] PddlParser.PrefConGDContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitPrefConGD(PddlParser.PrefConGDContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2630,7 +2614,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitPrefTimedGD([NotNull] PddlParser.PrefTimedGDContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitPrefTimedGD(PddlParser.PrefTimedGDContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2679,7 +2663,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitPrimType([NotNull] PddlParser.PrimTypeContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitPrimType(PddlParser.PrimTypeContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2728,7 +2712,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitProbConstraints([NotNull] PddlParser.ProbConstraintsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitProbConstraints(PddlParser.ProbConstraintsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2777,7 +2761,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitProblem([NotNull] PddlParser.ProblemContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitProblem(PddlParser.ProblemContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2826,7 +2810,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitProblemDecl([NotNull] PddlParser.ProblemDeclContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitProblemDecl(PddlParser.ProblemDeclContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2875,7 +2859,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitProblemDomain([NotNull] PddlParser.ProblemDomainContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitProblemDomain(PddlParser.ProblemDomainContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2924,7 +2908,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitRequireDef([NotNull] PddlParser.RequireDefContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitRequireDef(PddlParser.RequireDefContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2973,7 +2957,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitSimpleDurationConstraint([NotNull] PddlParser.SimpleDurationConstraintContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitSimpleDurationConstraint(PddlParser.SimpleDurationConstraintContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3022,7 +3006,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitSingleTypeNameList([NotNull] PddlParser.SingleTypeNameListContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitSingleTypeNameList(PddlParser.SingleTypeNameListContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3071,7 +3055,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitSingleTypeVarList([NotNull] PddlParser.SingleTypeVarListContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitSingleTypeVarList(PddlParser.SingleTypeVarListContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3120,7 +3104,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitStructureDef([NotNull] PddlParser.StructureDefContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitStructureDef(PddlParser.StructureDefContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3169,7 +3153,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitTerm([NotNull] PddlParser.TermContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitTerm(PddlParser.TermContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3218,7 +3202,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitTimedEffect([NotNull] PddlParser.TimedEffectContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitTimedEffect(PddlParser.TimedEffectContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3267,7 +3251,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitTimedGD([NotNull] PddlParser.TimedGDContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitTimedGD(PddlParser.TimedGDContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3316,7 +3300,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitTimeSpecifier([NotNull] PddlParser.TimeSpecifierContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitTimeSpecifier(PddlParser.TimeSpecifierContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3353,19 +3337,19 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pddl_IPddlVisitor_1_VisitType_GCore_Antlr_Grammers_Pddl_PddlParser_TypeContext_.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pddl.IPddlVisitor%601.VisitType(GCore.Antlr.Grammers.Pddl.PddlParser.TypeContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Pddl_IPddlVisitor_1_VisitType__GCore_Antlr_Grammers_Pddl_PddlParser_Type_Context_.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Pddl.IPddlVisitor%601.VisitType_(GCore.Antlr.Grammers.Pddl.PddlParser.Type_Context)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Pddl/PddlVisitor.cs/#L83">View Source</a>
   </span>
-  <a id="GCore_Antlr_Grammers_Pddl_IPddlVisitor_1_VisitType_" data-uid="GCore.Antlr.Grammers.Pddl.IPddlVisitor`1.VisitType*"></a>
-  <h4 id="GCore_Antlr_Grammers_Pddl_IPddlVisitor_1_VisitType_GCore_Antlr_Grammers_Pddl_PddlParser_TypeContext_" data-uid="GCore.Antlr.Grammers.Pddl.IPddlVisitor`1.VisitType(GCore.Antlr.Grammers.Pddl.PddlParser.TypeContext)">VisitType(PddlParser.TypeContext)</h4>
-  <div class="markdown level1 summary"><p>Visit a parse tree produced by <a class="xref" href="GCore.Antlr.Grammers.Pddl.PddlParser.html#GCore_Antlr_Grammers_Pddl_PddlParser_type">type()</a>.</p>
+  <a id="GCore_Antlr_Grammers_Pddl_IPddlVisitor_1_VisitType__" data-uid="GCore.Antlr.Grammers.Pddl.IPddlVisitor`1.VisitType_*"></a>
+  <h4 id="GCore_Antlr_Grammers_Pddl_IPddlVisitor_1_VisitType__GCore_Antlr_Grammers_Pddl_PddlParser_Type_Context_" data-uid="GCore.Antlr.Grammers.Pddl.IPddlVisitor`1.VisitType_(GCore.Antlr.Grammers.Pddl.PddlParser.Type_Context)">VisitType_(PddlParser.Type_Context)</h4>
+  <div class="markdown level1 summary"><p>Visit a parse tree produced by <a class="xref" href="GCore.Antlr.Grammers.Pddl.PddlParser.html#GCore_Antlr_Grammers_Pddl_PddlParser_type_">type_()</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitType([NotNull] PddlParser.TypeContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitType_(PddlParser.Type_Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3378,7 +3362,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GCore.Antlr.Grammers.Pddl.PddlParser.TypeContext.html">PddlParser.TypeContext</a></td>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Pddl.PddlParser.Type_Context.html">PddlParser.Type_Context</a></td>
         <td><span class="parametername">context</span></td>
         <td><p>The parse tree.</p>
 </td>
@@ -3414,7 +3398,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitTypedNameList([NotNull] PddlParser.TypedNameListContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitTypedNameList(PddlParser.TypedNameListContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3463,7 +3447,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitTypedVariableList([NotNull] PddlParser.TypedVariableListContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitTypedVariableList(PddlParser.TypedVariableListContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3512,7 +3496,7 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Result VisitTypesDef([NotNull] PddlParser.TypesDefContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">Result VisitTypesDef(PddlParser.TypesDefContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3563,7 +3547,8 @@ public interface IPddlVisitor&lt;Result&gt; : IParseTreeVisitor&lt;Result&gt;</c
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

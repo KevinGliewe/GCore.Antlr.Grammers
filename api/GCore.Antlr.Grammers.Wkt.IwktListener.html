@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IwktListener
    ">
-    <meta name="generator" content="docfx 2.50.0.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -77,27 +77,11 @@
 <a class="xref" href="GCore.Antlr.Grammers.Wkt.wktParser.html">wktParser</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.VisitTerminal(Antlr4.Runtime.Tree.ITerminalNode)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.VisitErrorNode(Antlr4.Runtime.Tree.IErrorNode)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.EnterEveryRule(Antlr4.Runtime.ParserRuleContext)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.ExitEveryRule(Antlr4.Runtime.ParserRuleContext)</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Antlr.Grammers.Wkt.html">GCore.Antlr.Grammers.Wkt</a></h6>
   <h6><strong>Assembly</strong>: Wkt.dll</h6>
   <h5 id="GCore_Antlr_Grammers_Wkt_IwktListener_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
-public interface IwktListener : IParseTreeListener</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IwktListener : Antlr4.Runtime.Tree.IParseTreeListener</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -115,7 +99,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterCircularStringGeometry([NotNull] wktParser.CircularStringGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterCircularStringGeometry(wktParser.CircularStringGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -149,7 +133,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterCompoundCurveGeometry([NotNull] wktParser.CompoundCurveGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterCompoundCurveGeometry(wktParser.CompoundCurveGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -183,7 +167,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterCurvePolygonGeometry([NotNull] wktParser.CurvePolygonGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterCurvePolygonGeometry(wktParser.CurvePolygonGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -217,7 +201,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterGeometry([NotNull] wktParser.GeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterGeometry(wktParser.GeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -251,7 +235,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterGeometryCollection([NotNull] wktParser.GeometryCollectionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterGeometryCollection(wktParser.GeometryCollectionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -285,7 +269,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterLineString([NotNull] wktParser.LineStringContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterLineString(wktParser.LineStringContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -319,7 +303,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterLineStringGeometry([NotNull] wktParser.LineStringGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterLineStringGeometry(wktParser.LineStringGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -353,7 +337,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterMultiCurveGeometry([NotNull] wktParser.MultiCurveGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterMultiCurveGeometry(wktParser.MultiCurveGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -387,7 +371,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterMultiLineStringGeometry([NotNull] wktParser.MultiLineStringGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterMultiLineStringGeometry(wktParser.MultiLineStringGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -421,7 +405,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterMultiPointGeometry([NotNull] wktParser.MultiPointGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterMultiPointGeometry(wktParser.MultiPointGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -455,7 +439,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterMultiPolygonGeometry([NotNull] wktParser.MultiPolygonGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterMultiPolygonGeometry(wktParser.MultiPolygonGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -489,7 +473,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterMultiPolyhedralSurfaceGeometry([NotNull] wktParser.MultiPolyhedralSurfaceGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterMultiPolyhedralSurfaceGeometry(wktParser.MultiPolyhedralSurfaceGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -523,7 +507,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterMultiSurfaceGeometry([NotNull] wktParser.MultiSurfaceGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterMultiSurfaceGeometry(wktParser.MultiSurfaceGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -557,7 +541,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterMultiTinGeometry([NotNull] wktParser.MultiTinGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterMultiTinGeometry(wktParser.MultiTinGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -591,7 +575,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterName([NotNull] wktParser.NameContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterName(wktParser.NameContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -625,7 +609,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterPoint([NotNull] wktParser.PointContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterPoint(wktParser.PointContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -659,7 +643,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterPointGeometry([NotNull] wktParser.PointGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterPointGeometry(wktParser.PointGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -693,7 +677,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterPointOrClosedPoint([NotNull] wktParser.PointOrClosedPointContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterPointOrClosedPoint(wktParser.PointOrClosedPointContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -727,7 +711,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterPolygon([NotNull] wktParser.PolygonContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterPolygon(wktParser.PolygonContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -761,7 +745,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterPolygonGeometry([NotNull] wktParser.PolygonGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterPolygonGeometry(wktParser.PolygonGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -795,7 +779,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitCircularStringGeometry([NotNull] wktParser.CircularStringGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitCircularStringGeometry(wktParser.CircularStringGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -829,7 +813,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitCompoundCurveGeometry([NotNull] wktParser.CompoundCurveGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitCompoundCurveGeometry(wktParser.CompoundCurveGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -863,7 +847,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitCurvePolygonGeometry([NotNull] wktParser.CurvePolygonGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitCurvePolygonGeometry(wktParser.CurvePolygonGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -897,7 +881,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitGeometry([NotNull] wktParser.GeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitGeometry(wktParser.GeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -931,7 +915,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitGeometryCollection([NotNull] wktParser.GeometryCollectionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitGeometryCollection(wktParser.GeometryCollectionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -965,7 +949,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitLineString([NotNull] wktParser.LineStringContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitLineString(wktParser.LineStringContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -999,7 +983,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitLineStringGeometry([NotNull] wktParser.LineStringGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitLineStringGeometry(wktParser.LineStringGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1033,7 +1017,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitMultiCurveGeometry([NotNull] wktParser.MultiCurveGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitMultiCurveGeometry(wktParser.MultiCurveGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1067,7 +1051,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitMultiLineStringGeometry([NotNull] wktParser.MultiLineStringGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitMultiLineStringGeometry(wktParser.MultiLineStringGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1101,7 +1085,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitMultiPointGeometry([NotNull] wktParser.MultiPointGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitMultiPointGeometry(wktParser.MultiPointGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1135,7 +1119,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitMultiPolygonGeometry([NotNull] wktParser.MultiPolygonGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitMultiPolygonGeometry(wktParser.MultiPolygonGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1169,7 +1153,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitMultiPolyhedralSurfaceGeometry([NotNull] wktParser.MultiPolyhedralSurfaceGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitMultiPolyhedralSurfaceGeometry(wktParser.MultiPolyhedralSurfaceGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1203,7 +1187,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitMultiSurfaceGeometry([NotNull] wktParser.MultiSurfaceGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitMultiSurfaceGeometry(wktParser.MultiSurfaceGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1237,7 +1221,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitMultiTinGeometry([NotNull] wktParser.MultiTinGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitMultiTinGeometry(wktParser.MultiTinGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1271,7 +1255,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitName([NotNull] wktParser.NameContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitName(wktParser.NameContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1305,7 +1289,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitPoint([NotNull] wktParser.PointContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitPoint(wktParser.PointContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1339,7 +1323,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitPointGeometry([NotNull] wktParser.PointGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitPointGeometry(wktParser.PointGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1373,7 +1357,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitPointOrClosedPoint([NotNull] wktParser.PointOrClosedPointContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitPointOrClosedPoint(wktParser.PointOrClosedPointContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1407,7 +1391,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitPolygon([NotNull] wktParser.PolygonContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitPolygon(wktParser.PolygonContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1441,7 +1425,7 @@ public interface IwktListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitPolygonGeometry([NotNull] wktParser.PolygonGeometryContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitPolygonGeometry(wktParser.PolygonGeometryContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1477,7 +1461,8 @@ public interface IwktListener : IParseTreeListener</code></pre>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

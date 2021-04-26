@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IAbnfListener
    ">
-    <meta name="generator" content="docfx 2.50.0.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -77,27 +77,11 @@
 <a class="xref" href="GCore.Antlr.Grammers.Abnf.AbnfParser.html">AbnfParser</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.VisitTerminal(Antlr4.Runtime.Tree.ITerminalNode)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.VisitErrorNode(Antlr4.Runtime.Tree.IErrorNode)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.EnterEveryRule(Antlr4.Runtime.ParserRuleContext)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.ExitEveryRule(Antlr4.Runtime.ParserRuleContext)</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Antlr.Grammers.Abnf.html">GCore.Antlr.Grammers.Abnf</a></h6>
   <h6><strong>Assembly</strong>: Abnf.dll</h6>
   <h5 id="GCore_Antlr_Grammers_Abnf_IAbnfListener_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
-public interface IAbnfListener : IParseTreeListener</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IAbnfListener : Antlr4.Runtime.Tree.IParseTreeListener</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -115,7 +99,7 @@ public interface IAbnfListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterAlternation([NotNull] AbnfParser.AlternationContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterAlternation(AbnfParser.AlternationContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -149,7 +133,7 @@ public interface IAbnfListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterConcatenation([NotNull] AbnfParser.ConcatenationContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterConcatenation(AbnfParser.ConcatenationContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -183,7 +167,7 @@ public interface IAbnfListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterElement([NotNull] AbnfParser.ElementContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterElement(AbnfParser.ElementContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -217,7 +201,7 @@ public interface IAbnfListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterElements([NotNull] AbnfParser.ElementsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterElements(AbnfParser.ElementsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -251,7 +235,7 @@ public interface IAbnfListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterGroup([NotNull] AbnfParser.GroupContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterGroup(AbnfParser.GroupContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -285,7 +269,7 @@ public interface IAbnfListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterOption([NotNull] AbnfParser.OptionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterOption(AbnfParser.OptionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -307,19 +291,19 @@ public interface IAbnfListener : IParseTreeListener</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Abnf_IAbnfListener_EnterRepeat_GCore_Antlr_Grammers_Abnf_AbnfParser_RepeatContext_.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Abnf.IAbnfListener.EnterRepeat(GCore.Antlr.Grammers.Abnf.AbnfParser.RepeatContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Abnf_IAbnfListener_EnterRepeat__GCore_Antlr_Grammers_Abnf_AbnfParser_Repeat_Context_.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Abnf.IAbnfListener.EnterRepeat_(GCore.Antlr.Grammers.Abnf.AbnfParser.Repeat_Context)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Abnf/AbnfListener.cs/#L99">View Source</a>
   </span>
-  <a id="GCore_Antlr_Grammers_Abnf_IAbnfListener_EnterRepeat_" data-uid="GCore.Antlr.Grammers.Abnf.IAbnfListener.EnterRepeat*"></a>
-  <h4 id="GCore_Antlr_Grammers_Abnf_IAbnfListener_EnterRepeat_GCore_Antlr_Grammers_Abnf_AbnfParser_RepeatContext_" data-uid="GCore.Antlr.Grammers.Abnf.IAbnfListener.EnterRepeat(GCore.Antlr.Grammers.Abnf.AbnfParser.RepeatContext)">EnterRepeat(AbnfParser.RepeatContext)</h4>
-  <div class="markdown level1 summary"><p>Enter a parse tree produced by <a class="xref" href="GCore.Antlr.Grammers.Abnf.AbnfParser.html#GCore_Antlr_Grammers_Abnf_AbnfParser_repeat">repeat()</a>.</p>
+  <a id="GCore_Antlr_Grammers_Abnf_IAbnfListener_EnterRepeat__" data-uid="GCore.Antlr.Grammers.Abnf.IAbnfListener.EnterRepeat_*"></a>
+  <h4 id="GCore_Antlr_Grammers_Abnf_IAbnfListener_EnterRepeat__GCore_Antlr_Grammers_Abnf_AbnfParser_Repeat_Context_" data-uid="GCore.Antlr.Grammers.Abnf.IAbnfListener.EnterRepeat_(GCore.Antlr.Grammers.Abnf.AbnfParser.Repeat_Context)">EnterRepeat_(AbnfParser.Repeat_Context)</h4>
+  <div class="markdown level1 summary"><p>Enter a parse tree produced by <a class="xref" href="GCore.Antlr.Grammers.Abnf.AbnfParser.html#GCore_Antlr_Grammers_Abnf_AbnfParser_repeat_">repeat_()</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterRepeat([NotNull] AbnfParser.RepeatContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterRepeat_(AbnfParser.Repeat_Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -332,7 +316,7 @@ public interface IAbnfListener : IParseTreeListener</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GCore.Antlr.Grammers.Abnf.AbnfParser.RepeatContext.html">AbnfParser.RepeatContext</a></td>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Abnf.AbnfParser.Repeat_Context.html">AbnfParser.Repeat_Context</a></td>
         <td><span class="parametername">context</span></td>
         <td><p>The parse tree.</p>
 </td>
@@ -353,7 +337,7 @@ public interface IAbnfListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterRepetition([NotNull] AbnfParser.RepetitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterRepetition(AbnfParser.RepetitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -387,7 +371,7 @@ public interface IAbnfListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterRule_([NotNull] AbnfParser.Rule_Context context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterRule_(AbnfParser.Rule_Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -421,7 +405,7 @@ public interface IAbnfListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterRulelist([NotNull] AbnfParser.RulelistContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterRulelist(AbnfParser.RulelistContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -455,7 +439,7 @@ public interface IAbnfListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitAlternation([NotNull] AbnfParser.AlternationContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitAlternation(AbnfParser.AlternationContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -489,7 +473,7 @@ public interface IAbnfListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitConcatenation([NotNull] AbnfParser.ConcatenationContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitConcatenation(AbnfParser.ConcatenationContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -523,7 +507,7 @@ public interface IAbnfListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitElement([NotNull] AbnfParser.ElementContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitElement(AbnfParser.ElementContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -557,7 +541,7 @@ public interface IAbnfListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitElements([NotNull] AbnfParser.ElementsContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitElements(AbnfParser.ElementsContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -591,7 +575,7 @@ public interface IAbnfListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitGroup([NotNull] AbnfParser.GroupContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitGroup(AbnfParser.GroupContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -625,7 +609,7 @@ public interface IAbnfListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitOption([NotNull] AbnfParser.OptionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitOption(AbnfParser.OptionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -647,19 +631,19 @@ public interface IAbnfListener : IParseTreeListener</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Abnf_IAbnfListener_ExitRepeat_GCore_Antlr_Grammers_Abnf_AbnfParser_RepeatContext_.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Abnf.IAbnfListener.ExitRepeat(GCore.Antlr.Grammers.Abnf.AbnfParser.RepeatContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/new/master/apiSpec/new?filename=GCore_Antlr_Grammers_Abnf_IAbnfListener_ExitRepeat__GCore_Antlr_Grammers_Abnf_AbnfParser_Repeat_Context_.md&amp;value=---%0Auid%3A%20GCore.Antlr.Grammers.Abnf.IAbnfListener.ExitRepeat_(GCore.Antlr.Grammers.Abnf.AbnfParser.Repeat_Context)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/KevinGliewe/GCore.Antlr.Grammers/blob/master/workspace/projects/Abnf/AbnfListener.cs/#L104">View Source</a>
   </span>
-  <a id="GCore_Antlr_Grammers_Abnf_IAbnfListener_ExitRepeat_" data-uid="GCore.Antlr.Grammers.Abnf.IAbnfListener.ExitRepeat*"></a>
-  <h4 id="GCore_Antlr_Grammers_Abnf_IAbnfListener_ExitRepeat_GCore_Antlr_Grammers_Abnf_AbnfParser_RepeatContext_" data-uid="GCore.Antlr.Grammers.Abnf.IAbnfListener.ExitRepeat(GCore.Antlr.Grammers.Abnf.AbnfParser.RepeatContext)">ExitRepeat(AbnfParser.RepeatContext)</h4>
-  <div class="markdown level1 summary"><p>Exit a parse tree produced by <a class="xref" href="GCore.Antlr.Grammers.Abnf.AbnfParser.html#GCore_Antlr_Grammers_Abnf_AbnfParser_repeat">repeat()</a>.</p>
+  <a id="GCore_Antlr_Grammers_Abnf_IAbnfListener_ExitRepeat__" data-uid="GCore.Antlr.Grammers.Abnf.IAbnfListener.ExitRepeat_*"></a>
+  <h4 id="GCore_Antlr_Grammers_Abnf_IAbnfListener_ExitRepeat__GCore_Antlr_Grammers_Abnf_AbnfParser_Repeat_Context_" data-uid="GCore.Antlr.Grammers.Abnf.IAbnfListener.ExitRepeat_(GCore.Antlr.Grammers.Abnf.AbnfParser.Repeat_Context)">ExitRepeat_(AbnfParser.Repeat_Context)</h4>
+  <div class="markdown level1 summary"><p>Exit a parse tree produced by <a class="xref" href="GCore.Antlr.Grammers.Abnf.AbnfParser.html#GCore_Antlr_Grammers_Abnf_AbnfParser_repeat_">repeat_()</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitRepeat([NotNull] AbnfParser.RepeatContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitRepeat_(AbnfParser.Repeat_Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -672,7 +656,7 @@ public interface IAbnfListener : IParseTreeListener</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GCore.Antlr.Grammers.Abnf.AbnfParser.RepeatContext.html">AbnfParser.RepeatContext</a></td>
+        <td><a class="xref" href="GCore.Antlr.Grammers.Abnf.AbnfParser.Repeat_Context.html">AbnfParser.Repeat_Context</a></td>
         <td><span class="parametername">context</span></td>
         <td><p>The parse tree.</p>
 </td>
@@ -693,7 +677,7 @@ public interface IAbnfListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitRepetition([NotNull] AbnfParser.RepetitionContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitRepetition(AbnfParser.RepetitionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -727,7 +711,7 @@ public interface IAbnfListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitRule_([NotNull] AbnfParser.Rule_Context context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitRule_(AbnfParser.Rule_Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -761,7 +745,7 @@ public interface IAbnfListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitRulelist([NotNull] AbnfParser.RulelistContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitRulelist(AbnfParser.RulelistContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -797,7 +781,8 @@ public interface IAbnfListener : IParseTreeListener</code></pre>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

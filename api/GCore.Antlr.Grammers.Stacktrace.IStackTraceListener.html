@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IStackTraceListener
    ">
-    <meta name="generator" content="docfx 2.50.0.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -77,27 +77,11 @@
 <a class="xref" href="GCore.Antlr.Grammers.Stacktrace.StackTraceParser.html">StackTraceParser</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.VisitTerminal(Antlr4.Runtime.Tree.ITerminalNode)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.VisitErrorNode(Antlr4.Runtime.Tree.IErrorNode)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.EnterEveryRule(Antlr4.Runtime.ParserRuleContext)</span>
-    </div>
-    <div>
-      <span class="xref">Antlr4.Runtime.Tree.IParseTreeListener.ExitEveryRule(Antlr4.Runtime.ParserRuleContext)</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Antlr.Grammers.Stacktrace.html">GCore.Antlr.Grammers.Stacktrace</a></h6>
   <h6><strong>Assembly</strong>: Stacktrace.dll</h6>
   <h5 id="GCore_Antlr_Grammers_Stacktrace_IStackTraceListener_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
-public interface IStackTraceListener : IParseTreeListener</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IStackTraceListener : Antlr4.Runtime.Tree.IParseTreeListener</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -115,7 +99,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterAtLine([NotNull] StackTraceParser.AtLineContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterAtLine(StackTraceParser.AtLineContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -149,7 +133,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterCausedByLine([NotNull] StackTraceParser.CausedByLineContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterCausedByLine(StackTraceParser.CausedByLineContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -183,7 +167,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterClassFile([NotNull] StackTraceParser.ClassFileContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterClassFile(StackTraceParser.ClassFileContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -217,7 +201,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterClassName([NotNull] StackTraceParser.ClassNameContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterClassName(StackTraceParser.ClassNameContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -251,7 +235,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterConstructor([NotNull] StackTraceParser.ConstructorContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterConstructor(StackTraceParser.ConstructorContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -285,7 +269,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterEllipsisLine([NotNull] StackTraceParser.EllipsisLineContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterEllipsisLine(StackTraceParser.EllipsisLineContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -319,7 +303,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterIdentifier([NotNull] StackTraceParser.IdentifierContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterIdentifier(StackTraceParser.IdentifierContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -353,7 +337,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterInnerClassName([NotNull] StackTraceParser.InnerClassNameContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterInnerClassName(StackTraceParser.InnerClassNameContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -387,7 +371,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterMessage([NotNull] StackTraceParser.MessageContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterMessage(StackTraceParser.MessageContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -421,7 +405,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterMessageLine([NotNull] StackTraceParser.MessageLineContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterMessageLine(StackTraceParser.MessageLineContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -455,7 +439,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterMethodName([NotNull] StackTraceParser.MethodNameContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterMethodName(StackTraceParser.MethodNameContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -489,7 +473,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterPackagePath([NotNull] StackTraceParser.PackagePathContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterPackagePath(StackTraceParser.PackagePathContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -523,7 +507,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterQualifiedClass([NotNull] StackTraceParser.QualifiedClassContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterQualifiedClass(StackTraceParser.QualifiedClassContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -557,7 +541,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterQualifiedMethod([NotNull] StackTraceParser.QualifiedMethodContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterQualifiedMethod(StackTraceParser.QualifiedMethodContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -591,7 +575,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterStackTrace([NotNull] StackTraceParser.StackTraceContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterStackTrace(StackTraceParser.StackTraceContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -625,7 +609,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterStackTraceLine([NotNull] StackTraceParser.StackTraceLineContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterStackTraceLine(StackTraceParser.StackTraceLineContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -659,7 +643,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnterStartRule([NotNull] StackTraceParser.StartRuleContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterStartRule(StackTraceParser.StartRuleContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -693,7 +677,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitAtLine([NotNull] StackTraceParser.AtLineContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitAtLine(StackTraceParser.AtLineContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -727,7 +711,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitCausedByLine([NotNull] StackTraceParser.CausedByLineContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitCausedByLine(StackTraceParser.CausedByLineContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -761,7 +745,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitClassFile([NotNull] StackTraceParser.ClassFileContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitClassFile(StackTraceParser.ClassFileContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -795,7 +779,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitClassName([NotNull] StackTraceParser.ClassNameContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitClassName(StackTraceParser.ClassNameContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -829,7 +813,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitConstructor([NotNull] StackTraceParser.ConstructorContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitConstructor(StackTraceParser.ConstructorContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -863,7 +847,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitEllipsisLine([NotNull] StackTraceParser.EllipsisLineContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitEllipsisLine(StackTraceParser.EllipsisLineContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -897,7 +881,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitIdentifier([NotNull] StackTraceParser.IdentifierContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitIdentifier(StackTraceParser.IdentifierContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -931,7 +915,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitInnerClassName([NotNull] StackTraceParser.InnerClassNameContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitInnerClassName(StackTraceParser.InnerClassNameContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -965,7 +949,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitMessage([NotNull] StackTraceParser.MessageContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitMessage(StackTraceParser.MessageContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -999,7 +983,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitMessageLine([NotNull] StackTraceParser.MessageLineContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitMessageLine(StackTraceParser.MessageLineContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1033,7 +1017,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitMethodName([NotNull] StackTraceParser.MethodNameContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitMethodName(StackTraceParser.MethodNameContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1067,7 +1051,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitPackagePath([NotNull] StackTraceParser.PackagePathContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitPackagePath(StackTraceParser.PackagePathContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1101,7 +1085,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitQualifiedClass([NotNull] StackTraceParser.QualifiedClassContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitQualifiedClass(StackTraceParser.QualifiedClassContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1135,7 +1119,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitQualifiedMethod([NotNull] StackTraceParser.QualifiedMethodContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitQualifiedMethod(StackTraceParser.QualifiedMethodContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1169,7 +1153,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitStackTrace([NotNull] StackTraceParser.StackTraceContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitStackTrace(StackTraceParser.StackTraceContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1203,7 +1187,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitStackTraceLine([NotNull] StackTraceParser.StackTraceLineContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitStackTraceLine(StackTraceParser.StackTraceLineContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1237,7 +1221,7 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExitStartRule([NotNull] StackTraceParser.StartRuleContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitStartRule(StackTraceParser.StartRuleContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1273,7 +1257,8 @@ public interface IStackTraceListener : IParseTreeListener</code></pre>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
