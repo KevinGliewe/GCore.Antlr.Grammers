@@ -21,7 +21,7 @@ namespace GCore.Antlr.Grammers
             Log.Info("Processing Solution");
             bool result = true;
 
-            foreach(Func<bool> f in new Func<bool>[] {InitSolution, AddProjects, CloneGhPages, GenerateDocumentation, PublishDocumentation }) {
+            foreach(Func<bool> f in new Func<bool>[] {InitSolution, AddProjects }) {
                 
                 if(!result) 
                     break;
@@ -59,21 +59,6 @@ namespace GCore.Antlr.Grammers
             }
             
             return true;
-        }
-
-        private bool CloneGhPages() {
-            return $"git clone -b gh-pages --single-branch https://{Repo.GithubUser}:{Repo.GithubToken}@github.com/KevinGliewe/GCore.Antlr.Grammers --depth 1 {Repo.GhPagesPath}".Sh2(out _lastprocess) == 0;
-        }
-        private bool GenerateDocumentation() {
-            return Repo.DocFxTool.Sh2(out _lastprocess, Repo.DocFxPath) == 0;
-        }
-
-        private bool PublishDocumentation() {
-            // https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
-            return 
-                $"git add .".Sh2(out _lastprocess, Repo.GhPagesPath) == 0 && 
-                $"git commit -m '{Repo.Version}'".Sh2(out _lastprocess, Repo.GhPagesPath) == 0 &&
-                $"git push origin gh-pages".Sh2(out _lastprocess, Repo.GhPagesPath) == 0;
         }
     }
 }
