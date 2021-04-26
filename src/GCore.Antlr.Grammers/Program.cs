@@ -18,7 +18,7 @@ namespace GCore.Antlr.Grammers
             var grammersPath = Path.Combine(workSpace, "grammers");
             var projectsPath = Path.Combine(workSpace, "projects");
             var packagePath = Path.Combine(workSpace, "packages");
-            var antlrPath = Path.Combine(workSpace, "antlr-4.8-complete.jar");
+            var antlrPath = Path.Combine(workSpace, "antlr.jar");
             var docFxPath = Path.Combine(repoPath, "doc", "docfx");
             var ghPagesPath = Path.Combine(docFxPath, "_site");
             
@@ -34,7 +34,7 @@ namespace GCore.Antlr.Grammers
             Directory.CreateDirectory(packagePath);
 
             var wc = new WebClient();
-            wc.DownloadFile("https://www.antlr.org/download/antlr-4.8-complete.jar", antlrPath);
+            wc.DownloadFile("https://www.antlr.org/download/antlr-4.9.2-complete.jar", antlrPath);
 
             $"git clone https://github.com/antlr/grammars-v4 {grammersPath}".Sh();
 
