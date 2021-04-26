@@ -10,7 +10,7 @@ namespace GCore.Antlr.Grammers
     {
         static void Main(string[] args)
         {
-            GCore.Logging.Log.LoggingHandler.Add(new GCore.Logging.Logger.ConsoleLogger());
+            GCore.Logging.Log.LoggingHandler.Add(new GCore.Logging.Logger.ConsoleLogger(Logging.LogEntry.LogTypes.All));
             GCore.Logging.Log.LoggingHandler.Add(new GCore.Logging.Logger.FileLogger("./log.txt"));
 
             var repoPath = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "../.."));
