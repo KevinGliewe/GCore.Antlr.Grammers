@@ -1,13 +1,14 @@
 using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
+using System.Threading.Tasks;
 using GCore.Logging;
 
 namespace GCore.Antlr.Grammers
 {
     public static class StringShExtensions {
 
-        public static string Sh(this string cmd, string workingDirectory = ".")
+        public static async Task<string> Sh(this string cmd, string workingDirectory = ".")
         {
             var escapedArgs = cmd.Replace("\"", "\\\"");
 
@@ -33,7 +34,7 @@ namespace GCore.Antlr.Grammers
             };
             process.Start();
             var stdOut = process.StandardOutput.ReadToEnd();
-            process.WaitForExit();
+            await process.WaitForExitAsync();
             return stdOut;
         }
 
@@ -66,16 +67,15 @@ namespace GCore.Antlr.Grammers
 
 
 
-        public static int Sh2(this string cmd, out string stdOut, string workingDirectory = ".")
+        public static async Task<(int, string)> Sh2(this string cmd, string workingDirectory = ".")
         {
             Process process;
             cmd.Sh2(out process, workingDirectory);
-            stdOut = process.StandardOutput.ReadToEnd();
-            process.WaitForExit();
-            return process.ExitCode;
+            await process.WaitForExitAsync();
+            return (process.ExitCode, process.StandardOutput.ReadToEnd());
         }
 
-        public static int Sh2(this string cmd, Action<string> lineCallback = null, string workingDirectory = ".")
+        public static async Task<int> Sh3(this string cmd, Action<string> lineCallback = null, string workingDirectory = ".")
         {
             Process process;
             cmd.Sh2(out process, workingDirectory);
@@ -83,18 +83,18 @@ namespace GCore.Antlr.Grammers
             if(lineCallback != null)
                 while((line = process.StandardOutput.ReadLine()) != null)
                     lineCallback(line);
-            process.WaitForExit();
+            await process.WaitForExitAsync();
             return process.ExitCode;
         }
 
-        public static int Sh2(this string cmd, string workingDirectory = ".")
+        public static async Task<int> Sh4(this string cmd, string workingDirectory = ".")
         {
             Process process;
             cmd.Sh2(out process, workingDirectory);
             string line;
             while((line = process.StandardOutput.ReadLine()) != null)
                 GCore.Logging.Log.Info($"Process {process.Id}: {line}");
-            process.WaitForExit();
+            await process.WaitForExitAsync();
             return process.ExitCode;
         }
             

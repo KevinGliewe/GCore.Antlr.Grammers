@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 using System.Linq;
-
+using System.Threading.Tasks;
 using GCore.Logging;
 
 namespace GCore.Antlr.Grammers
@@ -21,19 +21,19 @@ namespace GCore.Antlr.Grammers
             Context = new ProjectContext(antlr4Path, srcPath, destPath);
         }
 
-        public bool DoIt() {
+        public async Task<bool> DoIt() {
             Log.Info("Processing "+Context.Name);
             bool result = true;
 
-            foreach(Func<bool> f in new Func<bool>[] {CopyData, GenerateParser, GenerateProject, BuildProject, Publish}) {
+            foreach(Func<Task<bool>> f in new Func<Task<bool>>[] {CopyData, GenerateParser, GenerateProject, BuildProject, Publish}) {
                 
                 if(!result) 
                     break;
-                Log.Info("-> " + f.Method.Name);
+                //Log.Info("-> " + f.Method.Name);
                 try {
-                    result = f();
+                    result = await f();
                     if(!result) {
-                        Log.Warn("#> " + f.Method.Name + " FAILED");
+                        Log.Warn($"#> {Context.Name} -> {f.Method.Name} FAILED");
                         Log.Debug(_lastprocess);
                     }
                 } catch (Exception ex) {
@@ -43,30 +43,37 @@ namespace GCore.Antlr.Grammers
             }
 
             if(result)
-                Log.Success("Done");
+                Log.Success("Done " + Context.Name);
             return result;
         }
 
-        private bool CopyData() {
+        private async Task<bool> CopyData() {
             Directory.CreateDirectory(Context.DestPath);
 
             foreach(var file in Directory.GetFiles(Context.SrcPath, "*.g4"))
-                File.Copy(file, Path.GetFullPath(Path.Combine(Context.DestPath, Path.GetFileName(file))));
+                await Helper.CopyFileAsync(file, Path.GetFullPath(Path.Combine(Context.DestPath, Path.GetFileName(file))));
             return true;
         }
 
-        private bool GenerateParser() {
-            foreach(var file in Directory.GetFiles(Context.DestPath, "*.g4"))
-                if($"java -jar {Context.Antlr4Path} -Dlanguage=CSharp -visitor -o {Context.DestPath} {file}".Sh2(out _lastprocess) != 0)
+        private async Task<bool> GenerateParser()
+        {
+            foreach (var file in Directory.GetFiles(Context.DestPath, "*.g4"))
+            {
+                var result = await $"java -jar {Context.Antlr4Path} -Dlanguage=CSharp -visitor -o {Context.DestPath} {file}".Sh2();
+
+                _lastprocess = result.Item2;
+
+                if (result.Item1 != 0)
                     return false;
-            
+            }
+
             foreach(var csfile in Directory.GetFiles(Context.DestPath, "*.cs"))
-                File.WriteAllText(csfile, $"namespace {Repo.PackagePrefix}.{Context.Name}\n{{\n" + File.ReadAllText(csfile).Replace(".compareTo(", ".CompareTo(") + "\n}");
+                await File.WriteAllTextAsync(csfile, $"namespace {Repo.PackagePrefix}.{Context.Name}\n{{\n" + File.ReadAllText(csfile).Replace(".compareTo(", ".CompareTo(") + "\n}");
             return true;
         }
 
-        private bool GenerateProject() {
-            File.WriteAllText(Context.ProjectFile ,$@"
+        private async Task<bool> GenerateProject() {
+            await File.WriteAllTextAsync(Context.ProjectFile ,$@"
 
             <Project Sdk=""Microsoft.NET.Sdk"">
 
@@ -93,8 +100,11 @@ namespace GCore.Antlr.Grammers
             return true;
         }
 
-        private bool BuildProject() {
-            if($"dotnet publish -c Release {Context.ProjectFile}".Sh2(out _lastprocess) != 0)
+        private async Task<bool> BuildProject()
+        {
+            var result = await $"dotnet publish -c Release {Context.ProjectFile}".Sh2();
+            _lastprocess = result.Item2;
+            if (result.Item1  != 0)
                 return false;
 
             var src = Path.Combine(Context.DestPath, "bin", "Release", PackageName);
@@ -107,12 +117,16 @@ namespace GCore.Antlr.Grammers
             return true;
         }
 
-        private bool Publish() {
+        private async Task<bool> Publish() {
             if(Repo.ApiToken is null)
                 return true;
 
             var dest = Path.Combine(Repo.PackagePath, PackageName);
-            if($"dotnet nuget push {dest} -k {Repo.ApiToken} -s https://api.nuget.org/v3/index.json".Sh2(out _lastprocess) != 0)
+
+            var result =
+                await $"dotnet nuget push {dest} -k {Repo.ApiToken} -s https://api.nuget.org/v3/index.json".Sh2();
+            _lastprocess = result.Item2;
+            if (result.Item1 != 0)
                return false;
 
             return true;

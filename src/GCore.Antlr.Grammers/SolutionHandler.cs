@@ -43,8 +43,11 @@ namespace GCore.Antlr.Grammers
             return result;
         }
 
-        private bool InitSolution() {
-            return $"dotnet new sln --name {Repo.PackagePrefix}".Sh2(out _lastprocess, Repo.WorkspacePath) == 0;
+        private bool InitSolution()
+        {
+            var result = $"dotnet new sln --name {Repo.PackagePrefix}".Sh2(Repo.WorkspacePath).Result;
+            _lastprocess = result.Item2;
+            return result.Item1 == 0;
         }
 
         private bool AddProjects() {
@@ -54,26 +57,39 @@ namespace GCore.Antlr.Grammers
                 
                 var relativeProjectPath = Path.GetRelativePath(Repo.WorkspacePath, proj.ProjectFile);
                 Log.Info("--> Add project " + relativeProjectPath);
-                if($"dotnet sln {relativeSolutionPath} add {relativeProjectPath}".Sh2(out _lastprocess, Repo.WorkspacePath) != 0)
+
+                var result = $"dotnet sln {relativeSolutionPath} add {relativeProjectPath}".Sh2(Repo.WorkspacePath).Result;
+                _lastprocess = result.Item2;
+                if (result.Item1 != 0)
                     return false;
             }
             
             return true;
         }
 
-        private bool CloneGhPages() {
-            return $"git clone -b gh-pages --single-branch https://{Repo.GithubUser}:{Repo.GithubToken}@github.com/KevinGliewe/GCore.Antlr.Grammers --depth 1 {Repo.GhPagesPath}".Sh2(out _lastprocess) == 0;
+        private bool CloneGhPages()
+        {
+            return Sh($"git clone -b gh-pages --single-branch https://{Repo.GithubUser}:{Repo.GithubToken}@github.com/KevinGliewe/GCore.Antlr.Grammers --depth 1 {Repo.GhPagesPath}");
         }
-        private bool GenerateDocumentation() {
-            return Repo.DocFxTool.Sh2(out _lastprocess, Repo.DocFxPath) == 0;
+
+        private bool GenerateDocumentation()
+        {
+            return Sh(Repo.DocFxTool, Repo.GhPagesPath);
         }
 
         private bool PublishDocumentation() {
             // https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
             return 
-                $"git add .".Sh2(out _lastprocess, Repo.GhPagesPath) == 0 && 
-                $"git commit -m '{Repo.Version}'".Sh2(out _lastprocess, Repo.GhPagesPath) == 0 &&
-                $"git push origin gh-pages".Sh2(out _lastprocess, Repo.GhPagesPath) == 0;
+                Sh($"git add .", Repo.GhPagesPath) &&
+                Sh($"git commit -m '{Repo.Version}'", Repo.GhPagesPath) &&
+                Sh($"git push origin gh-pages", Repo.GhPagesPath);
+        }
+
+        bool Sh(string cmd, string workingDirectory = ".")
+        {
+            var result = cmd.Sh2(Repo.WorkspacePath).Result;
+            _lastprocess = result.Item2;
+            return result.Item1 == 0;
         }
     }
 }
