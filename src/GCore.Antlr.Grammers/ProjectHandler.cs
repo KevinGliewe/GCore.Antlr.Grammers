@@ -29,12 +29,12 @@ namespace GCore.Antlr.Grammers
                 
                 if(!result) 
                     break;
-                Log.Info("-> " + f.Method.Name);
+                Log.Debug("-> " + f.Method.Name);
                 try {
                     result = f();
                     if(!result) {
-                        Log.Warn("#> " + f.Method.Name + " FAILED");
-                        Log.Debug(_lastprocess);
+                        Log.Warn("#> " + Context.Name + " -> " + f.Method.Name + " FAILED");
+                        Log.Warn(_lastprocess);
                     }
                 } catch (Exception ex) {
                     Log.Exception(f.Method.Name, ex);
@@ -43,7 +43,7 @@ namespace GCore.Antlr.Grammers
             }
 
             if(result)
-                Log.Success("Done");
+                Log.Success("Done " + Context.Name);
             return result;
         }
 

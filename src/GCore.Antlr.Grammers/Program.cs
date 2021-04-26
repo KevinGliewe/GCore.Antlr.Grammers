@@ -10,7 +10,7 @@ namespace GCore.Antlr.Grammers
     {
         static void Main(string[] args)
         {
-            GCore.Logging.Log.LoggingHandler.Add(new GCore.Logging.Logger.ConsoleLogger(Logging.LogEntry.LogTypes.All));
+            GCore.Logging.Log.LoggingHandler.Add(new GCore.Logging.Logger.ConsoleLogger());
             GCore.Logging.Log.LoggingHandler.Add(new GCore.Logging.Logger.FileLogger("./log.txt"));
 
             var repoPath = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "../.."));
@@ -51,12 +51,14 @@ namespace GCore.Antlr.Grammers
             var solutionPath = Path.Combine(workSpace, repoContext.PackagePrefix + ".sln");
 
             var projects = new List<ProjectHandler>();
-            foreach(var dir in Directory.GetDirectories(grammersPath))
-                if(!(dir.EndsWith("-test") || dir.EndsWith(".git"))) {
+            foreach(var dir in Directory.GetDirectories(grammersPath)) {
+                var dirName = dir.Split(Path.DirectorySeparatorChar).Last();
+                if(!(dirName.StartsWith("_") || dirName.StartsWith("."))) {
                     var proj = new ProjectHandler(antlrPath, dir, projectsPath, repoContext);
                     if(proj.DoIt())
                     projects.Add(proj);
                 }
+            }
             
             new SolutionHandler(repoContext, projects.Select(p=>p.Context)).DoIt();
         }
