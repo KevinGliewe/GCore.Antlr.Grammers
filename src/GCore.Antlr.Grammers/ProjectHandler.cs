@@ -85,7 +85,7 @@ namespace GCore.Antlr.Grammers
                 </PropertyGroup>
 
                 <ItemGroup>
-                    <PackageReference Include=""Antlr4.Runtime.Standard"" Version=""4.8.0"" />
+                    <PackageReference Include=""Antlr4.Runtime.Standard"" Version=""4.9.3"" />
                 </ItemGroup>
 
             </Project>
